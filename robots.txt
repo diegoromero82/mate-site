@@ -1,0 +1,15 @@
+# =========================================================
+# robots.txt para MATE Inversiones & Negocios
+# =========================================================
+
+User-agent: *
+Allow: /
+
+# Evitar que rastreen la página de error
+Disallow: /404.html
+
+# Prevenir rastreo de carpetas internas de sistema si a futuro las hay
+Disallow: /cgi-bin/
+
+# Enlace directo al Sitemap para facilitar la indexación
+Sitemap: https://www.matesas.com/sitemap.xml
