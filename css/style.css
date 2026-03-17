@@ -1,0 +1,69 @@
+/* ==========================================================================
+   MATE SAS - Estilos Base Centralizados
+   ========================================================================== */
+
+/* Importamos las capas de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Comportamiento suave del scroll en toda la página */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Evitar que el texto sea seleccionable en botones y enlaces de navegación */
+  button, nav a {
+    user-select: none;
+  }
+}
+
+@layer components {
+  /* Aquí podremos crear clases personalizadas si notamos que repetimos
+     muchas clases de Tailwind en botones, tarjetas, etc. */
+  
+  .btn-primary {
+    @apply px-6 py-3 bg-primary text-white rounded-full font-bold shadow-md hover:bg-mateTeal hover:-translate-y-0.5 transition-all duration-300;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border-2 border-primary text-primary dark:border-white dark:text-white rounded-full font-bold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-background-dark transition-all duration-300;
+  }
+}
+
+@layer utilities {
+  /* Utilidades personalizadas para fondos decorativos si las necesitamos luego */
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-magenta;
+  }
+}
+
+/* ==========================================================================
+   Ajustes y Fixes Adicionales
+   ========================================================================== */
+
+/* Asegurar que los íconos de Material Design se alineen bien con el texto */
+.material-icons {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+/* Estilos personalizados para el scrollbar (Opcional, pero da un toque premium) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background-light dark:bg-background-dark;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-700 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary dark:bg-mateTeal;
+}

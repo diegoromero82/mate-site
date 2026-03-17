@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Página no encontrada | MATE Inversiones & Negocios</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="author" content="Megatel SAS" />
+
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Material+Icons&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#0E7287",
+                        magenta: "#B33E7E",
+                        deepPurple: "#432E60",
+                        "background-light": "#F9FAFB",
+                        "background-dark": "#0F172A",
+                        mateTeal: "#087E8B",
+                        mateMagenta: "#B53D7A",
+                        matePurple: "#543C72",
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "sans-serif"],
+                        sans: ["Plus Jakarta Sans", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark font-sans text-slate-800 dark:text-slate-200 transition-colors duration-300 antialiased flex flex-col min-h-screen">
+
+    <header
+        class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center gap-3 group">
+                    <img src="media/logos/LogoMate-03%20(2).png" alt="MATE Logo"
+                        class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+                </a>
+
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="index.html"
+                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Inicio</a>
+                    <a href="somos-mate.html"
+                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Somos
+                        Mate</a>
+                    <a href="proyectos.html"
+                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Proyectos</a>
+                    <a href="contacto.html"
+                        class="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-bold shadow-md hover:bg-mateTeal transition-all">Contáctanos</a>
+
+                    <div class="w-px h-6 bg-slate-300 dark:bg-slate-700"></div>
+                    <button id="btn-lang"
+                        class="flex items-center gap-2 font-bold text-sm hover:text-primary dark:hover:text-mateTeal transition-colors bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full shadow-sm">
+                        <img src="https://flagcdn.com/w20/us.png" alt="English" class="w-4 h-auto rounded-sm"> EN
+                    </button>
+                    <button id="theme-toggle"
+                        class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center text-slate-600 dark:text-slate-300"
+                        aria-label="Cambiar tema">
+                        <span class="material-icons text-xl hidden dark:block">light_mode</span>
+                        <span class="material-icons text-xl block dark:hidden">dark_mode</span>
+                    </button>
+                </nav>
+
+                <div class="md:hidden flex items-center gap-4">
+                    <button id="theme-toggle-mobile"
+                        class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300">
+                        <span class="material-icons text-xl hidden dark:block">light_mode</span>
+                        <span class="material-icons text-xl block dark:hidden">dark_mode</span>
+                    </button>
+                    <button id="mobile-menu-btn" class="text-slate-800 dark:text-white p-2">
+                        <span class="material-icons text-3xl">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow flex items-center justify-center py-20">
+        <div class="max-w-2xl mx-auto px-4 text-center">
+            <div
+                class="w-32 h-32 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-8 animate-bounce">
+                <span class="material-icons text-6xl text-primary">explore_off</span>
+            </div>
+
+            <h1 class="font-display text-8xl md:text-9xl font-bold text-deepPurple dark:text-white mb-4">404</h1>
+            <h2 class="font-display text-3xl md:text-4xl font-bold text-slate-900 dark:text-slate-200 mb-6">¡Ups! Parece
+                que nos hemos perdido.</h2>
+            <p class="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
+                La página que estás buscando no existe, ha sido movida o está temporalmente fuera de servicio.
+                Vuelve al inicio para seguir explorando nuestras soluciones.
+            </p>
+
+            <a href="index.html"
+                class="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-full font-bold shadow-lg hover:bg-mateTeal hover:-translate-y-1 transition-all">
+                <span class="material-icons">home</span> Volver al Inicio
+            </a>
+        </div>
+    </main>
+
+    <footer class="bg-deepPurple dark:bg-slate-900 text-white py-12 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-white text-deepPurple flex items-center justify-center rounded-lg">
+                            <span class="font-display font-bold text-2xl">M</span>
+                        </div>
+                        <span class="font-display font-bold text-2xl tracking-tight">MATE</span>
+                    </div>
+                    <p class="text-white/80 text-sm max-w-sm leading-relaxed">
+                        Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas,
+                        financieras, sociales y sostenibles.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4 text-magenta">Enlaces</h4>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li><a href="index.html" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="somos-mate.html" class="hover:text-white transition-colors">Somos Mate</a></li>
+                        <li><a href="proyectos.html" class="hover:text-white transition-colors">Proyectos</a></li>
+                        <li><a href="contacto.html" class="hover:text-white transition-colors">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4 text-mateTeal">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li class="flex items-center gap-2"><span class="material-icons text-sm">email</span>
+                            direcciongeneral@matesas.com</li>
+                        <li class="flex items-center gap-2"><span class="material-icons text-sm">location_on</span>
+                            Bogotá D.C. · Montería, Colombia</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div
+                class="pt-8 border-t border-white/10 text-center md:text-left text-xs text-white/60 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>&copy; 2026 MATE Inversiones & Negocios SAS. Todos los derechos reservados.</p>
+                <p>Desarrollado por <a href="https://www.megatelsas.com" target="_blank" rel="noopener noreferrer"
+                        class="font-bold text-white hover:text-primary transition-colors">Megatel SAS</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/seo.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
