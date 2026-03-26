@@ -7,10 +7,18 @@ const translations = {
         nav_projects: "Proyectos",
         nav_contact: "Contáctanos",
 
-        // SEO (Inicio)
+        // --- PÁGINA: INDEX (HOME) ---
         // Inicio
         meta_title_index: "MATE | Inversiones & Negocios",
         meta_desc_index: "Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas, financieras, sociales y sostenibles.",
+        // 1.1 Hero Section        
+        hero_badge_text: "Transformación Social",
+        hero_title: "Impulsamos<br>oportunidades para una ciudadanía más inclusiva",
+        hero_subtitle: "En MATE articulamos soluciones productivas, financieras, sociales y sostenibles para fortalecer capacidades, generar ingresos y ampliar oportunidades en personas, comunidades y territorios.",
+        hero_btn_1: "Conoce nuestras soluciones",
+        hero_btn_2: "Hablemos de una alianza",
+
+        // --- PÁGINA: SOMOS MATE ---
         // Somos Mate
         meta_title_somos: "Somos MATE | Inversiones & Negocios",
         meta_desc_somos: "Conoce a MATE, nuestra historia, misión, visión y el equipo interdisciplinario que impulsa la inclusión económica.",
@@ -43,9 +51,19 @@ const translations = {
         nav_projects: "Projects",
         nav_contact: "Contact Us",
 
+        // --- PÁGINA: INDEX (HOME) ---
         // SEO (Inicio)
         meta_title_index: "MATE | Investments & Business",
         meta_desc_index: "We drive economic inclusion and inclusive citizenship through productive, financial, social, and sustainable solutions.",
+        // 1.1 Hero Section
+        // Nota: En inglés el título es más corto, no necesita <br>.
+        hero_badge_text: "Social Transformation",
+        hero_title: "Driving opportunities for a more inclusive citizenship",
+        hero_subtitle: "At MATE, we articulate productive, financial, social, and sustainable solutions to strengthen capacities, generate income, and expand opportunities for people, communities, and territories.",
+        hero_btn_1: "Discover our solutions",
+        hero_btn_2: "Let's talk about an alliance",
+
+        // --- PÁGINA: SOMOS MATE ---
 
         // Index - Hero
         hero_title: "We drive opportunities for a more <span class='text-primary italic'>inclusive</span> citizenship",

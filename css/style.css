@@ -67,3 +67,80 @@
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-primary dark:bg-mateTeal;
 }
+/* =========================================================
+   MATE SAS - Animaciones del Hero Slider (3 Imágenes)
+   ========================================================= */
+
+/* Contenedor principal del Slider - Ocupa todo el fondo */
+.hero-slider-container {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    z-index: 0;
+}
+
+/* Base para cada imagen del slider (Slide) */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0; /* Ocultas por defecto para el cross-fade */
+    transform: scale(1); /* Escala normal por defecto */
+    transition: opacity 1.5s ease-in-out; /* Suavizado del cambio entre imágenes */
+    
+    /* Aplicamos las dos animaciones: Zoom lento y Desvanecimiento (Fade) */
+    animation-name: kenBurnsZoom, heroFade;
+    animation-duration: 30s, 30s; /* Duración total del ciclo para 3 imágenes */
+    animation-iteration-count: infinite; /* Infinito */
+}
+
+/* --- Animación 1: Efecto Ken Burns (Acercamiento lento y constante) --- */
+@keyframes kenBurnsZoom {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.15); /* Se acerca un 15% */
+    }
+}
+
+/* --- Animación 2: Control de opacidad y visibilidad (3 Imágenes / Ciclo 30s) ---
+   Cada imagen es totalmente visible durante 10 segundos (33.33% del tiempo).
+   El z-index cambia para que la imagen activa siempre esté arriba.
+*/
+@keyframes heroFade {
+    0%, 33.33% { 
+        opacity: 1; 
+        z-index: 2; /* Visible y encima */
+    } 
+    33.34%, 100% { 
+        opacity: 0; 
+        z-index: 0; /* Oculta */
+    }
+}
+
+/* Configuración de retardos (delays) para cada una de las 3 imágenes.
+   La duración total del ciclo es 30s.
+*/
+.hero-slide:nth-child(1) { 
+    animation-delay: 0s, 0s; 
+}
+.hero-slide:nth-child(2) { 
+    animation-delay: 10s, 10s; /* Empieza cuando la 1 termina su fase visible */
+}
+.hero-slide:nth-child(3) { 
+    animation-delay: 20s, 20s; /* Empieza cuando la 2 termina */
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    
+    /* Degradado con colores corporativos y opacidad media (50% a 70%) */
+    background: linear-gradient(135deg, rgba(67, 46, 96, 0.6) 0%, rgba(14, 114, 135, 0.5) 50%, rgba(0, 0, 0, 0.7) 100%);
+    
+    z-index: 10; 
+    pointer-events: none; 
+}
