@@ -41,7 +41,7 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Material+Icons&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -126,11 +126,61 @@
     </header>
 
     <main class="flex-grow">
-        <section class="py-20 text-center">
-            <h1 class="font-display text-4xl font-bold text-primary dark:text-white">Layout Base Configurado</h1>
-            <p class="mt-4 text-slate-600 dark:text-slate-400">Aquí inyectaremos las secciones de la página de inicio.
-            </p>
+
+        <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden text-white" id="inicio">
+
+            <div class="hero-slider-container">
+
+                <div class="hero-slide" style="background-image: url('./media/images/mate_img_26.jpg');">
+                </div>
+
+                <div class="hero-slide" style="background-image: url('./media/images/mate_img_43.jpg');">
+                </div>
+
+                <div class="hero-slide" style="background-image: url('./media/images/mate_img_30.jpg');">
+                </div>
+
+                <div class="hero-overlay"></div>
+            </div>
+
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 py-20 text-center">
+                <div class="max-w-4xl mx-auto flex flex-col items-center">
+
+                    <div
+                        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-white border border-white/20 mb-8 backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-magenta animate-pulse"></span>
+                        <span class="text-xs font-bold uppercase tracking-widest"
+                            data-i18n="hero_badge_text">Transformación Social</span>
+                    </div>
+
+                    <h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.1] mb-8" data-i18n="hero_title">
+                        Impulsamos<br>oportunidades para una ciudadanía más inclusiva
+                    </h1>
+
+                    <p class="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed max-w-3xl"
+                        data-i18n="hero_subtitle">
+                        En MATE articulamos soluciones productivas, financieras, sociales y sostenibles para fortalecer
+                        capacidades, generar ingresos y ampliar oportunidades en personas, comunidades y territorios.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <a href="proyectos.html"
+                            class="px-10 py-5 bg-mateTeal text-white rounded-full font-bold shadow-2xl hover:bg-white hover:text-deepPurple hover:-translate-y-1 transition-all text-lg flex items-center justify-center gap-2 group">
+                            <span data-i18n="hero_btn_1">Conoce nuestras soluciones</span>
+                            <span
+                                class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                        </a>
+
+                        <a href="contacto.html"
+                            class="px-10 py-5 bg-white/10 text-white border-2 border-white rounded-full font-bold hover:bg-white hover:text-primary transition-all text-lg backdrop-blur-sm"
+                            data-i18n="hero_btn_2">
+                            Hablemos de una alianza
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
+
     </main>
 
     <footer class="bg-deepPurple dark:bg-slate-900 text-white py-12 transition-colors duration-300">
