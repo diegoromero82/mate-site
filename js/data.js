@@ -13,7 +13,8 @@ const translations = {
         meta_desc_index: "Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas, financieras, sociales y sostenibles.",
         // 1.1 Hero Section        
         hero_badge_text: "Transformación Social",
-        hero_title: "Impulsamos<br>oportunidades para una ciudadanía más inclusiva",
+        hero_title_p1: "Impulsamos<br />oportunidades para una ciudadanía más ",
+        hero_title_p2: "inclusiva",
         hero_subtitle: "En MATE articulamos soluciones productivas, financieras, sociales y sostenibles para fortalecer capacidades, generar ingresos y ampliar oportunidades en personas, comunidades y territorios.",
         hero_btn_1: "Conoce nuestras soluciones",
         hero_btn_2: "Hablemos de una alianza",
@@ -89,7 +90,7 @@ const translations = {
         serv_a_desc: "Fortalecimos negocios liderados por mujeres indígenas, afrocolombianas, raizales y Rrom, integrando diagnóstico, asistencia técnica, acompañamiento comercial y seguimiento con enfoque étnico y de género.",
         serv_b_title: "Banca de las Oportunidades",
         serv_b_desc: "Elaboramos recomendaciones estratégicas para el diseño de programas de ahorro dirigidos a poblaciones de bajos ingresos y/o vulnerables.",
-        serv_c_title: "Migración juvenil rural",
+        serv_c_title: "Migración juvenil",
         serv_c_desc: "Lideramos una investigación sobre los factores que inciden en la migración de jóvenes rurales, generando insumos para decisiones y políticas con enfoque territorial.",
         serv_d_title: "Familias en su Tierra",
         serv_d_desc: "Acompañamos procesos de retorno de hogares víctima del conflicto con acciones en seguridad alimentaria, vivienda y generación de ingresos.",
@@ -110,13 +111,13 @@ const translations = {
         
         // Hero Section ---
         hero_about_title: "Somos MATE",
-        hero_about_desc: "Consultoría especializada en inclusión financiera, productiva y social, orientada a impulsar un desarrollo sostenible y equitativo.",
+        hero_about_desc: "Consultoría especializada en inclusión económica y social, orientada a impulsar un desarrollo sostenible y equitativo",
 
         // --- Acerca de la empresa y Misión ---
         about_company_title: "Acerca de la empresa",
         about_company_text: "Somos una empresa comprometida con la transformación y la innovación social. Promovemos la articulación regional como un medio estratégico para el intercambio de saberes y la implementación de modelos de desarrollo de alto impacto, orientados a la sostenibilidad y la equidad.",
         mission_title: "Misión",
-        mission_text: "Ofrecemos consultoría especializada en el diseño y gestión de intervenciones con enfoque social y productivo, orientadas a promover el desarrollo sostenible y el crecimiento económico inclusivo.",
+        mission_text: "Ofrecemos consultoría especializada en el diseño y gestión de intervenciones con enfoque económico y social, orientadas a promover el desarrollo sostenible y el crecimiento inclusivo.",
 
         // --- Cómo trabajamos ---
         how_title: "Cómo trabajamos",
@@ -142,12 +143,12 @@ const translations = {
         
         // Equipo - P2
         team_p2_name: "Any Andrea Benítez",
-        team_p2_role: "Experta en inclusión",
+        team_p2_role: "Experta financiera y protección social",
         team_p2_bio: "Experta en inclusión financiera y protección social. Tiene más de 22 años de experiencia en Colombia y América Latina, y una trayectoria destacada en educación financiera, ahorro, aseguramiento, ahorro para la vejez y economía plateada.",
         
         // Equipo - P3
         team_p3_name: "Ivonne Villada",
-        team_p3_role: "Especialista en inclusión",
+        team_p3_role: "Experta en inclusión económica y genero",
         team_p3_bio: "Especialista en inclusión financiera y protección social, con más de 16 años de experiencia en América Latina. Ha liderado iniciativas de educación financiera, género y diversidad para ampliar oportunidades y acceso a servicios financieros en poblaciones vulnerables.",
         
         // Equipo - P4
@@ -186,7 +187,8 @@ const translations = {
         hero_btn_2: "Let's talk about an alliance",       
 
         // Index - Hero
-        hero_title: "We drive opportunities for a more <span class='text-primary italic'>inclusive</span> citizenship",
+        hero_title_p1: "We drive<br />opportunities for a more ",
+        hero_title_p2: "inclusive",
         hero_subtitle: "At MATE, we articulate productive, financial, social, and sustainable solutions to strengthen capacities, generate income, and expand opportunities for people, communities, and territories.",
         hero_btn_1: "Discover our solutions",
         hero_btn_2: "Let's talk about an alliance",
@@ -245,7 +247,7 @@ const translations = {
         serv_a_desc: "We strengthened businesses led by Indigenous, Afro-Colombian, Raizal, and Romani women, integrating diagnostics, technical assistance, commercial support, and monitoring with an ethnic and gender focus.",
         serv_b_title: "Bank of Opportunities",
         serv_b_desc: "We developed strategic recommendations for the design of savings programs aimed at low-income and/or vulnerable populations.",
-        serv_c_title: "Rural youth migration",
+        serv_c_title: "Youth migration",
         serv_c_desc: "We led research on the factors affecting the migration of rural youth, generating inputs for decisions and policies with a territorial focus.",
         serv_d_title: "Families in their Land",
         serv_d_desc: "We supported return processes for conflict-victim households with actions in food security, housing, and income generation.",
@@ -273,9 +275,9 @@ const translations = {
 
         // --- About the company and Mission ---
         about_company_title: "About the company",
-        about_company_text: "We are a company committed to social transformation and innovation. We promote regional articulation as a strategic means for the exchange of knowledge and the implementation of high-impact development models, aimed at sustainability and equity.",
+        about_company_text: "Specialized consulting in economic and social inclusion, aimed at fostering sustainable and equitable development",
         mission_title: "Mission",
-        mission_text: "We offer specialized consulting in the design and management of interventions with a social and productive focus, aimed at promoting sustainable development and inclusive economic growth.",
+        mission_text: "We provide specialized consulting in the design and management of interventions with an economic and social focus, aimed at promoting sustainable development and inclusive growth.",
 
         // How we work ---
         how_title: "How we work",
@@ -298,11 +300,11 @@ const translations = {
         team_p1_bio: "Leads MATE's strategic vision and the consolidation of initiatives connecting territory, inclusion, and opportunities. She has over 22 years of experience in rural development, gender, entrepreneurship, and economic inclusion, supporting processes and vulnerable populations in Colombia and Latin America.",
         
         team_p2_name: "Any Andrea Benítez",
-        team_p2_role: "Inclusion Expert",
+        team_p2_role: "Financial and social protection expert",
         team_p2_bio: "Expert in financial inclusion and social protection. She has over 22 years of experience in Colombia and Latin America, with an outstanding track record in financial education, savings, insurance, retirement savings, and the silver economy.",
         
         team_p3_name: "Ivonne Villada",
-        team_p3_role: "Inclusion Specialist",
+        team_p3_role: "Expert in economic inclusion and gender",
         team_p3_bio: "Specialist in financial inclusion and social protection with over 16 years of experience in Latin America. She has led financial education, gender, and diversity initiatives to expand opportunities and access to financial services for vulnerable populations.",
         
         team_p4_name: "Claudia Sofía Santacruz",
