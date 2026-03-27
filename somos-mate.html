@@ -42,7 +42,7 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Material+Icons&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -127,109 +127,289 @@
 
     <main class="flex-grow">
 
-        <section
-            class="py-24 bg-slate-50 dark:bg-slate-900/50 text-center border-b border-slate-200 dark:border-slate-800">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h1 class="font-display text-5xl md:text-6xl font-bold text-deepPurple dark:text-white mb-6">Nuestra
-                    Esencia</h1>
-                <p class="text-xl text-slate-600 dark:text-slate-400">Aquí irá un texto introductorio sobre lo que
-                    representa MATE y su impacto en la sociedad.</p>
-            </div>
-        </section>
+        <section class="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-slate-900 pt-20" id="hero-somos">
+            
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('./media/images/mate_img_33.jpeg');"></div>
+            
+            <div class="absolute inset-0 bg-black/60 dark:bg-black/70"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
 
-        <section class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid md:grid-cols-2 gap-12 items-center">
-                    <div class="bg-slate-200 dark:bg-slate-800 rounded-2xl h-80 flex items-center justify-center">
-                        <span class="text-slate-500 dark:text-slate-400 font-medium">[Espacio para Imagen
-                            Corporativa]</span>
-                    </div>
-                    <div>
-                        <h2 class="font-display text-3xl font-bold text-primary dark:text-mateTeal mb-4">Acerca de la
-                            Empresa</h2>
-                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
-                            [Bloque de texto para insertar la descripción detallada de la empresa, historia, y propósito
-                            principal.]
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20 bg-slate-50 dark:bg-slate-900/40">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-white dark:bg-slate-800 p-10 rounded-2xl shadow-sm border-t-4 border-magenta">
-                        <span class="material-icons text-4xl text-magenta mb-4">flag</span>
-                        <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-4">Nuestra Misión
-                        </h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                            [Espacio para insertar el texto de la Misión de MATE SAS].
-                        </p>
-                    </div>
-                    <div class="bg-white dark:bg-slate-800 p-10 rounded-2xl shadow-sm border-t-4 border-primary">
-                        <span class="material-icons text-4xl text-primary mb-4">visibility</span>
-                        <h3 class="font-display text-2xl font-bold text-slate-900 dark:text-white mb-4">Nuestra Visión
-                        </h3>
-                        <p class="text-slate-600 dark:text-slate-400 leading-relaxed">
-                            [Espacio para insertar el texto de la Visión de MATE SAS].
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-20">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="font-display text-4xl font-bold text-deepPurple dark:text-white mb-4">Nuestro Equipo</h2>
-                <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto mb-12">
-                    [Breve introducción sobre los profesionales que conforman MATE SAS].
+            <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col items-center">
+                
+                <div class="h-1.5 w-16 bg-magenta rounded-full mb-8"></div>
+                
+                <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-lg tracking-tight" data-i18n="hero_about_title">
+                    Somos MATE
+                </h1>
+                
+                <p class="text-xl md:text-2xl lg:text-3xl text-white/95 font-medium leading-relaxed drop-shadow-md max-w-4xl" data-i18n="hero_about_desc">
+                    Consultoría especializada en inclusión financiera, productiva y social, orientada a impulsar un desarrollo sostenible y equitativo.
                 </p>
+            </div>
+            
+        </section>      
 
-                <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
-                    <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl">
-                        <div
-                            class="w-32 h-32 mx-auto bg-slate-200 dark:bg-slate-700 rounded-full mb-4 flex items-center justify-center">
-                            <span class="text-slate-400 text-sm">[Foto]</span>
-                        </div>
-                        <h4 class="font-bold text-lg text-slate-900 dark:text-white">[Nombre]</h4>
-                        <p class="text-primary text-sm font-medium">[Cargo]</p>
+        <section class="py-24 bg-white dark:bg-slate-900 overflow-hidden" id="acerca-de">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid lg:grid-cols-2 gap-12 items-center mb-24">
+                    
+                    <div class="relative z-10">
+                        <h2 class="font-display text-4xl lg:text-5xl font-bold text-deepPurple dark:text-white mb-6" data-i18n="about_company_title">
+                            Acerca de la empresa
+                        </h2>
+                        <div class="h-1.5 w-20 bg-magenta rounded-full mb-8"></div>
+                        <p class="text-xl text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="about_company_text">
+                            Somos una empresa comprometida con la transformación y la innovación social. Promovemos la articulación regional como un medio estratégico para el intercambio de saberes y la implementación de modelos de desarrollo de alto impacto, orientados a la sostenibilidad y la equidad.
+                        </p>
                     </div>
-                    <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl">
-                        <div
-                            class="w-32 h-32 mx-auto bg-slate-200 dark:bg-slate-700 rounded-full mb-4 flex items-center justify-center">
-                            <span class="text-slate-400 text-sm">[Foto]</span>
-                        </div>
-                        <h4 class="font-bold text-lg text-slate-900 dark:text-white">[Nombre]</h4>
-                        <p class="text-primary text-sm font-medium">[Cargo]</p>
+
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-primary to-mateTeal rounded-3xl transform translate-x-4 translate-y-4 opacity-30 dark:opacity-40"></div>
+                        
+                        <img src="./media/images/mate_img_12.jpeg" alt="Equipo de MATE SAS" class="relative z-10 w-full h-auto rounded-3xl shadow-xl object-cover aspect-[4/3]" />
                     </div>
-                    <div class="bg-slate-50 dark:bg-slate-800 p-6 rounded-2xl">
-                        <div
-                            class="w-32 h-32 mx-auto bg-slate-200 dark:bg-slate-700 rounded-full mb-4 flex items-center justify-center">
-                            <span class="text-slate-400 text-sm">[Foto]</span>
-                        </div>
-                        <h4 class="font-bold text-lg text-slate-900 dark:text-white">[Nombre]</h4>
-                        <p class="text-primary text-sm font-medium">[Cargo]</p>
+                </div>
+
+                <div class="relative bg-slate-50 dark:bg-slate-800/80 rounded-3xl p-10 md:p-16 max-w-4xl mx-auto text-center shadow-sm border border-slate-100 dark:border-slate-700">
+                    <div class="absolute -top-8 left-1/2 -translate-x-1/2 w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-lg border-4 border-white dark:border-slate-900">
+                        <span class="material-icons text-3xl">flag</span>
                     </div>
+                    
+                    <h3 class="font-display text-3xl font-bold text-slate-900 dark:text-white mb-6 mt-4" data-i18n="mission_title">
+                        Misión
+                    </h3>
+                    <p class="text-xl md:text-2xl text-slate-700 dark:text-slate-300 leading-relaxed font-medium" data-i18n="mission_text">
+                        Ofrecemos consultoría especializada en el diseño y gestión de intervenciones con enfoque social y productivo, orientadas a promover el desarrollo sostenible y el crecimiento económico inclusivo.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Como trabajamos -->
+
+        <section class="py-24 bg-slate-200 dark:bg-slate-900" id="como-trabajamos">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-4xl font-bold text-slate-900 dark:text-white mb-4" data-i18n="how_title">Cómo trabajamos</h2>
+                    <div class="h-1.5 w-20 bg-primary mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    
+                    <div class="p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all group">
+                        <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary transition-colors">
+                            <span class="material-icons text-3xl text-primary group-hover:text-white">explore</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white" data-i18n="how_c1_title">Escuchamos y comprendemos</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" data-i18n="how_c1_desc">
+                            Leemos el territorio e identificamos capacidades, brechas y oportunidades.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all group relative top-0 lg:top-8">
+                        <div class="w-14 h-14 bg-magenta/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-magenta transition-colors">
+                            <span class="material-icons text-3xl text-magenta group-hover:text-white">route</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white" data-i18n="how_c2_title">Diseñamos rutas de acción</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" data-i18n="how_c2_desc">
+                            Construimos propuestas ajustadas al contexto, a las personas y a los objetivos de cada alianza.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all group">
+                        <div class="w-14 h-14 bg-deepPurple/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-deepPurple transition-colors">
+                            <span class="material-icons text-3xl text-deepPurple group-hover:text-white">diversity_3</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white" data-i18n="how_c3_title">Implementamos y acompañamos</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" data-i18n="how_c3_desc">
+                            Desarrollamos procesos con cercanía territorial, formación, asistencia técnica y articulación.
+                        </p>
+                    </div>
+
+                    <div class="p-8 bg-slate-50 dark:bg-slate-800 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 hover:shadow-lg hover:-translate-y-1 transition-all group relative top-0 lg:top-8">
+                        <div class="w-14 h-14 bg-mateTeal/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-mateTeal transition-colors">
+                            <span class="material-icons text-3xl text-mateTeal group-hover:text-white">analytics</span>
+                        </div>
+                        <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white" data-i18n="how_c4_title">Medimos y aprendemos</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed" data-i18n="how_c4_desc">
+                            Hacemos seguimiento, recogemos aprendizajes y ajustamos para mejorar resultados.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section class="py-20 bg-deepPurple text-white">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="font-display text-3xl font-bold mb-10">Nuestros Aliados</h2>
-                <div class="flex flex-wrap justify-center gap-8 opacity-80">
-                    <div class="h-16 w-32 bg-white/20 rounded-lg flex items-center justify-center font-bold text-sm">
-                        [Logo Aliado 1]</div>
-                    <div class="h-16 w-32 bg-white/20 rounded-lg flex items-center justify-center font-bold text-sm">
-                        [Logo Aliado 2]</div>
-                    <div class="h-16 w-32 bg-white/20 rounded-lg flex items-center justify-center font-bold text-sm">
-                        [Logo Aliado 3]</div>
-                    <div class="h-16 w-32 bg-white/20 rounded-lg flex items-center justify-center font-bold text-sm">
-                        [Logo Aliado 4]</div>
+        <!-- Nuestro Equipo -->
+
+        <section class="py-24 bg-slate-50 dark:bg-slate-900/40" id="equipo">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center mb-16">
+                    <h2 class="font-display text-4xl font-bold text-deepPurple dark:text-white mb-4" data-i18n="team_title">Nuestro Equipo</h2>
+                    <div class="h-1.5 w-20 bg-magenta mx-auto rounded-full mb-6"></div>
+                    <p class="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto text-lg" data-i18n="team_subtitle">
+                        Conoce a las profesionales que impulsan la visión estratégica y el impacto de MATE SAS.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12 max-w-6xl mx-auto">
+                    
+                    <div class="group h-[400px] [perspective:1000px] w-full max-w-sm mx-auto lg:col-span-2">
+                        <div class="relative h-full w-full rounded-3xl shadow-lg transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer">
+                            <div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-slate-100 dark:border-slate-700">
+                                <div class="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden border-4 border-primary/20 shadow-inner bg-slate-100 dark:bg-slate-700">
+                                    <img src="./media/images/Ana_Negrette.jpeg" alt="Ana Milena Negrette" class="w-full h-full object-cover">
+                                </div>
+                                <h4 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-2 text-center" data-i18n="team_p1_name">Ana Milena Negrette</h4>
+                                <p class="text-primary dark:text-mateTeal font-bold tracking-wide text-sm uppercase text-center" data-i18n="team_p1_role">Directora General</p>
+                                <div class="mt-6 flex items-center gap-2 text-slate-400 text-xs uppercase font-bold tracking-widest">
+                                    <span class="material-icons text-base">touch_app</span> Girar
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-primary to-mateTeal text-white rounded-3xl p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center shadow-2xl">
+                                <h4 class="font-display font-bold text-xl mb-4 text-magenta" data-i18n="team_p1_name">Ana Milena Negrette</h4>
+                                <p class="text-sm leading-relaxed opacity-95" data-i18n="team_p1_bio">Lidera la visión estratégica de MATE...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group h-[400px] [perspective:1000px] w-full max-w-sm mx-auto lg:col-span-2">
+                        <div class="relative h-full w-full rounded-3xl shadow-lg transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer">
+                            <div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-slate-100 dark:border-slate-700">
+                                <div class="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden border-4 border-magenta/20 shadow-inner bg-slate-100 dark:bg-slate-700">
+                                    <img src="./media/images/Any_Benitez.jpeg" alt="Any Andrea Benítez Duarte" class="w-full h-full object-cover">
+                                </div>
+                                <h4 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-2 text-center" data-i18n="team_p2_name">Any Andrea Benítez</h4>
+                                <p class="text-magenta font-bold tracking-wide text-sm uppercase text-center" data-i18n="team_p2_role">Experta en inclusión</p>
+                                <div class="mt-6 flex items-center gap-2 text-slate-400 text-xs uppercase font-bold tracking-widest">
+                                    <span class="material-icons text-base">touch_app</span> Girar
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-magenta to-mateMagenta text-white rounded-3xl p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center shadow-2xl">
+                                <h4 class="font-display font-bold text-xl mb-4 text-white" data-i18n="team_p2_name">Any Andrea Benítez</h4>
+                                <p class="text-sm leading-relaxed opacity-95" data-i18n="team_p2_bio">Experta en inclusión financiera...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group h-[400px] [perspective:1000px] w-full max-w-sm mx-auto lg:col-span-2">
+                        <div class="relative h-full w-full rounded-3xl shadow-lg transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer">
+                            <div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-slate-100 dark:border-slate-700">
+                                <div class="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden border-4 border-deepPurple/20 shadow-inner bg-slate-100 dark:bg-slate-700">
+                                    <img src="./media/images/Ivonne_Villada.jpeg" alt="Ivonne Villada" class="w-full h-full object-cover">
+                                </div>
+                                <h4 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-2 text-center" data-i18n="team_p3_name">Ivonne Villada</h4>
+                                <p class="text-deepPurple dark:text-white font-bold tracking-wide text-sm uppercase text-center" data-i18n="team_p3_role">Experta en educación</p>
+                                <div class="mt-6 flex items-center gap-2 text-slate-400 text-xs uppercase font-bold tracking-widest">
+                                    <span class="material-icons text-base">touch_app</span> Girar
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-deepPurple to-matePurple text-white rounded-3xl p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center shadow-2xl">
+                                <h4 class="font-display font-bold text-xl mb-4 text-magenta" data-i18n="team_p3_name">Ivonne Villada</h4>
+                                <p class="text-sm leading-relaxed opacity-95" data-i18n="team_p3_bio">Cuenta con experiencia en metodologías...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group h-[400px] [perspective:1000px] w-full max-w-sm mx-auto lg:col-start-2 lg:col-span-2">
+                        <div class="relative h-full w-full rounded-3xl shadow-lg transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer">
+                            <div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-slate-100 dark:border-slate-700">
+                                <div class="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden border-4 border-mateTeal/20 shadow-inner bg-slate-100 dark:bg-slate-700">
+                                    <img src="./media/images/Claudia_Santacruz.jpeg" alt="Claudia Sofía Santacruz" class="w-full h-full object-cover">
+                                </div>
+                                <h4 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-2 text-center" data-i18n="team_p4_name">Claudia Sofía Santacruz</h4>
+                                <p class="text-mateTeal font-bold tracking-wide text-sm uppercase text-center" data-i18n="team_p4_role">Líder de operaciones</p>
+                                <div class="mt-6 flex items-center gap-2 text-slate-400 text-xs uppercase font-bold tracking-widest">
+                                    <span class="material-icons text-base">touch_app</span> Girar
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-mateTeal to-primary text-white rounded-3xl p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center shadow-2xl">
+                                <h4 class="font-display font-bold text-xl mb-4 text-deepPurple" data-i18n="team_p4_name">Claudia Sofía</h4>
+                                <p class="text-sm leading-relaxed opacity-95" data-i18n="team_p4_bio">Asegura el orden, planeación estratégica...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="group h-[400px] [perspective:1000px] w-full max-w-sm mx-auto lg:col-start-4 lg:col-span-2">
+                        <div class="relative h-full w-full rounded-3xl shadow-lg transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer">
+                            <div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-slate-100 dark:border-slate-700">
+                                <div class="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden border-4 border-slate-400/20 shadow-inner bg-slate-100 dark:bg-slate-700">
+                                    <img src="./media/images/Estefany_Brieva.jpeg" alt="Estefany Brieva Benítez" class="w-full h-full object-cover">
+                                </div>
+                                <h4 class="font-display font-bold text-2xl text-slate-900 dark:text-white mb-2 text-center" data-i18n="team_p5_name">Estefany Brieva Benítez</h4>
+                                <p class="text-slate-500 dark:text-slate-400 font-bold tracking-wide text-sm uppercase text-center" data-i18n="team_p5_role">Líder Contable</p>
+                                <div class="mt-6 flex items-center gap-2 text-slate-400 text-xs uppercase font-bold tracking-widest">
+                                    <span class="material-icons text-base">touch_app</span> Girar
+                                </div>
+                            </div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-slate-700 to-slate-900 text-white rounded-3xl p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center shadow-2xl">
+                                <h4 class="font-display font-bold text-xl mb-4 text-mateTeal" data-i18n="team_p5_name">Estefany Brieva</h4>
+                                <p class="text-sm leading-relaxed opacity-95" data-i18n="team_p5_bio">Acompaña la gestión financiera...</p>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
+        </section>        
+
+        <section class="py-24 bg-slate-100 dark:bg-slate-800/50 overflow-hidden" id="alianzas">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-4xl mx-auto mb-16">
+                    <h2 class="font-display text-4xl font-bold text-slate-900 dark:text-white mb-6" data-i18n="alliances_title">
+                        Creemos en el poder de las alianzas
+                    </h2>
+                    <p class="text-lg text-slate-600 dark:text-slate-400 leading-relaxed" data-i18n="alliances_text">
+                        Trabajamos con entidades públicas, cooperación internacional, empresas, fundaciones, organizaciones sociales y ecosistemas emprendedores que buscan implementar soluciones con sentido territorial, enfoque inclusivo y resultados verificables.
+                    </p>
+                </div>
+
+                <div class="logo-carousel-container py-8 my-12">
+                    <div class="logo-carousel-track">
+                        
+                        <img src="./media/logos/corpoempresarial-logo.png" alt="Aliado 1" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/corprogreso-logo.png" alt="Aliado 2" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/taller-creativo-logo.png" alt="Aliado 3" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/fundacion-ave-fenix-logo.png" alt="Aliado 4" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/innpulsa-logo.png" alt="Aliado 5" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/infotic-logo.png" alt="Aliado 6" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/satori-logo.png" alt="Aliado 7" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/Asoovinos-logo.png" alt="Aliado 8" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/agropecuaria-logo.jpg" alt="Aliado 9" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/fondo-mujer-logo.png" alt="Aliado 10" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                     
+                        <img src="./media/logos/corpoempresarial-logo.png" alt="Aliado 1" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/corprogreso-logo.png" alt="Aliado 2" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/taller-creativo-logo.png" alt="Aliado 3" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/fundacion-ave-fenix-logo.png" alt="Aliado 4" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/innpulsa-logo.png" alt="Aliado 5" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/infotic-logo.png" alt="Aliado 6" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/satori-logo.png" alt="Aliado 7" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/Asoovinos-logo.png" alt="Aliado 8" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/agropecuaria-logo.jpg" alt="Aliado 9" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        <img src="./media/logos/fondo-mujer-logo.png" alt="Aliado 10" class="h-16 w-auto grayscale hover:grayscale-0 opacity-70 hover:opacity-100 transition-all duration-300">
+                        
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center border-t border-slate-200 dark:border-slate-700 pt-12 max-w-3xl mx-auto">
+                    <span class="block material-icons text-4xl text-magenta/40 mb-4">format_quote</span>
+                    <p class="font-display text-2xl md:text-3xl italic font-medium text-slate-800 dark:text-slate-200" data-i18n="alliances_quote">
+                        "Las alianzas adecuadas convierten una intención en una transformación sostenible."
+                    </p>
+                </div>
+
+            </div>
         </section>
+
+
+
+
 
     </main>
 

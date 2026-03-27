@@ -104,8 +104,67 @@ const translations = {
         footer_contact_title: "Contacto",
         footer_location: "Bogotá D.C. · Montería, Colombia",
         footer_rights: "© 2026 MATE Inversiones & Negocios SAS. Todos los derechos reservados.",
-        developed_by: "Desarrollado por",
+        developed_by: "Desarrollado por",        
 
+        // --- PÁGINA: SOMOS MATE ---
+        
+        // Hero Section ---
+        hero_about_title: "Somos MATE",
+        hero_about_desc: "Consultoría especializada en inclusión financiera, productiva y social, orientada a impulsar un desarrollo sostenible y equitativo.",
+
+        // --- Acerca de la empresa y Misión ---
+        about_company_title: "Acerca de la empresa",
+        about_company_text: "Somos una empresa comprometida con la transformación y la innovación social. Promovemos la articulación regional como un medio estratégico para el intercambio de saberes y la implementación de modelos de desarrollo de alto impacto, orientados a la sostenibilidad y la equidad.",
+        mission_title: "Misión",
+        mission_text: "Ofrecemos consultoría especializada en el diseño y gestión de intervenciones con enfoque social y productivo, orientadas a promover el desarrollo sostenible y el crecimiento económico inclusivo.",
+
+        // --- Cómo trabajamos ---
+        how_title: "Cómo trabajamos",
+        how_c1_title: "Escuchamos y comprendemos",
+        how_c1_desc: "Leemos el territorio e identificamos capacidades, brechas y oportunidades.",
+        how_c2_title: "Diseñamos rutas de acción",
+        how_c2_desc: "Construimos propuestas ajustadas al contexto, a las personas y a los objetivos de cada alianza.",
+        how_c3_title: "Implementamos y acompañamos",
+        how_c3_desc: "Desarrollamos procesos con cercanía territorial, formación, asistencia técnica y articulación.",
+        how_c4_title: "Medimos y aprendemos",
+        how_c4_desc: "Hacemos seguimiento, recogemos aprendizajes y ajustamos para mejorar resultados.",
+        
+        team_title: "Nuestro Equipo",
+        team_subtitle: "Conoce a las profesionales que impulsan la visión estratégica y el impacto de MATE SAS.",
+
+        // --- Nuestro equipo ---
+        
+        // Equipo - P1
+        // Equipo - P1
+        team_p1_name: "Ana Milena Negrette",
+        team_p1_role: "Directora General",
+        team_p1_bio: "Lidera la visión estratégica de MATE y la consolidación de iniciativas que conectan territorio, inclusión y oportunidades. Tiene más de 22 años de experiencia en desarrollo rural, género, emprendimiento e inclusión económica, acompañando procesos y poblaciones vulnerable en Colombia y América Latina.",
+        
+        // Equipo - P2
+        team_p2_name: "Any Andrea Benítez",
+        team_p2_role: "Experta en inclusión",
+        team_p2_bio: "Experta en inclusión financiera y protección social. Tiene más de 22 años de experiencia en Colombia y América Latina, y una trayectoria destacada en educación financiera, ahorro, aseguramiento, ahorro para la vejez y economía plateada.",
+        
+        // Equipo - P3
+        team_p3_name: "Ivonne Villada",
+        team_p3_role: "Especialista en inclusión",
+        team_p3_bio: "Especialista en inclusión financiera y protección social, con más de 16 años de experiencia en América Latina. Ha liderado iniciativas de educación financiera, género y diversidad para ampliar oportunidades y acceso a servicios financieros en poblaciones vulnerables.",
+        
+        // Equipo - P4
+        team_p4_name: "Claudia Sofía Santacruz",
+        team_p4_role: "Experta en proyectos",
+        team_p4_bio: "Experta en planeación y ejecución de proyectos, coordinación de equipos multidisciplinarios y aplicación de sistemas Monitoreo Evaluación y Aprendizaje, gestión de riesgos y toma de decisiones basada en datos.",
+        
+        // Equipo - P5
+        team_p5_name: "Estefany Brieva",
+        team_p5_role: "Líder Contable",
+        team_p5_bio: "Acompaña la gestión financiera y contable de los proyectos, contribuyendo a la solidez administrativa y al control de los procesos internos.",
+                
+        // --- Alianzas ---
+        alliances_title: "Creemos en el poder de las alianzas",
+        alliances_text: "Trabajamos con entidades públicas, cooperación internacional, empresas, fundaciones, organizaciones sociales y ecosistemas emprendedores que buscan implementar soluciones con sentido territorial, enfoque inclusivo y resultados verificables.",
+        alliances_quote: "\"Las alianzas adecuadas convierten una intención en una transformación sostenible.\"",
+        
     },
     en: {
         // Navegación
@@ -124,9 +183,7 @@ const translations = {
         hero_title: "Driving opportunities for a more inclusive citizenship",
         hero_subtitle: "At MATE, we articulate productive, financial, social, and sustainable solutions to strengthen capacities, generate income, and expand opportunities for people, communities, and territories.",
         hero_btn_1: "Discover our solutions",
-        hero_btn_2: "Let's talk about an alliance",
-
-        // --- PÁGINA: SOMOS MATE ---
+        hero_btn_2: "Let's talk about an alliance",       
 
         // Index - Hero
         hero_title: "We drive opportunities for a more <span class='text-primary italic'>inclusive</span> citizenship",
@@ -205,5 +262,62 @@ const translations = {
         footer_location: "Bogota D.C. · Monteria, Colombia",
         footer_rights: "© 2026 MATE Investments & Business SAS. All rights reserved.",
         developed_by: "Developed by",
+
+        // --- PÁGINA: SOMOS MATE ---
+
+        // ====== AGREGAR DENTRO DE 'es': ======
+
+        // --- Hero Section ---
+        hero_about_title: "We are MATE",
+        hero_about_desc: "Specialized consulting in financial, productive, and social inclusion, aimed at promoting sustainable and equitable development.",
+
+        // --- About the company and Mission ---
+        about_company_title: "About the company",
+        about_company_text: "We are a company committed to social transformation and innovation. We promote regional articulation as a strategic means for the exchange of knowledge and the implementation of high-impact development models, aimed at sustainability and equity.",
+        mission_title: "Mission",
+        mission_text: "We offer specialized consulting in the design and management of interventions with a social and productive focus, aimed at promoting sustainable development and inclusive economic growth.",
+
+        // How we work ---
+        how_title: "How we work",
+        how_c1_title: "We listen and understand",
+        how_c1_desc: "We read the territory and identify capacities, gaps, and opportunities.",
+        how_c2_title: "We design action routes",
+        how_c2_desc: "We build proposals tailored to the context, the people, and the objectives of each alliance.",
+        how_c3_title: "We implement and support",
+        how_c3_desc: "We develop processes with territorial proximity, training, technical assistance, and articulation.",
+        how_c4_title: "We measure and learn",
+        how_c4_desc: "We monitor, gather lessons learned, and adjust to improve results.",
+
+        // Equipo
+     
+        team_title: "Our Team",
+        team_subtitle: "Meet the professionals driving the strategic vision and impact of MATE SAS.",
+        
+        team_p1_name: "Ana Milena Negrette",
+        team_p1_role: "General Director",
+        team_p1_bio: "Leads MATE's strategic vision and the consolidation of initiatives connecting territory, inclusion, and opportunities. She has over 22 years of experience in rural development, gender, entrepreneurship, and economic inclusion, supporting processes and vulnerable populations in Colombia and Latin America.",
+        
+        team_p2_name: "Any Andrea Benítez",
+        team_p2_role: "Inclusion Expert",
+        team_p2_bio: "Expert in financial inclusion and social protection. She has over 22 years of experience in Colombia and Latin America, with an outstanding track record in financial education, savings, insurance, retirement savings, and the silver economy.",
+        
+        team_p3_name: "Ivonne Villada",
+        team_p3_role: "Inclusion Specialist",
+        team_p3_bio: "Specialist in financial inclusion and social protection with over 16 years of experience in Latin America. She has led financial education, gender, and diversity initiatives to expand opportunities and access to financial services for vulnerable populations.",
+        
+        team_p4_name: "Claudia Sofía Santacruz",
+        team_p4_role: "Projects Expert",
+        team_p4_bio: "Expert in project planning and execution, coordination of multidisciplinary teams, and application of Monitoring, Evaluation, and Learning systems, risk management, and data-driven decision-making.",
+        
+        team_p5_name: "Estefany Brieva",
+        team_p5_role: "Accounting Leader",
+        team_p5_bio: "Supports the financial and accounting management of projects, contributing to administrative solidity and the control of internal processes.",
+
+        // -- Alliances ---
+        alliances_title: "We believe in the power of alliances",
+        alliances_text: "We work with public entities, international cooperation, companies, foundations, social organizations, and entrepreneurial ecosystems seeking to implement solutions with a territorial sense, inclusive approach, and verifiable results.",
+        alliances_quote: "\"The right alliances turn an intention into sustainable transformation.\""
+
+
     }
 };
