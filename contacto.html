@@ -34,8 +34,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Material+Icons&display=swap"
         rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css">
+    <style>
+        .iti {
+            width: 100%;
+        }
 
-    <link rel="stylesheet" href="style.css" />
+        .iti__country-list {
+            color: #1e293b;
+        }
+    </style>
+    <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
     <script>
@@ -77,10 +86,39 @@
 
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="index.html" data-i18n="nav_home"
-                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Inicio</a>
-                    <a href="somos-mate.html" data-i18n="nav_about"
+                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Inicio</a>                   
+                    <div class="relative group">
+                         <a href="somos-mate.html" data-i18n="nav_about"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Somos
                         Mate</a>
+                        <ul class="absolute top-full left-0 hidden group-hover:block bg-white dark:bg-slate-800 shadow-xl rounded-xl border border-slate-100 dark:border-slate-700 min-w-[200px] py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-200
+                   before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
+                            <li>
+                                <a href="somos-mate.html#acerca-de" data-i18n="submenu_about_history"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Nuestra Historia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#como-trabajamos" data-i18n="submenu_about_work"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Cómo trabajamos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#equipo" data-i18n="submenu_about_team"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Nuestro Equipo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#alianzas" data-i18n="submenu_about_alliances"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Alianzas
+                                </a>
+                            </li>
+                        </ul>
+                    </div>    
                     <a href="proyectos.html" data-i18n="nav_projects"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Proyectos</a>
 
@@ -115,17 +153,42 @@
     </header>
 
     <main class="flex-grow">
-        <section class="py-20">
+
+        <!-- Sección Hero -->
+        <section
+            class="relative w-full min-h-[60vh] md:min-h-[70vh] flex items-center justify-center bg-slate-900 pt-20"
+            id="hero-contacto">
+
+            <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                style="background-image: url('./media/images/mate_img_2.jpeg');"></div>
+
+            <div class="absolute inset-0 bg-black/60 dark:bg-black/70"></div>
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
+
+            <div class="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto flex flex-col items-center">
+
+                <div class="h-1.5 w-16 bg-magenta rounded-full mb-8"></div>
+
+                <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-lg tracking-tight"
+                    data-i18n="hero_contact_title">
+                    Hablemos de su próximo proyecto
+                </h1>
+
+                <p class="text-xl md:text-2xl lg:text-3xl text-white/95 font-medium leading-relaxed drop-shadow-md max-w-4xl"
+                    data-i18n="hero_contact_desc">
+                    Estamos listos para escuchar sus necesidades y construir juntos soluciones con impacto territorial y
+                    social.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sección de Información de Contacto -->
+
+        <section class="py-20" id="contacto">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div class="text-center max-w-3xl mx-auto mb-16">
-                    <h1 class="font-display text-5xl font-bold text-deepPurple dark:text-white mb-4">Hablemos</h1>
-                    <p class="text-lg text-slate-600 dark:text-slate-400">Las alianzas adecuadas convierten una
-                        intención en una transformación sostenible. Escríbenos y cuéntanos cómo podemos colaborar.</p>
-                </div>
-
                 <div
-                    class="grid lg:grid-cols-5 gap-12 bg-white dark:bg-slate-800 rounded-3xl shadow-xl overflow-hidden border border-slate-100 dark:border-slate-700">
+                    class="grid lg:grid-cols-5 gap-0 bg-white dark:bg-slate-800 rounded-3xl shadow-xl overflow-hidden border border-slate-100 dark:border-slate-700">
 
                     <div
                         class="lg:col-span-2 bg-primary text-white p-10 md:p-12 flex flex-col justify-between relative overflow-hidden">
@@ -135,107 +198,173 @@
                         </div>
 
                         <div class="relative z-10">
-                            <h3 class="font-display text-2xl font-bold mb-6">Información de Contacto</h3>
-                            <p class="text-white/80 mb-10 leading-relaxed">Completa el formulario y nuestro equipo se
-                                pondrá en contacto contigo a la brevedad posible.</p>
+                            <h3 class="font-display text-2xl font-bold mb-6" data-i18n="contact_info_title">
+                                Información de Contacto
+                            </h3>
+                            <p class="text-white/80 mb-10 leading-relaxed" data-i18n="contact_info_desc">
+                                Completa el formulario y nuestro equipo se pondrá en contacto contigo a la brevedad
+                                posible.
+                            </p>
 
-                            <div class="space-y-6">
+                            <div class="space-y-8">
                                 <div class="flex items-start gap-4">
-                                    <span class="material-icons text-magenta">email</span>
+                                    <span class="material-icons text-white">email</span>
                                     <div>
-                                        <p class="font-bold text-sm">Correo Electrónico</p>
-                                        <p class="text-white/80 text-sm">direcciongeneral@matesas.com</p>
+                                        <p class="font-bold text-sm mb-1" data-i18n="contact_write_us">Correo
+                                            Electrónico</p>
+                                        <a href="mailto:direcciongeneral@matesas.com" title="Enviar correo electrónico"
+                                            class="text-white/80 text-sm hover:text-white transition-colors">
+                                            direcciongeneral@matesas.com
+                                        </a>
                                     </div>
                                 </div>
+
                                 <div class="flex items-start gap-4">
-                                    <span class="material-icons text-magenta">location_on</span>
+                                    <span class="material-icons text-white">phone</span>
                                     <div>
-                                        <p class="font-bold text-sm">Ubicación</p>
-                                        <p class="text-white/80 text-sm">Bogotá D.C. · Montería<br>Colombia</p>
+                                        <p class="font-bold text-sm mb-1" data-i18n="contact_call_us">WhatsApp</p>
+                                        <a href="https://wa.me/573008169142?text=%C2%A1Hola%2C%20deseo%20recibir%20asesor%C3%ADa%21"
+                                            target="_blank" rel="noopener noreferrer" title="Contactar por WhatsApp"
+                                            class="text-white/80 text-sm hover:text-white transition-colors">
+                                            +57 300 816 9142
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="flex items-start gap-4">
+                                    <span class="material-icons text-white">location_on</span>
+                                    <div>
+                                        <p class="font-bold text-sm mb-1" data-i18n="contact_location_label">Ubicación
+                                        </p>
+                                        <p class="text-white/80 text-sm" data-i18n="footer_location">
+                                            Bogotá D.C. · Montería, Colombia
+                                        </p>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="mt-16 relative z-10">
-                            <p class="font-bold mb-4 text-sm">Síguenos</p>
+                        <div class="mt-16 relative z-10 pt-8 border-t border-white/10">
+                            <p class="font-bold mb-4 text-sm" data-i18n="contact_follow_us">Síguenos</p>
                             <div class="flex gap-4">
-                                <a href="https://www.linkedin.com/in/mate-sas/"
-                                    class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-magenta transition-colors">
-                                    <span class="text-sm font-bold">in</span> </a>
+                                <a href="https://www.instagram.com/mate_sas_/" target="_blank" rel="noopener noreferrer"
+                                    title="Instagram"
+                                    class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-magenta hover:scale-110 transition-all duration-300">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/mate-sas/" target="_blank"
+                                    rel="noopener noreferrer" title="LinkedIn"
+                                    class="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center hover:bg-primary hover:scale-110 transition-all duration-300">
+                                    <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </div>
 
                     <div class="lg:col-span-3 p-10 md:p-12">
-                        <form action="#" method="POST" class="space-y-6">
+                        <form id="contact-form"
+                            action="https://script.google.com/macros/s/AKfycby2M2Tc8TNXxadVjvuENFE6y_p5okN-_sWIjq1-3yIM8s_8CCMKbnMlE29MdFIfPh6zRw/exec"
+                            method="POST" class="space-y-6">
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="nombre"
-                                        class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Nombre
-                                        completo</label>
+                                        class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                        data-i18n="form_name">Nombre completo</label>
                                     <input type="text" id="nombre" name="nombre"
                                         class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white px-4 py-3 focus:ring-primary focus:border-primary transition-colors"
-                                        placeholder="Tu nombre" required>
+                                        placeholder="Nombre Completo" required maxlength="80"
+                                        pattern="^[a-zA-ZÀ-ÿ\s|_]*$">
                                 </div>
                                 <div>
                                     <label for="entidad"
-                                        class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Empresa
-                                        / Entidad</label>
+                                        class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                        data-i18n="form_entity">Empresa / Entidad</label>
                                     <input type="text" id="entidad" name="entidad"
                                         class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white px-4 py-3 focus:ring-primary focus:border-primary transition-colors"
-                                        placeholder="Nombre de tu organización">
+                                        placeholder="Empresa / Entidad" maxlength="100">
                                 </div>
                             </div>
 
                             <div class="grid md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="email"
-                                        class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Correo
-                                        electrónico</label>
+                                        class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                        data-i18n="form_email">Correo electrónico</label>
                                     <input type="email" id="email" name="email"
                                         class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white px-4 py-3 focus:ring-primary focus:border-primary transition-colors"
                                         placeholder="tucorreo@ejemplo.com" required>
                                 </div>
                                 <div>
-                                    <label for="asunto"
-                                        class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Asunto</label>
-                                    <select id="asunto" name="asunto"
-                                        class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white px-4 py-3 focus:ring-primary focus:border-primary transition-colors">
-                                        <option value="alianza">Propuesta de Alianza</option>
-                                        <option value="consultoria">Consultoría / Servicios</option>
-                                        <option value="informacion">Solicitud de Información</option>
-                                        <option value="otro">Otro</option>
-                                    </select>
+                                    <label for="telefono"
+                                        class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                        data-i18n="form_phone">Teléfono de contacto</label>
+                                    <input type="tel" id="telefono" name="telefono"
+                                        class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white px-4 py-3 focus:ring-primary focus:border-primary transition-colors"
+                                        required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                                 </div>
                             </div>
 
                             <div>
+                                <label for="asunto"
+                                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                    data-i18n="form_subject">Asunto</label>
+                                <select id="asunto" name="asunto"
+                                    class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white px-4 py-3 focus:ring-primary focus:border-primary transition-colors">
+                                    <option value="alianza">Propuesta de Alianza</option>
+                                    <option value="consultoria">Consultoría / Servicios</option>
+                                    <option value="informacion">Solicitud de Información</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+
+                            <div>
                                 <label for="mensaje"
-                                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">Mensaje</label>
+                                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2"
+                                    data-i18n="form_message">Mensaje</label>
                                 <textarea id="mensaje" name="mensaje" rows="4"
                                     class="w-full rounded-lg border-slate-300 dark:border-slate-600 bg-slate-50 dark:bg-slate-700 dark:text-white px-4 py-3 focus:ring-primary focus:border-primary transition-colors"
-                                    placeholder="Cuéntanos más sobre cómo podemos ayudarte..." required></textarea>
+                                    placeholder="Mensaje" required maxlength="500"></textarea>
+                            </div>
+
+                            <div
+                                class="bg-slate-50 dark:bg-slate-700/50 p-4 rounded-xl border border-slate-200 dark:border-slate-600 mb-6">
+                                <label for="captcha-input"
+                                    class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-2">
+                                    <span data-i18n="captcha_label">Validación de seguridad: ¿Cuánto es </span>
+                                    <span id="captcha-question" class="font-bold text-magenta"></span>?
+                                </label>
+                                <input type="number" id="captcha-input" name="captcha_user_answer"
+                                    class="w-full md:w-32 rounded-lg border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 dark:text-white px-4 py-2 focus:ring-primary focus:border-primary transition-colors"
+                                    data-i18n="[placeholder]captcha_placeholder" required>
                             </div>
 
                             <div class="flex justify-end pt-4">
-                                <button type="submit"
-                                    class="px-8 py-4 bg-primary text-white rounded-full font-bold shadow-md hover:bg-mateTeal hover:-translate-y-1 transition-all flex items-center gap-2">
-                                    Enviar Mensaje <span class="material-icons text-sm">send</span>
+                                <button type="submit" id="submit-btn"
+                                    class="px-8 py-4 bg-magenta text-white rounded-full font-bold shadow-md hover:bg-mateTeal hover:-translate-y-1 transition-all flex items-center gap-2 group">
+                                    <span data-i18n="form_btn">Enviar Mensaje</span>
+                                    <span
+                                        class="material-icons text-sm group-hover:translate-x-1 transition-transform">send</span>
                                 </button>
                             </div>
                         </form>
                     </div>
                 </div>
-
             </div>
         </section>
+
+
+
     </main>
 
     <footer class="bg-deepPurple dark:bg-slate-900 text-white py-12 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-
                 <div class="md:col-span-2">
                     <div class="flex items-center gap-3 mb-4">
                         <div class="w-10 h-10 bg-white text-deepPurple flex items-center justify-center rounded-lg">
@@ -244,45 +373,91 @@
                         <span class="font-display font-bold text-2xl tracking-tight">MATE</span>
                     </div>
                     <p class="text-white/80 text-sm max-w-sm leading-relaxed" data-i18n="footer_desc">
-                        Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas,
-                        financieras, sociales y sostenibles.
+                        Impulsamos inclusión económica y ciudadanía inclusiva a través de
+                        soluciones productivas, financieras, sociales y sostenibles.
                     </p>
                 </div>
 
                 <div>
-                    <h4 class="font-display font-bold text-lg mb-4 text-magenta" data-i18n="footer_links_title">Enlaces
+                    <h4 class="font-display font-bold text-lg mb-4 text-magenta" data-i18n="footer_links_title">
+                        Enlaces
                     </h4>
                     <ul class="space-y-2 text-sm text-white/80">
-                        <li><a href="index.html" data-i18n="nav_home"
-                                class="hover:text-white transition-colors">Inicio</a></li>
-                        <li><a href="somos-mate.html" data-i18n="nav_about"
-                                class="hover:text-white transition-colors">Somos Mate</a></li>
-                        <li><a href="proyectos.html" data-i18n="nav_services"
-                                class="hover:text-white transition-colors">Proyectos</a></li>
-                        <li><a href="contacto.html" data-i18n="nav_contact"
-                                class="hover:text-white transition-colors">Contáctanos</a></li>
+                        <li>
+                            <a href="index.html" data-i18n="nav_home"
+                                class="hover:text-white transition-colors">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="somos-mate.html" data-i18n="nav_about"
+                                class="hover:text-white transition-colors">Somos Mate</a>
+                        </li>
+                        <li>
+                            <a href="proyectos.html" data-i18n="nav_services"
+                                class="hover:text-white transition-colors">Proyectos</a>
+                        </li>
+                        <li>
+                            <a href="contacto.html" data-i18n="nav_contact"
+                                class="hover:text-white transition-colors">Contáctanos</a>
+                        </li>
                     </ul>
                 </div>
 
                 <div>
                     <h4 class="font-display font-bold text-lg mb-4 text-mateTeal" data-i18n="footer_contact_title">
-                        Contacto</h4>
-                    <ul class="space-y-2 text-sm text-white/80">
+                        Contacto
+                    </h4>
+                    <ul class="space-y-3 text-sm text-white/80">
+
                         <li class="flex items-center gap-2">
                             <span class="material-icons text-sm">email</span>
-                            direcciongeneral@matesas.com
+                            <a href="mailto:direcciongeneral@matesas.com" title="Enviar correo electrónico"
+                                class="hover:text-white transition-colors">
+                                direcciongeneral@matesas.com
+                            </a>
                         </li>
+
+                        <li class="flex items-center gap-2">
+                            <span class="material-icons text-sm">phone</span>
+                            <a href="https://wa.me/573008169142?text=%C2%A1Hola%2C%20deseo%20recibir%20asesor%C3%ADa%21"
+                                target="_blank" rel="noopener noreferrer" title="Contactar por WhatsApp"
+                                class="hover:text-white transition-colors">
+                                +57 300 816 9142
+                            </a>
+                        </li>
+
                         <li class="flex items-center gap-2">
                             <span class="material-icons text-sm">location_on</span>
                             <span data-i18n="footer_location">Bogotá D.C. · Montería, Colombia</span>
                         </li>
+
+                        <li class="flex items-center gap-5 pt-2">
+                            <a href="https://www.instagram.com/mate_sas_/" target="_blank" rel="noopener noreferrer"
+                                title="Instagram"
+                                class="hover:text-white transition-colors opacity-80 hover:opacity-100">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mate-sas/" target="_blank" rel="noopener noreferrer"
+                                title="LinkedIn"
+                                class="hover:text-white transition-colors opacity-80 hover:opacity-100">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+
             </div>
 
             <div
                 class="pt-8 border-t border-white/10 text-center md:text-left text-xs text-white/60 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p data-i18n="footer_rights">&copy; 2026 MATE Inversiones & Negocios SAS. Todos los derechos reservados.
+                <p data-i18n="footer_rights">
+                    &copy; 2026 MATE Inversiones & Negocios SAS. Todos los derechos
+                    reservados.
                 </p>
 
                 <p>
@@ -298,6 +473,8 @@
     <script src="js/i18n.js"></script>
     <script src="js/seo.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
 </body>
 
 </html>
