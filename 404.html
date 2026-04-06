@@ -9,8 +9,10 @@
     <meta name="robots" content="noindex, follow" />
     <meta name="author" content="Megatel SAS" />
 
-    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
+    <link rel="icon" href="media/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,7 +20,7 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Material+Icons&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -54,26 +56,61 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <a href="index.html" class="flex items-center gap-3 group">
-                    <img src="media/logos/LogoMate-03%20(2).png" alt="MATE Logo"
-                        class="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+                    <img src="media/logos/LogoMate-03.png" alt="MATE Logo"
+                        class="h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
                 </a>
 
                 <nav class="hidden md:flex items-center space-x-8">
-                    <a href="index.html"
+                    <a href="index.html" data-i18n="nav_home"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Inicio</a>
-                    <a href="somos-mate.html"
+                        
+                    <div class="relative group">
+                         <a href="somos-mate.html" data-i18n="nav_about"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Somos
                         Mate</a>
-                    <a href="proyectos.html"
+                        <ul class="absolute top-full left-0 hidden group-hover:block bg-white dark:bg-slate-800 shadow-xl rounded-xl border border-slate-100 dark:border-slate-700 min-w-[200px] py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-200
+                   before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
+                            <li>
+                                <a href="somos-mate.html#acerca-de" data-i18n="submenu_about_history"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Nuestra Historia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#como-trabajamos" data-i18n="submenu_about_work"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Cómo trabajamos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#equipo" data-i18n="submenu_about_team"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Nuestro Equipo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#alianzas" data-i18n="submenu_about_alliances"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Alianzas
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
+
+                    <a href="proyectos.html" data-i18n="nav_projects"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Proyectos</a>
-                    <a href="contacto.html"
+
+                    <a href="contacto.html" data-i18n="nav_contact"
                         class="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-bold shadow-md hover:bg-mateTeal transition-all">Contáctanos</a>
 
                     <div class="w-px h-6 bg-slate-300 dark:bg-slate-700"></div>
+
                     <button id="btn-lang"
                         class="flex items-center gap-2 font-bold text-sm hover:text-primary dark:hover:text-mateTeal transition-colors bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full shadow-sm">
-                        <img src="https://flagcdn.com/w20/us.png" alt="English" class="w-4 h-auto rounded-sm"> EN
+                        <img src="https://flagcdn.com/w20/us.png" alt="English" class="w-4 h-auto rounded-sm" />
+                        EN
                     </button>
+
                     <button id="theme-toggle"
                         class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center justify-center text-slate-600 dark:text-slate-300"
                         aria-label="Cambiar tema">

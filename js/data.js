@@ -164,7 +164,10 @@ const translations = {
 
         // --- Nuestro equipo ---
 
-        // Equipo - P1
+        // ====== AGREGAR DENTRO DE 'es': ======
+        recognition_badge: "Reconocimiento Internacional",
+        recognition_text: "MATE recibió el reconocimiento a la Mejor práctica local con enfoque de género en el marco de la VII Cumbre Iberoamericana de Agendas Locales de Género y del XV Congreso Iberoamericano de Municipalistas, realizados en Zapopan, México, en 2026 como reflejo de su compromiso con la inclusión, la equidad y la transformación territorial.",
+
         // Equipo - P1
         team_p1_name: "Ana Milena Negrette",
         team_p1_role: "Directora General",
@@ -403,7 +406,9 @@ const translations = {
         how_c4_title: "We measure and learn",
         how_c4_desc: "We monitor, gather lessons learned, and adjust to improve results.",
 
-        // Equipo
+        // Equipo        
+        recognition_badge: "International Recognition",
+        recognition_text: "MATE received the recognition for Best Local Practice with a Gender Perspective within the framework of the VII Ibero-American Summit of Local Gender Agendas and the XV Ibero-American Congress of Municipalists, held in Zapopan, Mexico, in 2026, as a reflection of its commitment to inclusion, equity, and territorial transformation.",
 
         team_title: "Our Team",
         team_subtitle: "Meet the professionals driving the strategic vision and impact of MATE SAS.",
