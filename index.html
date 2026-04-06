@@ -84,10 +84,39 @@
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="index.html" data-i18n="nav_home"
                         class="text-sm font-semibold text-primary dark:text-mateTeal border-b-2 border-primary dark:border-mateTeal pb-1 transition-colors">Inicio</a>
-
-                    <a href="somos-mate.html" data-i18n="nav_about"
+                        
+                    <div class="relative group">
+                         <a href="somos-mate.html" data-i18n="nav_about"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Somos
                         Mate</a>
+                        <ul class="absolute top-full left-0 hidden group-hover:block bg-white dark:bg-slate-800 shadow-xl rounded-xl border border-slate-100 dark:border-slate-700 min-w-[200px] py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-200
+                   before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
+                            <li>
+                                <a href="somos-mate.html#acerca-de" data-i18n="submenu_about_history"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Nuestra Historia
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#como-trabajamos" data-i18n="submenu_about_work"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Cómo trabajamos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#equipo" data-i18n="submenu_about_team"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Nuestro Equipo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="somos-mate.html#alianzas" data-i18n="submenu_about_alliances"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta transition-colors">
+                                    Alianzas
+                                </a>
+                            </li>
+                        </ul>
+                    </div> 
 
                     <a href="proyectos.html" data-i18n="nav_projects"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Proyectos</a>
@@ -218,7 +247,7 @@
                             class="absolute inset-0 bg-gradient-to-tr from-primary to-magenta rounded-3xl transform translate-x-4 translate-y-4 opacity-20 dark:opacity-40">
                         </div>
 
-                        <img src="./media/images/mate_img_2.jpeg" alt="Equipo MATE trabajando"
+                        <img src="./media/images/mate_img_somos_mate.jpeg" alt="Equipo MATE trabajando"
                             class="relative z-10 w-full h-auto rounded-3xl shadow-xl object-cover aspect-[4/3]" />
                     </div>
                 </div>
@@ -475,7 +504,7 @@
                 <div class="relative min-h-[400px] rounded-3xl overflow-hidden shadow-2xl flex flex-col">
                     <div class="tab-content block animate-fadeIn h-full min-h-[400px] w-full relative">
                         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_21.jpeg&quot;);
+                  background-image: url(&quot;./media/images/mate_img_propulxora.jpeg&quot;);
                 "></div>
                         <div class="absolute inset-0 bg-gradient-to-r from-deepPurple/90 to-transparent"></div>
                         <div class="relative z-10 p-8 md:p-16 flex flex-col justify-center h-full max-w-xl text-white">
@@ -572,7 +601,7 @@
                         class="flex flex-col items-center lg:items-start lg:border-r lg:border-slate-200 lg:dark:border-slate-700 lg:pr-12">
                         <span
                             class="text-7xl md:text-8xl font-display font-bold text-primary dark:text-mateTeal mb-4 counter-animate"
-                            data-i18n="exp_big_num">+1.000</span>
+                            data-i18n="exp_big_num">+1'000.000</span>
                         <p class="text-xl font-semibold text-slate-600 dark:text-slate-400 mb-8 text-center lg:text-left"
                             data-i18n="exp_big_label">
                             personas impactadas en Colombia
@@ -594,20 +623,20 @@
                         <div class="grid grid-cols-3 gap-4">
                             <div class="text-center">
                                 <span class="block text-3xl md:text-4xl font-bold text-magenta counter-animate"
-                                    data-i18n="exp_stat1_num">+200</span>
+                                    data-i18n="exp_stat1_num">+500</span>
                                 <span class="text-xs uppercase tracking-widest text-slate-500"
                                     data-i18n="exp_stat1_label">emprendimientos</span>
                             </div>
                             <div class="text-center">
                                 <span
                                     class="block text-3xl md:text-4xl font-bold text-deepPurple dark:text-mateTeal counter-animate"
-                                    data-i18n="exp_stat2_num">15</span>
+                                    data-i18n="exp_stat2_num">+100</span>
                                 <span class="text-xs uppercase tracking-widest text-slate-500"
                                     data-i18n="exp_stat2_label">comunidades</span>
                             </div>
                             <div class="text-center">
                                 <span class="block text-3xl md:text-4xl font-bold text-primary counter-animate"
-                                    data-i18n="exp_stat3_num">+30</span>
+                                    data-i18n="exp_stat3_num">+50</span>
                                 <span class="text-xs uppercase tracking-widest text-slate-500"
                                     data-i18n="exp_stat3_label">alianzas</span>
                             </div>
@@ -738,7 +767,7 @@
 
                     <div class="service-slide hidden">
                         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_48.JPG&quot;);
+                  background-image: url(&quot;./media/images/mate_img_ed_financiera.jpeg&quot;);
                 "></div>
                         <div
                             class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/60 to-transparent">
@@ -806,17 +835,52 @@
                     <h4 class="font-display font-bold text-lg mb-4 text-mateTeal" data-i18n="footer_contact_title">
                         Contacto
                     </h4>
-                    <ul class="space-y-2 text-sm text-white/80">
+                    <ul class="space-y-3 text-sm text-white/80">
+                        
                         <li class="flex items-center gap-2">
                             <span class="material-icons text-sm">email</span>
-                            direcciongeneral@matesas.com
+                            <a href="mailto:direcciongeneral@matesas.com" 
+                               title="Enviar correo electrónico"
+                               class="hover:text-white transition-colors">
+                                direcciongeneral@matesas.com
+                            </a>
                         </li>
+                        
+                        <li class="flex items-center gap-2">
+                            <span class="material-icons text-sm">phone</span>
+                            <a href="https://wa.me/573008169142?text=%C2%A1Hola%2C%20deseo%20recibir%20asesor%C3%ADa%21" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Contactar por WhatsApp"
+                               class="hover:text-white transition-colors">
+                                +57 300 816 9142
+                            </a>
+                        </li>
+
                         <li class="flex items-center gap-2">
                             <span class="material-icons text-sm">location_on</span>
                             <span data-i18n="footer_location">Bogotá D.C. · Montería, Colombia</span>
                         </li>
+
+                        <li class="flex items-center gap-5 pt-2">
+                            <a href="https://www.instagram.com/mate_sas_/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Instagram"
+                               class="hover:text-white transition-colors opacity-80 hover:opacity-100">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/mate-sas/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="LinkedIn"
+                               class="hover:text-white transition-colors opacity-80 hover:opacity-100">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                        </li>
                     </ul>
                 </div>
+
             </div>
 
             <div
