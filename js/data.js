@@ -83,8 +83,8 @@ const translations = {
         home_do_title: "Qué hacemos",
         home_do_subtitle: "Desarrollamos soluciones adaptadas a las necesidades de organizaciones, territorios y poblaciones diversas.",
 
-        home_do_card1_title: "Inclusión productiva",
-        home_do_card1_desc: "Fortalecemos unidades productivas, emprendimientos y pequeños negocios mediante rutas de diagnóstico, mejora de capacidades, acceso a mercados y sostenibilidad.",
+        home_do_card1_title: "Inclusión económica",
+        home_do_card1_desc: "Fortalecemos unidades productivas, emprendimientos y pequeños negocios, y promovemos la generación de empleo a través de rutas de diagnóstico, fortalecimiento de capacidades, acceso a mercados y estrategias de sostenibilidad.",
 
         home_do_card2_title: "Inclusión financiera",
         home_do_card2_desc: "Promovemos ahorro, crédito, bancarización, pagos digitales, microseguros y bienestar financiero para la vida y los negocios.",
@@ -113,21 +113,7 @@ const translations = {
         exp_stat2_label: "comunidades",
         exp_stat3_num: "+50",
         exp_stat3_label: "alianzas",
-
-        // Servicios del Carrusel
-        serv_a_title: "Mujer Étnica",
-        serv_a_desc: "Fortalecimos negocios liderados por mujeres indígenas, afrocolombianas, raizales y Rrom, integrando diagnóstico, asistencia técnica, acompañamiento comercial y seguimiento con enfoque étnico y de género.",
-        serv_b_title: "Banca de las Oportunidades",
-        serv_b_desc: "Elaboramos recomendaciones estratégicas para el diseño de programas de ahorro dirigidos a poblaciones de bajos ingresos y/o vulnerables.",
-        serv_c_title: "Migración juvenil",
-        serv_c_desc: "Lideramos una investigación sobre los factores que inciden en la migración de jóvenes rurales, generando insumos para decisiones y políticas con enfoque territorial.",
-        serv_d_title: "Familias en su Tierra",
-        serv_d_desc: "Acompañamos procesos de retorno de hogares víctima del conflicto con acciones en seguridad alimentaria, vivienda y generación de ingresos.",
-        serv_e_title: "Alianza Bancalimentos",
-        serv_e_desc: "Desarrollamos y adaptamos productos financieros incluyentes para población vulnerable, articulando canales, incentivos, comunicación y validación en territorio.",
-        serv_f_title: "Educación financiera digital",
-        serv_f_desc: "Diseñamos y adaptamos un producto digital de educación financiera para mujeres en condición de vulnerabilidad en Chile, con enfoque pedagógico y conductual.",
-
+        
         // Footer
         footer_desc: "Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas, financieras, sociales y sostenibles.",
         footer_links_title: "Enlaces",
@@ -170,7 +156,7 @@ const translations = {
 
         // Equipo - P1
         team_p1_name: "Ana Milena Negrette",
-        team_p1_role: "Directora General",
+        team_p1_role: "Fundadora y Directora General",
         team_p1_bio: "Lidera la visión estratégica de MATE y la consolidación de iniciativas que conectan territorio, inclusión y oportunidades. Tiene más de 22 años de experiencia en desarrollo rural, género, emprendimiento e inclusión económica, acompañando procesos y poblaciones vulnerable en Colombia y América Latina.",
 
         // Equipo - P2
@@ -315,8 +301,8 @@ const translations = {
         home_do_title: "What We Do",
         home_do_subtitle: "We develop solutions adapted to the needs of organizations, territories, and diverse populations.",
 
-        home_do_card1_title: "Productive inclusion",
-        home_do_card1_desc: "We strengthen productive units, startups, and small businesses through diagnostic pathways, capacity building, market access, and sustainability.",
+        home_do_card1_title: "Economic inclusion",
+        home_do_card1_desc: "We strengthen productive units, entrepreneurship initiatives, and small businesses, and promote job creation through diagnostic pathways, capacity-building processes, market access, and sustainability strategies.",
 
         home_do_card2_title: "Financial inclusion",
         home_do_card2_desc: "We promote savings, credit, banking access, digital payments, microinsurance, and financial well-being for life and business.",
@@ -358,22 +344,7 @@ const translations = {
         exp_stat2_num: "+100",
         exp_stat2_label: "communities",
         exp_stat3_num: "+50",
-        exp_stat3_label: "partnerships",
-
-        // Carousel of Services
-        serv_a_title: "Ethnic Woman",
-        serv_a_desc: "We strengthened businesses led by Indigenous, Afro-Colombian, Raizal, and Romani women, integrating diagnostics, technical assistance, commercial support, and monitoring with an ethnic and gender focus.",
-        serv_b_title: "Bank of Opportunities",
-        serv_b_desc: "We developed strategic recommendations for the design of savings programs aimed at low-income and/or vulnerable populations.",
-        serv_c_title: "Youth migration",
-        serv_c_desc: "We led research on the factors affecting the migration of rural youth, generating inputs for decisions and policies with a territorial focus.",
-        serv_d_title: "Families in their Land",
-        serv_d_desc: "We supported return processes for conflict-victim households with actions in food security, housing, and income generation.",
-        serv_e_title: "Bancalimentos Alliance",
-        serv_e_desc: "We developed and adapted inclusive financial products for vulnerable populations, articulating channels, incentives, communication, and field validation.",
-        serv_f_title: "Digital financial education",
-        serv_f_desc: "We designed and adapted a digital financial education product for vulnerable women in Chile, with a pedagogical and behavioral focus.",
-
+        exp_stat3_label: "partnerships",        
 
         // Footer
         footer_desc: "We drive economic inclusion and inclusive citizenship through productive, financial, social, and sustainable solutions.",
@@ -414,7 +385,7 @@ const translations = {
         team_subtitle: "Meet the professionals driving the strategic vision and impact of MATE SAS.",
 
         team_p1_name: "Ana Milena Negrette",
-        team_p1_role: "General Director",
+        team_p1_role: "Founder and Chief Executive Officer",
         team_p1_bio: "Leads MATE's strategic vision and the consolidation of initiatives connecting territory, inclusion, and opportunities. She has over 22 years of experience in rural development, gender, entrepreneurship, and economic inclusion, supporting processes and vulnerable populations in Colombia and Latin America.",
 
         team_p2_name: "Any Andrea Benítez",

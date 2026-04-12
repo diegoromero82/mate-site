@@ -84,7 +84,7 @@
     position: absolute;
     inset: 0;
     background-size: cover;
-    background-position: center;
+    background-position: center; /* Enfocamos el punto de interés en la parte derecha */
     background-repeat: no-repeat;
     opacity: 0; /* Ocultas por defecto para el cross-fade */
     transform: scale(1); /* Escala normal por defecto */

@@ -84,11 +84,11 @@
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="index.html" data-i18n="nav_home"
                         class="text-sm font-semibold text-primary dark:text-mateTeal border-b-2 border-primary dark:border-mateTeal pb-1 transition-colors">Inicio</a>
-                        
+
                     <div class="relative group">
-                         <a href="somos-mate.html" data-i18n="nav_about"
-                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Somos
-                        Mate</a>
+                        <a href="somos-mate.html" data-i18n="nav_about"
+                            class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Somos
+                            Mate</a>
                         <ul class="absolute top-full left-0 hidden group-hover:block bg-white dark:bg-slate-800 shadow-xl rounded-xl border border-slate-100 dark:border-slate-700 min-w-[200px] py-2 z-50 animate-in fade-in slide-in-from-top-1 duration-200
                    before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
                             <li>
@@ -116,13 +116,13 @@
                                 </a>
                             </li>
                         </ul>
-                    </div> 
+                    </div>
 
                     <a href="proyectos.html" data-i18n="nav_projects"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Proyectos</a>
 
                     <a href="contacto.html" data-i18n="nav_contact"
-                        class="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-bold shadow-md hover:bg-mateTeal transition-all">Contáctanos</a>
+                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Contáctanos</a>
 
                     <div class="w-px h-6 bg-slate-300 dark:bg-slate-700"></div>
 
@@ -484,96 +484,77 @@
                 </h2>
 
                 <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
-                    <button onclick="switchTab(0)" class="tab-btn active-tab" data-i18n="init_tab_a">
-                        PROPULXORA
-                    </button>
-                    <button onclick="switchTab(1)" class="tab-btn" data-i18n="init_tab_b">
-                        Modelo Étnico
-                    </button>
-                    <button onclick="switchTab(2)" class="tab-btn" data-i18n="init_tab_c">
-                        Fundación MATE
-                    </button>
-                    <button onclick="switchTab(3)" class="tab-btn" data-i18n="init_tab_d">
-                        Finanzas Plateadas
-                    </button>
-                    <button onclick="switchTab(4)" class="tab-btn" data-i18n="init_tab_e">
-                        Gobierno Corporativo
-                    </button>
+                    <button onclick="switchTab(0)" class="tab-btn active-tab" data-i18n="init_tab_a">PROPULXORA</button>
+                    <button onclick="switchTab(1)" class="tab-btn" data-i18n="init_tab_b">Modelo Étnico</button>
+                    <button onclick="switchTab(2)" class="tab-btn" data-i18n="init_tab_c">Fundación MATE</button>
+                    <button onclick="switchTab(3)" class="tab-btn" data-i18n="init_tab_d">Finanzas Plateadas</button>
+                    <button onclick="switchTab(4)" class="tab-btn" data-i18n="init_tab_e">Gobierno Corporativo</button>
                 </div>
 
-                <div class="relative min-h-[400px] rounded-3xl overflow-hidden shadow-2xl flex flex-col">
-                    <div class="tab-content block animate-fadeIn h-full min-h-[400px] w-full relative">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_propulxora.jpeg&quot;);
-                "></div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-deepPurple/90 to-transparent"></div>
-                        <div class="relative z-10 p-8 md:p-16 flex flex-col justify-center h-full max-w-xl text-white">
-                            <h3 class="text-3xl font-bold mb-4" data-i18n="init_tab_a">
-                                PROPULXORA
-                            </h3>
-                            <p class="text-lg opacity-90" data-i18n="init_content_a">
-                                Contenido A...
-                            </p>
+                <div class="relative h-[550px] rounded-3xl overflow-hidden shadow-2xl">
+
+                    <div class="tab-content block animate-fadeIn h-full w-full relative flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                            style="background-image: url('./media/images/mate_img_propulxora.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-deepPurple via-deepPurple/60 to-transparent">
+                        </div>
+
+                        <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
+                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_a">PROPULXORA</h3>
+                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_a">
+                                Contenido A...</p>
                         </div>
                     </div>
 
-                    <div class="tab-content hidden animate-fadeIn h-full min-h-[400px] w-full relative">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_17.jpeg&quot;);
-                "></div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent"></div>
-                        <div class="relative z-10 p-8 md:p-16 flex flex-col justify-center h-full max-w-xl text-white">
-                            <h3 class="text-3xl font-bold mb-4" data-i18n="init_tab_b">
-                                Modelo Étnico
-                            </h3>
-                            <p class="text-lg opacity-90" data-i18n="init_content_b">
-                                Contenido B...
-                            </p>
+                    <div class="tab-content hidden animate-fadeIn h-full w-full relative flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                            style="background-image: url('./media/images/mate_img_17.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
+
+                        <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
+                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_b">Modelo Étnico</h3>
+                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_b">
+                                Contenido B...</p>
                         </div>
                     </div>
 
-                    <div class="tab-content hidden animate-fadeIn h-full min-h-[400px] w-full relative">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_11.jpeg&quot;);
-                "></div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-magenta/90 to-transparent"></div>
-                        <div class="relative z-10 p-8 md:p-16 flex flex-col justify-center h-full max-w-xl text-white">
-                            <h3 class="text-3xl font-bold mb-4" data-i18n="init_tab_c">
-                                Fundación MATE
-                            </h3>
-                            <p class="text-lg opacity-90" data-i18n="init_content_c">
-                                Contenido C...
-                            </p>
+                    <div class="tab-content hidden animate-fadeIn h-full w-full relative flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                            style="background-image: url('./media/images/mate_img_11.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-magenta via-magenta/60 to-transparent"></div>
+
+                        <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
+                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_c">Fundación MATE</h3>
+                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_c">
+                                Contenido C...</p>
                         </div>
                     </div>
 
-                    <div class="tab-content hidden animate-fadeIn h-full min-h-[400px] w-full relative">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_23.jpeg&quot;);
-                "></div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-mateTeal/90 to-transparent"></div>
-                        <div class="relative z-10 p-8 md:p-16 flex flex-col justify-center h-full max-w-xl text-white">
-                            <h3 class="text-3xl font-bold mb-4" data-i18n="init_tab_d">
-                                Finanzas Plateadas
+                    <div class="tab-content hidden animate-fadeIn h-full w-full relative flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                            style="background-image: url('./media/images/mate_img_finanzas_plateadas.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-mateTeal via-mateTeal/60 to-transparent">
+                        </div>
+
+                        <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
+                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_d">Finanzas Plateadas
                             </h3>
-                            <p class="text-lg opacity-90" data-i18n="init_content_d">
-                                Contenido D...
-                            </p>
+                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_d">
+                                Contenido D...</p>
                         </div>
                     </div>
 
-                    <div class="tab-content hidden animate-fadeIn h-full min-h-[400px] w-full relative">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_47.JPG&quot;);
-                "></div>
-                        <div class="absolute inset-0 bg-gradient-to-r from-slate-900/90 to-transparent"></div>
-                        <div class="relative z-10 p-8 md:p-16 flex flex-col justify-center h-full max-w-xl text-white">
-                            <h3 class="text-3xl font-bold mb-4" data-i18n="init_tab_e">
-                                Gobierno Corporativo
+                    <div class="tab-content hidden animate-fadeIn h-full w-full relative flex flex-col justify-end">
+                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
+                            style="background-image: url('./media/images/mate_img_corporativo.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent">
+                        </div>
+
+                        <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
+                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_e">Gobierno Corporativo
                             </h3>
-                            <p class="text-lg opacity-90" data-i18n="init_content_e">
-                                Contenido E...
-                            </p>
+                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_e">
+                                Contenido E...</p>
                         </div>
                     </div>
                 </div>
@@ -644,149 +625,6 @@
                     </div>
                 </div>
 
-                <div class="relative rounded-3xl overflow-hidden shadow-2xl min-h-[450px]" id="service-carousel">
-                    <button onclick="moveService(-1)"
-                        class="absolute left-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 p-2 rounded-full backdrop-blur-md text-white transition-all">
-                        <span class="material-icons">chevron_left</span>
-                    </button>
-                    <button onclick="moveService(1)"
-                        class="absolute right-4 top-1/2 -translate-y-1/2 z-30 bg-white/20 hover:bg-white/40 p-2 rounded-full backdrop-blur-md text-white transition-all">
-                        <span class="material-icons">chevron_right</span>
-                    </button>
-
-                    <div class="service-slide block active-service">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_42.jpeg&quot;);
-                "></div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/60 to-transparent">
-                        </div>
-                        <div
-                            class="relative z-10 grid md:grid-cols-2 h-full min-h-[450px] items-center p-8 md:p-16 md:pl-24 gap-8">
-                            <h3 class="text-3xl md:text-4xl font-display font-bold text-white drop-shadow-md"
-                                data-i18n="serv_a_title">
-                                Mujer Étnica
-                            </h3>
-                            <p class="text-lg text-white font-medium leading-relaxed border-l-4 border-primary pl-6 drop-shadow-md"
-                                data-i18n="serv_a_desc">
-                                Fortalecimos negocios liderados por mujeres indígenas,
-                                afrocolombianas, raizales y Rrom, integrando diagnóstico,
-                                asistencia técnica, acompañamiento comercial y seguimiento con
-                                enfoque étnico y de género.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="service-slide hidden">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_9.jpeg&quot;);
-                "></div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/60 to-transparent">
-                        </div>
-                        <div
-                            class="relative z-10 grid md:grid-cols-2 h-full min-h-[450px] items-center p-8 md:p-16 md:pl-24 gap-8">
-                            <h3 class="text-3xl md:text-4xl font-display font-bold text-white drop-shadow-md"
-                                data-i18n="serv_b_title">
-                                Banca de las Oportunidades
-                            </h3>
-                            <p class="text-lg text-white font-medium leading-relaxed border-l-4 border-primary pl-6 drop-shadow-md"
-                                data-i18n="serv_b_desc">
-                                Elaboramos recomendaciones estratégicas para el diseño de
-                                programas de ahorro dirigidos a poblaciones de bajos ingresos
-                                y/o vulnerables.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="service-slide hidden">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_4.jpeg&quot;);
-                "></div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/60 to-transparent">
-                        </div>
-                        <div
-                            class="relative z-10 grid md:grid-cols-2 h-full min-h-[450px] items-center p-8 md:p-16 md:pl-24 gap-8">
-                            <h3 class="text-3xl md:text-4xl font-display font-bold text-white drop-shadow-md"
-                                data-i18n="serv_c_title">
-                                Migración juvenil rural
-                            </h3>
-                            <p class="text-lg text-white font-medium leading-relaxed border-l-4 border-magenta pl-6 drop-shadow-md"
-                                data-i18n="serv_c_desc">
-                                Lideramos una investigación sobre los factores que inciden en
-                                la migración de jóvenes rurales, generando insumos para
-                                decisiones y políticas con enfoque territorial.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="service-slide hidden">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_31.jpeg&quot;);
-                "></div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/60 to-transparent">
-                        </div>
-                        <div
-                            class="relative z-10 grid md:grid-cols-2 h-full min-h-[450px] items-center p-8 md:p-16 md:pl-24 gap-8">
-                            <h3 class="text-3xl md:text-4xl font-display font-bold text-white dark:text-white drop-shadow-md"
-                                data-i18n="serv_d_title">
-                                Familias en su Tierra
-                            </h3>
-                            <p class="text-lg text-white font-medium leading-relaxed border-l-4 border-mateTeal pl-6 drop-shadow-md"
-                                data-i18n="serv_d_desc">
-                                Acompañamos procesos de retorno de hogares víctima del
-                                conflicto con acciones en seguridad alimentaria, vivienda y
-                                generación de ingresos.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="service-slide hidden">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_8.jpeg&quot;);
-                "></div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/60 to-transparent">
-                        </div>
-                        <div
-                            class="relative z-10 grid md:grid-cols-2 h-full min-h-[450px] items-center p-8 md:p-16 md:pl-24 gap-8">
-                            <h3 class="text-3xl md:text-4xl font-display font-bold text-white drop-shadow-md"
-                                data-i18n="serv_e_title">
-                                Alianza Bancalimentos
-                            </h3>
-                            <p class="text-lg text-white font-medium leading-relaxed border-l-4 border-white pl-6 drop-shadow-md"
-                                data-i18n="serv_e_desc">
-                                Desarrollamos y adaptamos productos financieros incluyentes
-                                para población vulnerable, articulando canales, incentivos,
-                                comunicación y validación en territorio.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="service-slide hidden">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat" style="
-                  background-image: url(&quot;./media/images/mate_img_ed_financiera.jpeg&quot;);
-                "></div>
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-slate-900/95 via-slate-900/60 to-transparent">
-                        </div>
-                        <div
-                            class="relative z-10 grid md:grid-cols-2 h-full min-h-[450px] items-center p-8 md:p-16 md:pl-24 gap-8">
-                            <h3 class="text-3xl md:text-4xl font-display font-bold text-white drop-shadow-md"
-                                data-i18n="serv_f_title">
-                                Educación financiera digital
-                            </h3>
-                            <p class="text-lg text-white font-medium leading-relaxed border-l-4 border-magenta pl-6 drop-shadow-md"
-                                data-i18n="serv_f_desc">
-                                Diseñamos y adaptamos un producto digital de educación
-                                financiera para mujeres en condición de vulnerabilidad en
-                                Chile, con enfoque pedagógico y conductual.
-                            </p>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </main>
@@ -836,26 +674,26 @@
                         Contacto
                     </h4>
                     <ul class="space-y-3 text-sm text-white/80">
-                        
+
                         <li class="flex items-center gap-2">
                             <span class="material-icons text-sm">email</span>
-                            <a href="mailto:direcciongeneral@matesas.com" 
-                               title="Enviar correo electrónico"
-                               class="hover:text-white transition-colors">
+                            <a href="mailto:direcciongeneral@matesas.com" title="Enviar correo electrónico"
+                                class="hover:text-white transition-colors">
                                 direcciongeneral@matesas.com
                             </a>
                         </li>
-                        
+
+                        <!----
                         <li class="flex items-center gap-2">
                             <span class="material-icons text-sm">phone</span>
-                            <a href="https://wa.me/573008169142?text=%C2%A1Hola%2C%20deseo%20recibir%20asesor%C3%ADa%21" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               title="Contactar por WhatsApp"
-                               class="hover:text-white transition-colors">
+                            <a href="https://wa.me/573008169142?text=%C2%A1Hola%2C%20deseo%20recibir%20asesor%C3%ADa%21"
+                                target="_blank" rel="noopener noreferrer" title="Contactar por WhatsApp"
+                                class="hover:text-white transition-colors">
                                 +57 300 816 9142
                             </a>
                         </li>
+                        ---->
+
 
                         <li class="flex items-center gap-2">
                             <span class="material-icons text-sm">location_on</span>
@@ -863,19 +701,21 @@
                         </li>
 
                         <li class="flex items-center gap-5 pt-2">
-                            <a href="https://www.instagram.com/mate_sas_/" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               title="Instagram"
-                               class="hover:text-white transition-colors opacity-80 hover:opacity-100">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                            <a href="https://www.instagram.com/mate_sas_/" target="_blank" rel="noopener noreferrer"
+                                title="Instagram"
+                                class="hover:text-white transition-colors opacity-80 hover:opacity-100">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                                </svg>
                             </a>
-                            <a href="https://www.linkedin.com/in/mate-sas/" 
-                               target="_blank" 
-                               rel="noopener noreferrer" 
-                               title="LinkedIn"
-                               class="hover:text-white transition-colors opacity-80 hover:opacity-100">
-                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <a href="https://www.linkedin.com/in/mate-sas/" target="_blank" rel="noopener noreferrer"
+                                title="LinkedIn"
+                                class="hover:text-white transition-colors opacity-80 hover:opacity-100">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
                             </a>
                         </li>
                     </ul>
