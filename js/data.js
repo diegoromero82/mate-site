@@ -10,6 +10,7 @@ const translations = {
         submenu_about_history: "Nuestra Historia",
         submenu_about_mission: "Misión y Visión",
         submenu_about_team: "Nuestro Equipo",
+        submenu_about_milestones: "Hitos Institucionales",
         submenu_about_work: "Cómo trabajamos",
         submenu_about_alliances: "Alianzas",
 
@@ -43,7 +44,7 @@ const translations = {
         hero_btn_2: "Hablemos de una alianza",
 
         // 1.2 Quiénes Somos (Home)
-        home_about_headline: "Somos <span class='text-primary'>MATE</span>, una firma colombiana que impulsa inclusión económica con enfoque territorial, social y diferencial.",
+        home_about_headline: "Somos <span class='text-primary'>MATE</span>, una firma con experiencia en Colombia y América Latina que acompaña la inclusión económica con enfoque territorial, social y diferencial.",
         home_about_subtext: "Trabajamos con entidades públicas, privadas, de cooperación y organizaciones territoriales para diseñar e implementar soluciones que fortalecen capacidades, promueven autonomía económica y conectan a las personas con más y mejores oportunidades.",
         home_about_btn: "Conocernos",
 
@@ -57,37 +58,35 @@ const translations = {
         home_diff_card3_title: "Trabajo colaborativo",
         home_diff_card3_desc: "Articulamos sector público, cooperación, empresas, comunidades y ecosistemas emprendedores.",
         home_diff_card4_title: "Decisiones con evidencia",
-        home_diff_card4_desc: "Incorporamos diagnóstico, seguimiento, analítica de datos y herramientas de economía del comportamiento para fortalecer la toma de decisiones.",
+        home_diff_card4_desc: "Incorporamos diagnóstico, seguimiento, analítica de datos y economía del comportamiento para orientar mejor la toma de decisiones.",
         home_diff_card5_title: "Impacto con propósito",
-        home_diff_card5_desc: "Buscamos resultados que fortalezcan bienestar, autonomía y oportunidades reales.",
+        home_diff_card5_desc: "Buscamos resultados que fortalezcan bienestar, autonomía y oportunidades reales, con una visión de sostenibilidad.",
 
         // 1.4 Iniciativas (Home)
-
         home_init_title: "Iniciativas que hoy marcan nuestra agenda",
         // Títulos de pestañas
         init_tab_a: "PROPULXORA",
         init_tab_b: "Modelo Étnico",
         init_tab_c: "Fundación MATE",
-        init_tab_d: "Finanzas Plateadas",
+        init_tab_d: "Economía Plateada",
         init_tab_e: "Gobierno Corporativo",
         // Contenidos
-        init_content_a: "Una plataforma y modelo operativo para acompañar emprendimiento popular con diagnóstico, registro simple, alertas y recomendaciones. Alianza con Fundación Pymergia.",
+        init_content_a: "Una plataforma y un modelo operativo que acerca la tecnología, el financiamiento y acompaña el emprendimiento popular con diagnósticos, registro simple de las cuentas, alertas en tiempo real y recomendaciones para que se tomen decisiones oportunas y basadas en los datos que hacen crecer los negocios. <br>Alianza con Propulsor Latinoamerica.",
         init_content_b: "Una apuesta que integra asociatividad, fortalecimiento productivo, identidad cultural y canales de comercialización.",
-        init_content_c: "Una iniciativa para movilizar alianzas, filantropía y cofinanciación alrededor de inclusión económica y ciudadanía inclusiva.",
+        init_content_c: "Una iniciativa para movilizar alianzas, filantropía y cofinanciación alrededor de la inclusión económica y la ciudadanía inclusiva.",
         init_content_d: "Una agenda que conecta inclusión financiera, empleabilidad y emprendimiento para personas mayores de 50 años.",
-        init_content_e: "Una línea orientada a fortalecer organización interna, toma de decisiones, transparencia y sostenibilidad en organizaciones y alianzas.",
+        init_content_e: "Una línea orientada a acompañar a las organizaciones, no importa su tamaño, en el fortalecimiento de su gobierno corporativo, promoviendo estructuras de dirección más sólidas, transparentes y orientadas a la sostenibilidad.",
         init_btn: "Ver soluciones",
 
         // 1.5 Qué Hacemos (Home)
-
         home_do_title: "Qué hacemos",
         home_do_subtitle: "Desarrollamos soluciones adaptadas a las necesidades de organizaciones, territorios y poblaciones diversas.",
 
-        home_do_card1_title: "Inclusión productiva",
-        home_do_card1_desc: "Fortalecemos unidades productivas, emprendimientos y pequeños negocios mediante rutas de diagnóstico, mejora de capacidades, acceso a mercados y sostenibilidad.",
+        home_do_card1_title: "Inclusión económica",
+        home_do_card1_desc: "Acompañamos a unidades productivas, emprendimientos y pequeños negocios, y promovemos la generación de empleo a través de rutas de diagnóstico, fortalecimiento de capacidades, acceso a mercados y estrategias de sostenibilidad.",
 
         home_do_card2_title: "Inclusión financiera",
-        home_do_card2_desc: "Promovemos ahorro, crédito, bancarización, pagos digitales, microseguros y bienestar financiero para la vida y los negocios.",
+        home_do_card2_desc: "Promovemos el acceso y uso amplio del ahorro, crédito, pagos digitales, seguros y las finanzas verdes para que las personas y los negocios prosperen y alcancen su bienestar. Creemos firmemente en que la inclusión financiera no es un fin, es un medio que impulsa el crecimiento económico, fomenta la equidad y brinda bienestar.",
 
         home_do_card3_title: "Fortalecimiento social y comunitario",
         home_do_card3_desc: "Impulsamos asociatividad, liderazgo, formación y autonomía económica con enfoque de género, diversidad y territorio.",
@@ -101,7 +100,6 @@ const translations = {
         home_do_btn: "Ver todas las soluciones",
 
         // 1.6 Experiencia e Impacto (Home)
-
         exp_title: "Experiencia e impacto",
         exp_big_num: "+1'000.000",
         exp_big_label: "personas impactadas en Colombia",
@@ -114,25 +112,13 @@ const translations = {
         exp_stat3_num: "+50",
         exp_stat3_label: "alianzas",
 
-        // Servicios del Carrusel
-        serv_a_title: "Mujer Étnica",
-        serv_a_desc: "Fortalecimos negocios liderados por mujeres indígenas, afrocolombianas, raizales y Rrom, integrando diagnóstico, asistencia técnica, acompañamiento comercial y seguimiento con enfoque étnico y de género.",
-        serv_b_title: "Banca de las Oportunidades",
-        serv_b_desc: "Elaboramos recomendaciones estratégicas para el diseño de programas de ahorro dirigidos a poblaciones de bajos ingresos y/o vulnerables.",
-        serv_c_title: "Migración juvenil",
-        serv_c_desc: "Lideramos una investigación sobre los factores que inciden en la migración de jóvenes rurales, generando insumos para decisiones y políticas con enfoque territorial.",
-        serv_d_title: "Familias en su Tierra",
-        serv_d_desc: "Acompañamos procesos de retorno de hogares víctima del conflicto con acciones en seguridad alimentaria, vivienda y generación de ingresos.",
-        serv_e_title: "Alianza Bancalimentos",
-        serv_e_desc: "Desarrollamos y adaptamos productos financieros incluyentes para población vulnerable, articulando canales, incentivos, comunicación y validación en territorio.",
-        serv_f_title: "Educación financiera digital",
-        serv_f_desc: "Diseñamos y adaptamos un producto digital de educación financiera para mujeres en condición de vulnerabilidad en Chile, con enfoque pedagógico y conductual.",
-
         // Footer
         footer_desc: "Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas, financieras, sociales y sostenibles.",
         footer_links_title: "Enlaces",
         footer_contact_title: "Contacto",
-        footer_location: "Bogotá D.C. · Montería, Colombia",
+        footer_location_1: "Bogotá D.C.",
+        footer_location_2: "Montería, Córdoba",
+        footer_location_3: "Colombia, Sur América",
         footer_rights: "© 2026 MATE Inversiones & Negocios SAS. Todos los derechos reservados.",
         developed_by: "Desarrollado por",
 
@@ -140,7 +126,7 @@ const translations = {
 
         // Hero Section ---
         hero_about_title: "Somos MATE",
-        hero_about_desc: "Consultoría especializada en inclusión económica y social, orientada a impulsar un desarrollo sostenible y equitativo",
+        hero_about_desc: "Más de 10 años impulsando inclusión económica, financiera y social en Colombia y América Latina.",
 
         // --- Acerca de la empresa y Misión ---
         about_company_title: "Acerca de la empresa",
@@ -151,9 +137,9 @@ const translations = {
         // --- Cómo trabajamos ---
         how_title: "Cómo trabajamos",
         how_c1_title: "Escuchamos y comprendemos",
-        how_c1_desc: "Leemos el territorio e identificamos capacidades, brechas y oportunidades.",
+        how_c1_desc: "Escuchamos a las comunidades, entendemos sus necesidades, analizamos el territorio y su contexto para identificar las capacidades, brechas y oportunidades.",
         how_c2_title: "Diseñamos rutas de acción",
-        how_c2_desc: "Construimos propuestas ajustadas al contexto, a las personas y a los objetivos de cada alianza.",
+        how_c2_desc: "Construimos de manera conjunta propuestas ajustadas al contexto, a las personas y a los objetivos de cada alianza.  ",
         how_c3_title: "Implementamos y acompañamos",
         how_c3_desc: "Desarrollamos procesos con cercanía territorial, formación, asistencia técnica y articulación.",
         how_c4_title: "Medimos y aprendemos",
@@ -162,25 +148,25 @@ const translations = {
         team_title: "Nuestro Equipo",
         team_subtitle: "Conoce a las profesionales que impulsan la visión estratégica y el impacto de MATE SAS.",
 
-        // --- Nuestro equipo ---
-
-        // ====== AGREGAR DENTRO DE 'es': ======
+        // --- Hitos Institucionales ---        
+        hitos_title: "Hitos Institucionales",
         recognition_badge: "Reconocimiento Internacional",
-        recognition_text: "MATE recibió el reconocimiento a la Mejor práctica local con enfoque de género en el marco de la VII Cumbre Iberoamericana de Agendas Locales de Género y del XV Congreso Iberoamericano de Municipalistas, realizados en Zapopan, México, en 2026 como reflejo de su compromiso con la inclusión, la equidad y la transformación territorial.",
+        recognition_text: "MATE recibió el reconocimiento a la Mejor práctica local con enfoque de género en el marco de la VII Cumbre Iberoamericana de Agendas Locales de Género y del XV Congreso Iberoamericano de Municipalistas, realizados en Zapopan, México, en 2025 como reflejo de su compromiso con la inclusión, la equidad y la transformación territorial.",
 
+        // --- Nuestro equipo --- 
         // Equipo - P1
         team_p1_name: "Ana Milena Negrette",
-        team_p1_role: "Directora General",
-        team_p1_bio: "Lidera la visión estratégica de MATE y la consolidación de iniciativas que conectan territorio, inclusión y oportunidades. Tiene más de 22 años de experiencia en desarrollo rural, género, emprendimiento e inclusión económica, acompañando procesos y poblaciones vulnerable en Colombia y América Latina.",
+        team_p1_role: "Fundadora y Directora General",
+        team_p1_bio: "Lidera la visión estratégica de MATE y la consolidación de iniciativas que conectan territorio, inclusión y oportunidades. Tiene más de 22 años de experiencia en desarrollo rural, género, emprendimiento e inclusión económica, acompañando procesos y poblaciones vulnerables en Colombia y América Latina.",
 
         // Equipo - P2
         team_p2_name: "Any Andrea Benítez",
-        team_p2_role: "Experta financiera y protección social",
+        team_p2_role: "Experta en inclusión financiera y protección social",
         team_p2_bio: "Experta en inclusión financiera y protección social. Tiene más de 22 años de experiencia en Colombia y América Latina, y una trayectoria destacada en educación financiera, ahorro, aseguramiento, ahorro para la vejez y economía plateada.",
 
         // Equipo - P3
         team_p3_name: "Ivonne Villada",
-        team_p3_role: "Experta en inclusión económica y genero",
+        team_p3_role: "Experta en Inclusión financiera, género y transformación digital",
         team_p3_bio: "Especialista en inclusión financiera y protección social, con más de 16 años de experiencia en América Latina. Ha liderado iniciativas de educación financiera, género y diversidad para ampliar oportunidades y acceso a servicios financieros en poblaciones vulnerables.",
 
         // Equipo - P4
@@ -204,6 +190,9 @@ const translations = {
         hero_proj_desc: "Nuestra experiencia combina trabajo en territorio, fortalecimiento de capacidades, inclusión financiera, investigación aplicada y articulación institucional.",
 
         // Detalle de Servicios/Proyectos
+        serv_muelle_title: "Muelle Turístico de Buenaventura (2017–2023)",
+        serv_muelle_desc: "Diseño e implementación del plan de concesión, integrando modernización operativa y acompañamiento social. Estructuración de la articulación con actores clave y fortalecimiento de la gestión estratégica, procesos y riesgos. Desarrollo de estrategias de experiencia de usuario, educación financiera y acceso a productos financieros para la comunidad del muelle.",
+        
         serv_a_title: "Mujer Étnica",
         serv_a_desc: "Fortalecimos negocios liderados por mujeres indígenas, afrocolombianas, raizales y Rrom, integrando diagnóstico, asistencia técnica, acompañamiento comercial y seguimiento con enfoque étnico y de género.",
 
@@ -222,11 +211,14 @@ const translations = {
         serv_f_title: "Educación financiera digital para mujeres en Chile",
         serv_f_desc: "Diseñamos y adaptamos un producto digital de educación financiera para mujeres en condición de vulnerabilidad, con enfoque pedagógico y conductual.",
 
+        cta_capitaliza_title: "Capitaliza tu negocio",
+        cta_capitaliza_text: "Te ayudamos a valorar tu emprendimiento y a explorar opciones de financiamiento.",
+
         // --- PÁGINA: CONTACTO ---
         hero_contact_title: "Hablemos de su próximo proyecto",
         hero_contact_desc: "Estamos listos para escuchar sus necesidades y construir juntos soluciones con impacto territorial y social.",
         contact_info_title: "Información de Contacto",
-        contact_info_desc: "Completa el formulario y nuestro equipo se pondrá en contacto contigo a la brevedad posible.",
+        contact_info_desc: "Completa el formulario y nuestro equipo se pondrá en contacto contigo", 
         contact_write_us: "Escríbenos",
         contact_call_us: "WhatsApp",
         contact_location_label: "Ubicación",
@@ -269,6 +261,7 @@ const translations = {
         submenu_about_top: "Top",
         submenu_about_history: "Our History",
         submenu_about_mission: "Mission & Vision",
+        submenu_about_milestones: "Institutional Milestones",
         submenu_about_team: "Our Team",
         submenu_about_work: "How we work",
         submenu_about_alliances: "Alliances",
@@ -277,8 +270,7 @@ const translations = {
         // SEO (Inicio)
         meta_title_index: "MATE | Investments & Business",
         meta_desc_index: "We drive economic inclusion and inclusive citizenship through productive, financial, social, and sustainable solutions.",
-        // 1.1 Hero Section
-        // Nota: En inglés el título es más corto, no necesita <br>.
+        // 1.1 Hero Section        
         hero_badge_text: "Social Transformation",
         hero_title: "Driving opportunities for a more inclusive citizenship",
         hero_subtitle: "At MATE, we articulate productive, financial, social, and sustainable solutions to strengthen capacities, generate income, and expand opportunities for people, communities, and territories.",
@@ -293,7 +285,7 @@ const translations = {
         hero_btn_2: "Let's talk about an alliance",
 
         // 1.2 About Us (Home)
-        home_about_headline: "We are <span class='text-primary'>MATE</span>, a Colombian firm driving economic inclusion with a territorial, social, and differential approach.",
+        home_about_headline: "We are <span class='text-primary'>MATE</span>, a firm originating in Colombia that promotes economic inclusion with a territorial approach in Latin America.",
         home_about_subtext: "We work with public, private, cooperation entities, and local organizations to design and implement solutions that strengthen capacities, promote economic autonomy, and connect people with more and better opportunities.",
         home_about_btn: "Get to know us",
 
@@ -307,19 +299,19 @@ const translations = {
         home_diff_card3_title: "Collaborative work",
         home_diff_card3_desc: "We articulate the public sector, international cooperation, companies, communities, and entrepreneurial ecosystems.",
         home_diff_card4_title: "Evidence-based decisions",
-        home_diff_card4_desc: "We incorporate diagnostics, monitoring, data analytics, and behavioral economics tools to strengthen decision-making.",
+        home_diff_card4_desc: "We incorporate diagnostics, monitoring, data analytics, and behavioral economics to better inform decision-making.",
         home_diff_card5_title: "Impact with purpose",
-        home_diff_card5_desc: "We seek results that strengthen well-being, autonomy, and real opportunities.",
+        home_diff_card5_desc: "We pursue outcomes that strengthen well-being, autonomy, and real opportunities, with a sustainability-focused perspective.",
 
         // 1.4 What We Do (Home)
         home_do_title: "What We Do",
         home_do_subtitle: "We develop solutions adapted to the needs of organizations, territories, and diverse populations.",
 
-        home_do_card1_title: "Productive inclusion",
-        home_do_card1_desc: "We strengthen productive units, startups, and small businesses through diagnostic pathways, capacity building, market access, and sustainability.",
+        home_do_card1_title: "Economic inclusion",
+        home_do_card1_desc: "We strengthen productive units, entrepreneurship initiatives, and small businesses, and promote job creation through diagnostic pathways, capacity-building processes, market access, and sustainability strategies.",
 
         home_do_card2_title: "Financial inclusion",
-        home_do_card2_desc: "We promote savings, credit, banking access, digital payments, microinsurance, and financial well-being for life and business.",
+        home_do_card2_desc: "We promote broad access to and use of savings, credit, digital payments, insurance, and green finance so that individuals and businesses can thrive and achieve well-being. We firmly believe that financial inclusion is not an end in itself, but a means that drives economic growth, fosters equity, and delivers well-being.",
 
         home_do_card3_title: "Social and community strengthening",
         home_do_card3_desc: "We drive associativity, leadership, training, and economic autonomy with a gender, diversity, and territorial focus.",
@@ -333,18 +325,17 @@ const translations = {
         home_do_btn: "See all solutions",
 
         // 1.5 Iniciativas (Home)
-
         home_init_title: "Initiatives marking our agenda today",
         init_tab_a: "PROPULXORA",
         init_tab_b: "Ethnic Model",
         init_tab_c: "MATE Foundation",
-        init_tab_d: "Silver Finance",
+        init_tab_d: "Silver Economy",
         init_tab_e: "Corporate Governance",
-        init_content_a: "A platform and operating model to support popular entrepreneurship with diagnostics, simple registration, alerts, and recommendations. Alliance with Pymergia Foundation.",
+        init_content_a: "A platform and an operating model that brings technology and financing closer while supporting grassroots entrepreneurship through diagnostics, simplified bookkeeping, real-time alerts, and recommendations to enable timely, data-driven decision-making that helps businesses grow. In partnership with Fundación Pymergia.",
         init_content_b: "A commitment that integrates associativity, productive strengthening, cultural identity, and marketing channels.",
         init_content_c: "An initiative to mobilize alliances, philanthropy, and co-financing around economic inclusion and inclusive citizenship.",
         init_content_d: "An agenda connecting financial inclusion, employability, and entrepreneurship for people over 50.",
-        init_content_e: "A line focused on strengthening internal organization, decision-making, transparency, and sustainability in organizations and alliances.",
+        init_content_e: "A line of work aimed at supporting organizations—regardless of their size—in strengthening their corporate governance, promoting more robust, transparent, and sustainability-oriented leadership structures.",
         init_btn: "See solutions",
 
         // 1.6 Experience and Impact
@@ -360,26 +351,13 @@ const translations = {
         exp_stat3_num: "+50",
         exp_stat3_label: "partnerships",
 
-        // Carousel of Services
-        serv_a_title: "Ethnic Woman",
-        serv_a_desc: "We strengthened businesses led by Indigenous, Afro-Colombian, Raizal, and Romani women, integrating diagnostics, technical assistance, commercial support, and monitoring with an ethnic and gender focus.",
-        serv_b_title: "Bank of Opportunities",
-        serv_b_desc: "We developed strategic recommendations for the design of savings programs aimed at low-income and/or vulnerable populations.",
-        serv_c_title: "Youth migration",
-        serv_c_desc: "We led research on the factors affecting the migration of rural youth, generating inputs for decisions and policies with a territorial focus.",
-        serv_d_title: "Families in their Land",
-        serv_d_desc: "We supported return processes for conflict-victim households with actions in food security, housing, and income generation.",
-        serv_e_title: "Bancalimentos Alliance",
-        serv_e_desc: "We developed and adapted inclusive financial products for vulnerable populations, articulating channels, incentives, communication, and field validation.",
-        serv_f_title: "Digital financial education",
-        serv_f_desc: "We designed and adapted a digital financial education product for vulnerable women in Chile, with a pedagogical and behavioral focus.",
-
-
         // Footer
         footer_desc: "We drive economic inclusion and inclusive citizenship through productive, financial, social, and sustainable solutions.",
         footer_links_title: "Links",
         footer_contact_title: "Contact",
-        footer_location: "Bogota D.C. · Monteria, Colombia",
+        footer_location_1: "Bogotá D.C.",
+        footer_location_2: "Montería, Córdoba",
+        footer_location_3: "Colombia, South America",
         footer_rights: "© 2026 MATE Investments & Business SAS. All rights reserved.",
         developed_by: "Developed by",
 
@@ -387,7 +365,7 @@ const translations = {
 
         // --- Hero Section ---
         hero_about_title: "We are MATE",
-        hero_about_desc: "Specialized consulting in financial, productive, and social inclusion, aimed at promoting sustainable and equitable development.",
+        hero_about_desc: "More than 10 years driving economic, financial, and social inclusion in Colombia and Latin America.",
 
         // --- About the company and Mission ---
         about_company_title: "About the company",
@@ -398,23 +376,26 @@ const translations = {
         // How we work ---
         how_title: "How we work",
         how_c1_title: "We listen and understand",
-        how_c1_desc: "We read the territory and identify capacities, gaps, and opportunities.",
+        how_c1_desc: "We listen to communities, understand their needs, and analyze the territory and its context to identify capabilities, gaps, and opportunities.",
         how_c2_title: "We design action routes",
-        how_c2_desc: "We build proposals tailored to the context, the people, and the objectives of each alliance.",
+        how_c2_desc: "We jointly develop proposals tailored to the context, the people, and the objectives of each partnership.",
         how_c3_title: "We implement and support",
         how_c3_desc: "We develop processes with territorial proximity, training, technical assistance, and articulation.",
         how_c4_title: "We measure and learn",
         how_c4_desc: "We monitor, gather lessons learned, and adjust to improve results.",
 
-        // Equipo        
-        recognition_badge: "International Recognition",
-        recognition_text: "MATE received the recognition for Best Local Practice with a Gender Perspective within the framework of the VII Ibero-American Summit of Local Gender Agendas and the XV Ibero-American Congress of Municipalists, held in Zapopan, Mexico, in 2026, as a reflection of its commitment to inclusion, equity, and territorial transformation.",
 
+        // --- Hitos Institucionales ---        
+        hitos_title: "Institutional Milestones",
+        recognition_badge: "International Recognition",
+        recognition_text: "MATE received the recognition for Best Local Practice with a Gender Perspective within the framework of the VII Ibero-American Summit of Local Gender Agendas and the XV Ibero-American Congress of Municipalists, held in Zapopan, Mexico, in 2025, as a reflection of its commitment to inclusion, equity, and territorial transformation.",
+
+        // Equipo 
         team_title: "Our Team",
         team_subtitle: "Meet the professionals driving the strategic vision and impact of MATE SAS.",
 
         team_p1_name: "Ana Milena Negrette",
-        team_p1_role: "General Director",
+        team_p1_role: "Founder and Chief Executive Officer",
         team_p1_bio: "Leads MATE's strategic vision and the consolidation of initiatives connecting territory, inclusion, and opportunities. She has over 22 years of experience in rural development, gender, entrepreneurship, and economic inclusion, supporting processes and vulnerable populations in Colombia and Latin America.",
 
         team_p2_name: "Any Andrea Benítez",
@@ -422,7 +403,7 @@ const translations = {
         team_p2_bio: "Expert in financial inclusion and social protection. She has over 22 years of experience in Colombia and Latin America, with an outstanding track record in financial education, savings, insurance, retirement savings, and the silver economy.",
 
         team_p3_name: "Ivonne Villada",
-        team_p3_role: "Expert in economic inclusion and gender",
+        team_p3_role: "Expert in financial inclusion, gender, and digital transformation",
         team_p3_bio: "Specialist in financial inclusion and social protection with over 16 years of experience in Latin America. She has led financial education, gender, and diversity initiatives to expand opportunities and access to financial services for vulnerable populations.",
 
         team_p4_name: "Claudia Sofía Santacruz",
@@ -443,7 +424,10 @@ const translations = {
         hero_proj_title: "Experience translated into action",
         hero_proj_desc: "Our experience combines fieldwork, capacity building, financial inclusion, applied research, and institutional articulation.",
 
-        // Services/Projects Detail
+        // Services/Projects Detail        
+        serv_muelle_title: "Buenaventura Tourist Pier (2017–2023)",
+        serv_muelle_desc: "Design and implementation of the concession plan, integrating operational modernization and social support. Structuring the coordination with key actors and strengthening strategic management, processes and risks. Development of user experience strategies, financial education and access to financial products for the pier community.",
+        
         serv_a_title: "Ethnic Woman",
         serv_a_desc: "We strengthened businesses led by Indigenous, Afro-Colombian, Raizal, and Romani women, integrating diagnostics, technical assistance, commercial support, and monitoring with an ethnic and gender focus.",
 
@@ -462,11 +446,14 @@ const translations = {
         serv_f_title: "Digital financial education for women in Chile",
         serv_f_desc: "We designed and adapted a digital financial education product for vulnerable women in Chile, with a pedagogical and behavioral focus.",
 
+        cta_capitaliza_title: "Capitalize your business",
+        cta_capitaliza_text: "We help you value your venture and explore financing options.",
+
         // --- CONTACT PAGE ---
         hero_contact_title: "Let's talk about your next project",
         hero_contact_desc: "We are ready to listen to your needs and build solutions with territorial and social impact together.",
         contact_info_title: "Contact Information",
-        contact_info_desc: "Complete the form and our team will get in touch with you as soon as possible.",
+        contact_info_desc: "Complete the form and our team will get in touch with you.",
         contact_write_us: "Write to us",
         contact_call_us: "WhatsApp",
         contact_location_label: "Location",
