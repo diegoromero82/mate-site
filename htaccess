@@ -1,16 +1,15 @@
 # =========================================================
-# 1. SEGURIDAD Y REDIRECCIONES (HTTPS Y WWW)
+# 1. SEGURIDAD Y REDIRECCIONES (HTTPS Y WWW UNIFICADO)
 # =========================================================
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
-    # Forzar HTTPS (Conexión segura)
-    RewriteCond %{HTTPS} off
-    RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-    # Forzar www (Para unificar el dominio y evitar contenido duplicado en SEO)
-    RewriteCond %{HTTP_HOST} ^matesas\.com [NC]
-    RewriteRule ^(.*)$ https://www.matesas.com/$1 [L,R=301]
+    # Si NO es HTTPS O NO tiene el prefijo WWW.
+    # Se redirige todo a la versión final de una sola vez.
+    RewriteCond %{HTTPS} off [OR]
+    RewriteCond %{HTTP_HOST} !^www\. [NC]
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+    RewriteRule ^ https://www.matesas.com%{REQUEST_URI} [L,R=301]
 </IfModule>
 
 # =========================================================

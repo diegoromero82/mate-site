@@ -47,7 +47,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
-            darkMode: "class", // Habilita el modo oscuro basado en clases
+            darkMode: "class",
             theme: {
                 extend: {
                     colors: {
@@ -72,7 +72,7 @@
 
 <body
     class="bg-background-light dark:bg-background-dark font-sans text-slate-800 dark:text-slate-200 transition-colors duration-300 antialiased flex flex-col min-h-screen">
-    
+
     <header
         class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -102,6 +102,10 @@
                             <li><a href="somos-mate.html#como-trabajamos" data-i18n="submenu_about_work"
                                     class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Cómo
                                     trabajamos</a></li>
+                            <li><a href="somos-mate.html#hitos" data-i18n="submenu_about_milestones"
+                                    class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Hitos
+                                    Institucionales</a>
+                            </li>
                             <li><a href="somos-mate.html#equipo" data-i18n="submenu_about_team"
                                     class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Nuestro
                                     Equipo</a></li>
@@ -454,7 +458,7 @@
 
                     <div
                         class="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col lg:col-start-2 lg:col-end-3 lg:translate-x-[50%]">
-                        <img src="./media/images/mate_img_46.JPG" alt="Consultorías y estudios técnicos"
+                        <img src="./media/images/mate_img_consultoria_1.jpeg" alt="Consultorías y estudios técnicos"
                             class="w-full h-56 object-cover aspect-[16/10]" />
                         <div class="p-8 flex-grow">
                             <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
@@ -607,26 +611,32 @@
                             fortalecimiento de capacidades, inclusión financiera,
                             investigación aplicada y articulación institucional.
                         </p>
-                        <div class="grid grid-cols-3 gap-4">
-                            <div class="text-center">
-                                <span class="block text-3xl md:text-4xl font-bold text-magenta counter-animate"
-                                    data-i18n="exp_stat1_num">+500</span>
-                                <span class="text-xs uppercase tracking-widest text-slate-500"
-                                    data-i18n="exp_stat1_label">emprendimientos</span>
-                            </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 sm:gap-4">
+
                             <div class="text-center">
                                 <span
-                                    class="block text-3xl md:text-4xl font-bold text-deepPurple dark:text-mateTeal counter-animate"
+                                    class="block text-4xl sm:text-3xl md:text-4xl font-bold text-magenta counter-animate"
+                                    data-i18n="exp_stat1_num">+500</span>
+                                <span class="text-xs uppercase tracking-wider sm:tracking-widest text-slate-500 block"
+                                    data-i18n="exp_stat1_label">emprendimientos</span>
+                            </div>
+
+                            <div class="text-center">
+                                <span
+                                    class="block text-4xl sm:text-3xl md:text-4xl font-bold text-deepPurple dark:text-mateTeal counter-animate"
                                     data-i18n="exp_stat2_num">+100</span>
-                                <span class="text-xs uppercase tracking-widest text-slate-500"
+                                <span class="text-xs uppercase tracking-wider sm:tracking-widest text-slate-500 block"
                                     data-i18n="exp_stat2_label">comunidades</span>
                             </div>
+
                             <div class="text-center">
-                                <span class="block text-3xl md:text-4xl font-bold text-primary counter-animate"
+                                <span
+                                    class="block text-4xl sm:text-3xl md:text-4xl font-bold text-primary counter-animate"
                                     data-i18n="exp_stat3_num">+50</span>
-                                <span class="text-xs uppercase tracking-widest text-slate-500"
+                                <span class="text-xs uppercase tracking-wider sm:tracking-widest text-slate-500 block"
                                     data-i18n="exp_stat3_label">alianzas</span>
                             </div>
+
                         </div>
                     </div>
                 </div>
@@ -704,7 +714,6 @@
 
                             <div class="flex flex-col gap-1">
                                 <span data-i18n="footer_location_1">Bogotá D.C.</span>
-                                <span data-i18n="footer_location_2">Montería, Córdoba</span>
                                 <span data-i18n="footer_location_3">Colombia, South America</span>
                             </div>
                         </li>
