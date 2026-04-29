@@ -192,7 +192,7 @@ const translations = {
         // Detalle de Servicios/Proyectos
         serv_muelle_title: "Muelle Turístico de Buenaventura (2017–2023)",
         serv_muelle_desc: "Diseño e implementación del plan de concesión, integrando modernización operativa y acompañamiento social. Estructuración de la articulación con actores clave y fortalecimiento de la gestión estratégica, procesos y riesgos. Desarrollo de estrategias de experiencia de usuario, educación financiera y acceso a productos financieros para la comunidad del muelle.",
-        
+
         serv_a_title: "Mujer Étnica",
         serv_a_desc: "Fortalecimos negocios liderados por mujeres indígenas, afrocolombianas, raizales y Rrom, integrando diagnóstico, asistencia técnica, acompañamiento comercial y seguimiento con enfoque étnico y de género.",
 
@@ -218,7 +218,7 @@ const translations = {
         hero_contact_title: "Hablemos de su próximo proyecto",
         hero_contact_desc: "Estamos listos para escuchar sus necesidades y construir juntos soluciones con impacto territorial y social.",
         contact_info_title: "Información de Contacto",
-        contact_info_desc: "Completa el formulario y nuestro equipo se pondrá en contacto contigo", 
+        contact_info_desc: "Completa el formulario y nuestro equipo se pondrá en contacto contigo",
         contact_write_us: "Escríbenos",
         contact_call_us: "WhatsApp",
         contact_location_label: "Ubicación",
@@ -240,6 +240,8 @@ const translations = {
         opt_other: "Otro",
         form_message: "Mensaje",
         form_message_placeholder: "Cuéntanos más sobre cómo podemos ayudarte...",
+        form_privacy_text: "Acepto la",
+        form_privacy_link: "Política de Tratamiento de Datos Personales",
         form_btn: "Enviar Mensaje",
 
         // Validación de seguridad (Captcha)
@@ -427,7 +429,7 @@ const translations = {
         // Services/Projects Detail        
         serv_muelle_title: "Buenaventura Tourist Pier (2017–2023)",
         serv_muelle_desc: "Design and implementation of the concession plan, integrating operational modernization and social support. Structuring the coordination with key actors and strengthening strategic management, processes and risks. Development of user experience strategies, financial education and access to financial products for the pier community.",
-        
+
         serv_a_title: "Ethnic Woman",
         serv_a_desc: "We strengthened businesses led by Indigenous, Afro-Colombian, Raizal, and Romani women, integrating diagnostics, technical assistance, commercial support, and monitoring with an ethnic and gender focus.",
 
@@ -475,6 +477,8 @@ const translations = {
         opt_other: "Other",
         form_message: "Message",
         form_message_placeholder: "Tell us more about how we can help you...",
+        form_privacy_text: "I accept the",
+        form_privacy_link: "Data Privacy Policy",
         form_btn: "Send Message",
 
         // Security Validation (Captcha)
