@@ -14,10 +14,6 @@
 
     <link rel="canonical" href="https://www.matesas.com/proyectos.html" />
 
-    <link rel="alternate" hreflang="es" href="https://www.matesas.com/proyectos.html" />
-    <link rel="alternate" hreflang="en" href="https://www.matesas.com/en/proyectos.html" />
-    <link rel="alternate" hreflang="x-default" href="https://www.matesas.com/proyectos.html" />
-
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Proyectos | MATE Inversiones & Negocios" />
     <meta property="og:description"
@@ -36,7 +32,7 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Material+Icons&display=swap"
         rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />    
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -72,13 +68,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
 
-                <a href="index.html" class="flex items-center gap-3 group">
+                <a href="/" class="flex items-center gap-3 group">
                     <img src="media/logos/LogoMate-03.png" alt="MATE Logo"
                         class="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
                 </a>
 
                 <nav class="hidden lg:flex items-center space-x-8">
-                    <a href="index.html" data-i18n="nav_home"
+                    <a href="/" data-i18n="nav_home"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Inicio</a>
 
                     <div class="relative group">
@@ -117,11 +113,17 @@
 
                 <div class="flex items-center gap-2 md:gap-4">
 
-                    <button id="btn-lang"
-                        class="flex items-center gap-2 font-bold text-xs md:text-sm hover:text-primary dark:hover:text-mateTeal transition-colors bg-slate-100 dark:bg-slate-800 px-3 py-1.5 rounded-full shadow-sm">
-                        <img src="https://flagcdn.com/w20/us.png" alt="English" class="w-4 h-auto rounded-sm">
-                        <span>EN</span>
-                    </button>
+                    <div class="flex items-center gap-2 text-sm font-medium ml-4">
+                        <button id="btn-lang-es"
+                            class="transition-all duration-300 pb-1 border-b-2 border-transparent hover:text-magenta uppercase">
+                            ES
+                        </button>
+                        <span class="text-slate-300 dark:text-slate-600">|</span>
+                        <button id="btn-lang-en"
+                            class="transition-all duration-300 pb-1 border-b-2 border-transparent hover:text-magenta uppercase">
+                            EN
+                        </button>
+                    </div>
 
                     <button id="theme-toggle"
                         class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300">
@@ -139,8 +141,7 @@
         <div id="mobile-menu"
             class="hidden lg:hidden bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
             <nav class="flex flex-col items-center text-center p-8 space-y-6">
-                <a href="index.html" data-i18n="nav_home"
-                    class="text-lg font-bold text-slate-800 dark:text-white">Inicio</a>
+                <a href="/" data-i18n="nav_home" class="text-lg font-bold text-slate-800 dark:text-white">Inicio</a>
                 <a href="somos-mate.html" data-i18n="nav_about"
                     class="text-lg font-bold text-slate-800 dark:text-white">Somos Mate</a>
 
@@ -191,31 +192,36 @@
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
                 <div class="grid lg:grid-cols-2 gap-12 items-center mb-24">
-    <div class="order-1 lg:order-1 relative group">
-        <div class="absolute inset-0 bg-primary/10 rounded-3xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform">
-        </div>
-        <img src="./media/images/mate_img_muelle_turistico.jpeg" alt="Muelle Turístico de Buenaventura"
-            class="relative z-10 w-full h-[450px] object-cover rounded-3xl shadow-lg">
-    </div>
+                    <div class="order-1 lg:order-1 relative group">
+                        <div
+                            class="absolute inset-0 bg-primary/10 rounded-3xl translate-x-3 translate-y-3 group-hover:translate-x-1 group-hover:translate-y-1 transition-transform">
+                        </div>
+                        <img src="./media/images/mate_img_muelle_turistico.jpeg" alt="Muelle Turístico de Buenaventura"
+                            class="relative z-10 w-full h-[450px] object-cover rounded-3xl shadow-lg">
+                    </div>
 
-    <div class="order-2 lg:order-2">
-        <h3 class="text-3xl font-bold text-deepPurple dark:text-white mb-6"
-            data-i18n="serv_muelle_title">Muelle Turístico de Buenaventura (2017–2023)</h3>
-        <div class="h-1 w-12 bg-magenta mb-6"></div>
-        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
-            data-i18n="serv_muelle_desc">
-            Diseño e implementación del plan de concesión, integrando modernización operativa y acompañamiento social. Estructuración de la articulación con actores clave y fortalecimiento de la gestión estratégica, procesos y riesgos. Desarrollo de estrategias de experiencia de usuario, educación financiera y acceso a productos financieros para la comunidad del muelle.
-        </p>
-        
-        <div class="flex mt-8">
-            <a href="media/docs/MuelleBuenaventura.pdf" target="_blank"
-                class="inline-flex items-center gap-2 px-8 py-4 bg-magenta text-white rounded-full font-bold shadow-lg hover:bg-mateTeal hover:-translate-y-1 transition-all group">
-                <span data-i18n="init_btn_more">Conoce más</span>
-                <span class="material-icons text-sm group-hover:translate-x-1 transition-transform">description</span>
-            </a>
-        </div>
-    </div>
-</div>
+                    <div class="order-2 lg:order-2">
+                        <h3 class="text-3xl font-bold text-deepPurple dark:text-white mb-6"
+                            data-i18n="serv_muelle_title">Muelle Turístico de Buenaventura (2017–2023)</h3>
+                        <div class="h-1 w-12 bg-magenta mb-6"></div>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+                            data-i18n="serv_muelle_desc">
+                            Diseño e implementación del plan de concesión, integrando modernización operativa y
+                            acompañamiento social. Estructuración de la articulación con actores clave y fortalecimiento
+                            de la gestión estratégica, procesos y riesgos. Desarrollo de estrategias de experiencia de
+                            usuario, educación financiera y acceso a productos financieros para la comunidad del muelle.
+                        </p>
+
+                        <div class="flex mt-8">
+                            <a href="media/docs/MuelleBuenaventura.pdf" target="_blank"
+                                class="inline-flex items-center gap-2 px-8 py-4 bg-magenta text-white rounded-full font-bold shadow-lg hover:bg-mateTeal hover:-translate-y-1 transition-all group">
+                                <span data-i18n="init_btn_more">Conoce más</span>
+                                <span
+                                    class="material-icons text-sm group-hover:translate-x-1 transition-transform">description</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="flex flex-col gap-24 lg:gap-32">
 
@@ -254,7 +260,7 @@
                             <div
                                 class="absolute inset-0 bg-mateTeal/10 rounded-3xl -translate-x-3 translate-y-3 group-hover:-translate-x-1 group-hover:translate-y-1 transition-transform">
                             </div>
-                            <img src="./media/images/mate_img_39.jpeg" alt="Banca de las Oportunidades"
+                            <img src="./media/images/mate_img_banca_oportunidades.jpeg" alt="Banca de las Oportunidades"
                                 class="relative z-10 w-full h-[400px] object-cover rounded-3xl shadow-lg">
                         </div>
                         <div class="order-2">
@@ -330,50 +336,53 @@
                     </div>
 
                     <div class="grid lg:grid-cols-2 gap-12 items-center">
-    <div class="order-1 relative group h-[400px]">
-        <div class="absolute inset-0 bg-primary/10 rounded-3xl -translate-x-3 translate-y-3 group-hover:-translate-x-1 group-hover:translate-y-1 transition-transform">
-        </div>
-        
-        <div class="relative z-10 w-full h-full overflow-hidden rounded-3xl shadow-lg">
-            <img id="edu-slide-1" src="./media/images/mate_img_28.jpeg" alt="Educación financiera Chile"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100">
-            
-            <img id="edu-slide-2" src="./media/images/mate_img_chile.jpeg" alt="Educación financiera"
-                class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
-        </div>
-    </div>
+                        <div class="order-1 relative group h-[400px]">
+                            <div
+                                class="absolute inset-0 bg-primary/10 rounded-3xl -translate-x-3 translate-y-3 group-hover:-translate-x-1 group-hover:translate-y-1 transition-transform">
+                            </div>
 
-    <div class="order-2">
-        <h3 class="text-3xl font-bold text-primary dark:text-white mb-6" data-i18n="serv_f_title">
-            Educación financiera digital</h3>
-        <div class="h-1 w-12 bg-magenta mb-6"></div>
-        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
-            data-i18n="serv_f_desc">
-            Diseñamos y adaptamos un producto digital de educación financiera para mujeres en
-            condición de vulnerabilidad, con enfoque pedagógico y conductual.
-        </p>
-    </div>
-</div>
+                            <div class="relative z-10 w-full h-full overflow-hidden rounded-3xl shadow-lg">
+                                <img id="edu-slide-1" src="./media/images/mate_img_28.jpeg"
+                                    alt="Educación financiera Chile"
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100">
 
-<script>
-    // Lógica para alternar las imágenes del carrusel
-    document.addEventListener('DOMContentLoaded', () => {
-        const slide1 = document.getElementById('edu-slide-1');
-        const slide2 = document.getElementById('edu-slide-2');
-        let isFirstVisible = true;
+                                <img id="edu-slide-2" src="./media/images/mate_img_chile.jpeg"
+                                    alt="Educación financiera"
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0">
+                            </div>
+                        </div>
 
-        setInterval(() => {
-            if (isFirstVisible) {
-                slide1.classList.replace('opacity-100', 'opacity-0');
-                slide2.classList.replace('opacity-0', 'opacity-100');
-            } else {
-                slide1.classList.replace('opacity-0', 'opacity-100');
-                slide2.classList.replace('opacity-100', 'opacity-0');
-            }
-            isFirstVisible = !isFirstVisible;
-        }, 5000); // Cambia cada 5 segundos
-    });
-</script>
+                        <div class="order-2">
+                            <h3 class="text-3xl font-bold text-primary dark:text-white mb-6" data-i18n="serv_f_title">
+                                Educación financiera digital</h3>
+                            <div class="h-1 w-12 bg-magenta mb-6"></div>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+                                data-i18n="serv_f_desc">
+                                Diseñamos y adaptamos un producto digital de educación financiera para mujeres en
+                                condición de vulnerabilidad, con enfoque pedagógico y conductual.
+                            </p>
+                        </div>
+                    </div>
+
+                    <script>
+                        // Lógica para alternar las imágenes del carrusel
+                        document.addEventListener('DOMContentLoaded', () => {
+                            const slide1 = document.getElementById('edu-slide-1');
+                            const slide2 = document.getElementById('edu-slide-2');
+                            let isFirstVisible = true;
+
+                            setInterval(() => {
+                                if (isFirstVisible) {
+                                    slide1.classList.replace('opacity-100', 'opacity-0');
+                                    slide2.classList.replace('opacity-0', 'opacity-100');
+                                } else {
+                                    slide1.classList.replace('opacity-0', 'opacity-100');
+                                    slide2.classList.replace('opacity-100', 'opacity-0');
+                                }
+                                isFirstVisible = !isFirstVisible;
+                            }, 5000); // Cambia cada 5 segundos
+                        });
+                    </script>
 
                 </div>
             </div>
@@ -381,35 +390,38 @@
     </main>
 
     <section class="py-20 relative overflow-hidden">
-            <div class="absolute inset-0 bg-gradient-to-br from-deepPurple to-primary dark:from-slate-900 dark:to-deepPurple"></div>
-            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-magenta/20 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-mateTeal/20 rounded-full blur-3xl"></div>
+        <div
+            class="absolute inset-0 bg-gradient-to-br from-deepPurple to-primary dark:from-slate-900 dark:to-deepPurple">
+        </div>
+        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-magenta/20 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-mateTeal/20 rounded-full blur-3xl"></div>
 
-            <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <div class="max-w-4xl mx-auto text-center">
-                    <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6" data-i18n="cta_capitaliza_title">
-                        Capitaliza tu negocio
-                    </h2>
-                    <p class="text-xl text-white/90 mb-10 leading-relaxed" data-i18n="cta_capitaliza_text">
-                        Te ayudamos a valorar tu emprendimiento y a explorar opciones de financiamiento.
-                    </p>
-                    
-                    <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="contacto.html" 
-                           class="inline-flex items-center justify-center gap-2 px-10 py-4 bg-white text-deepPurple hover:bg-magenta hover:text-white rounded-full font-bold shadow-2xl hover:-translate-y-1 transition-all text-lg group">
-                            <span data-i18n="nav_contact">Contáctanos</span>
-                            <span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                        </a>
-                    </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-display text-4xl md:text-5xl font-bold text-white mb-6"
+                    data-i18n="cta_capitaliza_title">
+                    Capitaliza tu negocio
+                </h2>
+                <p class="text-xl text-white/90 mb-10 leading-relaxed" data-i18n="cta_capitaliza_text">
+                    Te ayudamos a valorar tu emprendimiento y a explorar opciones de financiamiento.
+                </p>
+
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="contacto.html"
+                        class="inline-flex items-center justify-center gap-2 px-10 py-4 bg-white text-deepPurple hover:bg-magenta hover:text-white rounded-full font-bold shadow-2xl hover:-translate-y-1 transition-all text-lg group">
+                        <span data-i18n="nav_contact">Contáctanos</span>
+                        <span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <footer class="bg-deepPurple dark:bg-slate-900 text-white py-12 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="md:col-span-2">
-                    <a href="index.html" class="flex items-center gap-3 mb-4 hover:opacity-80 transition-opacity">
+                    <a href="/" class="flex items-center gap-3 mb-4 hover:opacity-80 transition-opacity">
                         <img src="./media/logos/LogoMate-05.png" alt="MATE Inversiones & Negocios"
                             class="h-20 w-auto object-contain">
                     </a>
@@ -425,7 +437,7 @@
                     </h4>
                     <ul class="space-y-2 text-sm text-white/80">
                         <li>
-                            <a href="index.html" data-i18n="nav_home"
+                            <a href="/" data-i18n="nav_home"
                                 class="hover:text-white transition-colors">Inicio</a>
                         </li>
                         <li>
@@ -461,7 +473,7 @@
                             <span class="material-icons text-sm mt-0.5">location_on</span>
 
                             <div class="flex flex-col gap-1">
-                                <span data-i18n="footer_location_1">Bogotá D.C.</span>                                
+                                <span data-i18n="footer_location_1">Bogotá D.C.</span>
                                 <span data-i18n="footer_location_3">Colombia, South America</span>
                             </div>
                         </li>
@@ -503,7 +515,7 @@
                 </p>
             </div>
         </div>
-        
+
     </footer>
 
     <script src="js/data.js"></script>

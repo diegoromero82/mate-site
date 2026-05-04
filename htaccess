@@ -4,12 +4,19 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Redirigir rastro de la carpeta /en/ (IMPORTANTE: Poner antes de la redirección general)
+    RewriteRule ^en/(.*)$ https://www.matesas.com/$1 [L,R=301]
+    RewriteRule ^en$ https://www.matesas.com/ [L,R=301]
+
     # Si NO es HTTPS O NO tiene el prefijo WWW.
-    # Se redirige todo a la versión final de una sola vez.
     RewriteCond %{HTTPS} off [OR]
     RewriteCond %{HTTP_HOST} !^www\. [NC]
     RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
     RewriteRule ^ https://www.matesas.com%{REQUEST_URI} [L,R=301]
+
+    # Eliminar index.html de la URL y redirigir a la raíz
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+    RewriteRule ^index\.html$ https://www.matesas.com/ [R=301,L]
 </IfModule>
 
 # =========================================================
