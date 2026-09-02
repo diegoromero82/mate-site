@@ -18,14 +18,14 @@
     <meta property="og:title" content="MATE | Inversiones & Negocios" />
     <meta property="og:description"
         content="Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas, financieras, sociales y sostenibles." />
-    <meta property="og:image" content="https://www.matesas.com/media/og-image.jpg" />
+    <meta property="og:image" content="https://www.matesas.com/media/images/Inicio/mate_img_43.jpg" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://www.matesas.com/" />
     <meta name="twitter:title" content="MATE | Inversiones & Negocios" />
     <meta name="twitter:description"
         content="Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas, financieras, sociales y sostenibles." />
-    <meta name="twitter:image" content="https://www.matesas.com/media/twitter-image.jpg" />
+    <meta name="twitter:image" content="https://www.matesas.com/media/images/Inicio/mate_img_43.jpg" />
 
     <link rel="icon" href="media/favicon/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
@@ -110,8 +110,15 @@
                         </ul>
                     </div>
 
-                    <a href="proyectos.html" data-i18n="nav_projects"
-                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Proyectos</a>
+                    <a href="experiencia.html" data-i18n="nav_projects"
+                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Experiencia</a>
+                    <div class="relative group">
+                        <a href="servicios.html" data-i18n="nav_services" class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors flex items-center gap-1">Servicios <span class="material-icons text-xs group-hover:rotate-180 transition-transform">expand_more</span></a>
+                        <ul class="absolute top-full left-0 hidden group-hover:block bg-white dark:bg-slate-800 shadow-xl rounded-xl border border-slate-100 dark:border-slate-700 min-w-[270px] py-2 z-50 before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
+                            <li><a href="servicios.html#longevidad-bienestar-cuidado" data-i18n="submenu_services_longevity" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Longevidad, Bienestar y Cuidado</a></li>
+                            <li><a href="servicios.html#inclusion-economica-autonomia-financiera" data-i18n="submenu_services_economic" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Inclusión Económica y Autonomía Financiera</a></li>
+                        </ul>
+                    </div>
 
                     <a href="contacto.html" data-i18n="nav_contact"
                         class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Contáctanos</a>
@@ -137,7 +144,7 @@
                         <span class="material-icons text-xl block dark:hidden">dark_mode</span>
                     </button>
 
-                    <button id="mobile-menu-btn" class="lg:hidden text-slate-800 dark:text-white p-2">
+                    <button id="mobile-menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú de navegación" class="lg:hidden text-slate-800 dark:text-white p-2">
                         <span class="material-icons text-3xl">menu</span>
                     </button>
                 </div>
@@ -159,8 +166,10 @@
                         class="text-sm text-slate-500 italic">Nuestro Equipo</a>
                 </div>
 
-                <a href="proyectos.html" data-i18n="nav_projects"
-                    class="text-lg font-bold text-slate-800 dark:text-white">Proyectos</a>
+                <a href="experiencia.html" data-i18n="nav_projects"
+                    class="text-lg font-bold text-slate-800 dark:text-white">Experiencia</a>
+                <a href="servicios.html" data-i18n="nav_services"
+                    class="text-lg font-bold text-slate-800 dark:text-white">Servicios</a>
                 <a href="contacto.html" data-i18n="nav_contact" class="text-lg font-bold text-magenta">Contáctanos</a>
             </nav>
         </div>
@@ -170,13 +179,16 @@
         <section class="relative min-h-[90vh] flex items-center justify-center overflow-hidden text-white" id="inicio">
             <div class="hero-slider-container">
                 <div class="hero-slide" style="
-              background-image: url(&quot;./media/images/mate_img_26.jpg&quot;);
+              background-image: url(&quot;./media/images/Inicio/mate_img_26.jpg&quot;);
             "></div>
                 <div class="hero-slide" style="
-              background-image: url(&quot;./media/images/mate_img_43.jpg&quot;);
+              background-image: url(&quot;./media/images/Inicio/hero/inicio-image-hero-001.jpeg&quot;);
             "></div>
                 <div class="hero-slide" style="
-              background-image: url(&quot;./media/images/mate_img_30.jpg&quot;);
+              background-image: url(&quot;./media/images/Inicio/hero/inicio-image-hero-002.jpeg&quot;);
+            "></div>
+                <div class="hero-slide" style="
+              background-image: url(&quot;./media/images/Inicio/hero/inicio-image-hero-003.jpeg&quot;);
             "></div>
                 <div class="hero-overlay"></div>
             </div>
@@ -191,20 +203,17 @@
                     </div>
 
                     <h1 class="font-display text-5xl md:text-7xl font-bold leading-[1.1] mb-8">
-                        <span data-i18n="hero_title_p1">Impulsamos<br />oportunidades para una ciudadanía más </span>
-                        <span class="text-white" style="color: white !important;"
-                            data-i18n="hero_title_p2">inclusiva</span>
+                        <span data-i18n="hero_title">Más capacidades.<br />Más Oportunidades.<br />Más Bienestar.</span>
                     </h1>
 
                     <p class="text-xl md:text-2xl text-white/90 mb-12 leading-relaxed max-w-3xl"
                         data-i18n="hero_subtitle">
-                        En MATE articulamos soluciones productivas, financieras, sociales
-                        y sostenibles para fortalecer capacidades, generar ingresos y
-                        ampliar oportunidades en personas, comunidades y territorios.
+                        En MATE conectamos territorios, personas y actores para impulsar oportunidades,
+                        transformar realidades de la mano de las comunidades y generar bienestar a lo largo de la vida.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-6">
-                        <a href="proyectos.html"
+                        <a href="experiencia.html"
                             class="px-10 py-5 bg-magenta text-white rounded-full font-bold shadow-2xl hover:bg-white hover:text-deepPurple hover:-translate-y-1 transition-all text-lg flex items-center justify-center gap-2 group">
                             <span data-i18n="hero_btn_1">Conoce nuestras soluciones</span>
                             <span
@@ -259,7 +268,7 @@
                             class="absolute inset-0 bg-gradient-to-tr from-primary to-magenta rounded-3xl transform translate-x-4 translate-y-4 opacity-20 dark:opacity-40">
                         </div>
 
-                        <img src="./media/images/mate_img_somos_mate.jpeg" alt="Equipo MATE trabajando"
+                        <img src="./media/images/Compartidas/mate_img_somos_mate.jpeg" alt="Equipo MATE trabajando"
                             class="relative z-10 w-full h-auto rounded-3xl shadow-xl object-cover aspect-[4/3]" />
                     </div>
                 </div>
@@ -272,7 +281,7 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="font-display text-4xl font-bold text-slate-900 dark:text-white mb-4"
                         data-i18n="home_diff_title">
-                        Lo que nos hace diferentes
+                        ¿Por qué somos diferentes?
                     </h2>
                     <p class="text-lg text-slate-600 dark:text-slate-400" data-i18n="home_diff_subtitle">
                         Construimos rutas integrales que conectan personas, capacidades,
@@ -280,21 +289,23 @@
                     </p>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
                     <div
                         class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                         <div
                             class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
-                            <span class="material-icons text-3xl text-primary group-hover:text-white">hub</span>
+                            <span class="material-icons text-3xl text-primary group-hover:text-white">favorite</span>
                         </div>
                         <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                             data-i18n="home_diff_card1_title">
-                            Mirada integral
+                            Apasionamiento con propósito
                         </h3>
                         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
                             data-i18n="home_diff_card1_desc">
-                            Conectamos inclusión productiva, financiera, social y
-                            sostenibilidad en un mismo marco de acción.
+                            En MATE compartimos una gran pasión por lo que hacemos y la
+                            direccionamos hacia un mismo propósito: hacer que las personas no solo
+                            vivan MÁS sino que vivan en las MEJORES condiciones de salud,
+                            económicas, de bienestar y calidad de vida.
                         </p>
                     </div>
 
@@ -302,16 +313,17 @@
                         class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                         <div
                             class="w-14 h-14 bg-magenta/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-magenta group-hover:text-white transition-colors">
-                            <span class="material-icons text-3xl text-magenta group-hover:text-white">map</span>
+                            <span class="material-icons text-3xl text-magenta group-hover:text-white">track_changes</span>
                         </div>
                         <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                             data-i18n="home_diff_card2_title">
-                            Enfoque territorial y diferencial
+                            Propósito con dirección
                         </h3>
                         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
                             data-i18n="home_diff_card2_desc">
-                            Adaptamos cada intervención a las realidades, capacidades y
-                            oportunidades de cada contexto y de las personas.
+                            Para alcanzar el propósito nos apalancamos en metodologías, enfoques y
+                            técnicas serias, probadas y científicas que nos permiten mantener el
+                            rumbo en tanto cimentamos nuestra acción en la mejor evidencia posible.
                         </p>
                     </div>
 
@@ -320,52 +332,35 @@
                         <div
                             class="w-14 h-14 bg-deepPurple/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-deepPurple group-hover:text-white transition-colors">
                             <span
-                                class="material-icons text-3xl text-deepPurple group-hover:text-white">handshake</span>
+                                class="material-icons text-3xl text-deepPurple group-hover:text-white">groups</span>
                         </div>
                         <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                             data-i18n="home_diff_card3_title">
-                            Trabajo colaborativo
+                            Resultados con rostro social
                         </h3>
                         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
                             data-i18n="home_diff_card3_desc">
-                            Articulamos sector público, cooperación, empresas, comunidades y
-                            ecosistemas emprendedores.
+                            Además de los resultados, medidos con indicadores técnicos, nos interesa
+                            medir los impactos, lo que nos lleva a visibilizar las transformaciones
+                            que acontecen en el tejido social.
                         </p>
                     </div>
 
                     <div
-                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl group lg:col-start-1 lg:col-end-2 lg:translate-x-[50%]">
+                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl group">
                         <div
                             class="w-14 h-14 bg-mateTeal/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-mateTeal group-hover:text-white transition-colors">
-                            <span class="material-icons text-3xl text-mateTeal group-hover:text-white">analytics</span>
+                            <span class="material-icons text-3xl text-mateTeal group-hover:text-white">people</span>
                         </div>
                         <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                             data-i18n="home_diff_card4_title">
-                            Decisiones con evidencia
+                            Calidad con calidez
                         </h3>
                         <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
                             data-i18n="home_diff_card4_desc">
-                            Incorporamos diagnóstico, seguimiento, analítica de datos y
-                            herramientas de economía del comportamiento para fortalecer la
-                            toma de decisiones.
-                        </p>
-                    </div>
-
-                    <div
-                        class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl group lg:col-start-2 lg:col-end-3 lg:translate-x-[50%]">
-                        <div
-                            class="w-14 h-14 bg-mateMagenta/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-mateMagenta group-hover:text-white transition-colors">
-                            <span
-                                class="material-icons text-3xl text-mateMagenta group-hover:text-white">auto_awesome</span>
-                        </div>
-                        <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
-                            data-i18n="home_diff_card5_title">
-                            Impacto con propósito
-                        </h3>
-                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed"
-                            data-i18n="home_diff_card5_desc">
-                            Buscamos resultados que fortalezcan bienestar, autonomía y
-                            oportunidades reales.
+                            El valor superior siempre serán las personas y por ello nuestra atención
+                            siempre estará centrada en ellas respetando sus diferencias y las
+                            características de cada contexto y territorio que habitan.
                         </p>
                     </div>
                 </div>
@@ -379,98 +374,102 @@
                 <div class="text-center max-w-3xl mx-auto mb-16">
                     <h2 class="font-display text-4xl font-bold text-slate-900 dark:text-white mb-4"
                         data-i18n="home_do_title">
-                        Qué hacemos
+                        ¿Cómo lo hacemos?
                     </h2>
                     <p class="text-lg text-slate-600 dark:text-slate-400" data-i18n="home_do_subtitle">
-                        Desarrollamos soluciones adaptadas a las necesidades de
-                        organizaciones, territorios y poblaciones diversas.
+                        La experiencia nos enseñó que las personas parten de distintos lugares y
+                        cada territorio ofrece diferentes oportunidades. Por ello, en MATE primero
+                        COMPRENDEMOS y luego ACTUAMOS.
                     </p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                     <div
                         class="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
-                        <img src="./media/images/mate_img_45.jpeg" alt="Inclusión productiva"
+                        <img src="./media/images/Inicio/mate_img_45.jpeg" alt="Enfoque territorial y diferencial"
                             class="w-full h-56 object-cover aspect-[16/10]" />
                         <div class="p-8 flex-grow">
                             <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                                 data-i18n="home_do_card1_title">
-                                Inclusión productiva
+                                Enfoque territorial y diferencial
                             </h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed"
                                 data-i18n="home_do_card1_desc">
-                                Fortalecemos unidades productivas, emprendimientos y pequeños
-                                negocios mediante rutas de diagnóstico, mejora de capacidades,
-                                acceso a mercados y sostenibilidad.
+                                Partimos de las personas y de las oportunidades del territorio para
+                                adaptar cada intervención a diferentes realidades, capacidades y
+                                necesidades.
                             </p>
                         </div>
                     </div>
 
                     <div
                         class="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
-                        <img src="./media/images/mate_img_10.jpeg" alt="Inclusión financiera"
+                        <img src="./media/images/Inicio/mate_img_10.jpeg" alt="Mirada integral"
                             class="w-full h-56 object-cover aspect-[16/10]" />
                         <div class="p-8 flex-grow">
                             <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                                 data-i18n="home_do_card2_title">
-                                Inclusión financiera
+                                Mirada integral
                             </h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed"
                                 data-i18n="home_do_card2_desc">
-                                Promovemos ahorro, crédito, bancarización, pagos digitales,
-                                microseguros y bienestar financiero para la vida y los
-                                negocios.
+                                Generamos visiones integrales e integradas por medio de la
+                                configuración de equipos interdisciplinarios de trabajo compuestos
+                                por profesionales con amplia experiencia y actitud empática.
                             </p>
                         </div>
                     </div>
 
                     <div
                         class="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
-                        <img src="./media/images/mate_img_25.jpeg" alt="Fortalecimiento social y comunitario"
+                        <img src="./media/images/Inicio/mate_img_25.jpeg" alt="Trabajo colaborativo"
                             class="w-full h-56 object-cover aspect-[16/10]" />
                         <div class="p-8 flex-grow">
                             <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                                 data-i18n="home_do_card3_title">
-                                Fortalecimiento social y comunitario
+                                Trabajo colaborativo
                             </h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed"
                                 data-i18n="home_do_card3_desc">
-                                Impulsamos asociatividad, liderazgo, formación y autonomía
-                                económica con enfoque de género, diversidad y territorio.
+                                Articulamos sector público, cooperación, empresas, comunidades y
+                                ecosistemas emprendedores desde una visión de inter y trans
+                                sectorialidad.
                             </p>
                         </div>
                     </div>
 
                     <div
                         class="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col lg:col-start-1 lg:col-end-2 lg:translate-x-[50%]">
-                        <img src="./media/images/mate_img_40.jpeg" alt="Sostenibilidad y resiliencia"
+                        <img src="./media/images/Inicio/mate_img_40.jpeg" alt="Decisiones con evidencia"
                             class="w-full h-56 object-cover aspect-[16/10]" />
                         <div class="p-8 flex-grow">
                             <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                                 data-i18n="home_do_card4_title">
-                                Sostenibilidad y resiliencia
+                                Decisiones con evidencia
                             </h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed"
                                 data-i18n="home_do_card4_desc">
-                                Integramos bioeconomía, clima, economía circular y resiliencia
-                                territorial como parte de las oportunidades de desarrollo.
+                                Incorporamos diagnóstico, seguimiento, analítica de datos, ciencias
+                                del comportamiento y ciencias de la implementación para comprender
+                                mejor y orientar la toma de decisiones en la ejecución.
                             </p>
                         </div>
                     </div>
 
                     <div
                         class="bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:scale-105 hover:shadow-xl flex flex-col lg:col-start-2 lg:col-end-3 lg:translate-x-[50%]">
-                        <img src="./media/images/mate_img_consultoria_1.jpeg" alt="Consultorías y estudios técnicos"
+                        <img src="./media/images/Inicio/mate_img_consultoria_1.jpeg" alt="Impacto con propósito"
                             class="w-full h-56 object-cover aspect-[16/10]" />
                         <div class="p-8 flex-grow">
                             <h3 class="font-bold text-xl mb-3 text-slate-900 dark:text-white"
                                 data-i18n="home_do_card5_title">
-                                Consultorías y estudios técnicos
+                                Impacto con propósito
                             </h3>
                             <p class="text-slate-600 dark:text-slate-300 text-sm leading-relaxed"
                                 data-i18n="home_do_card5_desc">
-                                Formulamos, estructuramos y evaluamos proyectos con rigor
-                                técnico, enfoque territorial y capacidad de implementación.
+                                Buscamos resultados que fortalezcan el bienestar, la autonomía y las
+                                oportunidades reales, buscando que cada etapa del curso de vida sea
+                                un paso firme hacia una nueva longevidad.
                             </p>
                         </div>
                     </div>
@@ -496,43 +495,15 @@
                 </h2>
 
                 <div class="flex flex-wrap justify-center gap-2 md:gap-4 mb-12">
-                    <button onclick="switchTab(0)" class="tab-btn active-tab" data-i18n="init_tab_a">PROPULXORA</button>
+                    <button onclick="switchTab(0)" class="tab-btn active-tab" data-i18n="init_tab_c">Fundación MATE</button>
                     <button onclick="switchTab(1)" class="tab-btn" data-i18n="init_tab_b">Modelo Étnico</button>
-                    <button onclick="switchTab(2)" class="tab-btn" data-i18n="init_tab_c">Fundación MATE</button>
-                    <button onclick="switchTab(3)" class="tab-btn" data-i18n="init_tab_d">Finanzas Plateadas</button>
-                    <button onclick="switchTab(4)" class="tab-btn" data-i18n="init_tab_e">Gobierno Corporativo</button>
+                    <button onclick="switchTab(2)" class="tab-btn" data-i18n="init_tab_e">Gobierno Corporativo</button>
                 </div>
 
                 <div class="relative h-[550px] rounded-3xl overflow-hidden shadow-2xl">
-
                     <div class="tab-content block animate-fadeIn h-full w-full relative flex flex-col justify-end">
                         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                            style="background-image: url('./media/images/mate_img_propulxora.jpeg');"></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-deepPurple via-deepPurple/60 to-transparent">
-                        </div>
-
-                        <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
-                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_a">PROPULXORA</h3>
-                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_a">
-                                Contenido A...</p>
-                        </div>
-                    </div>
-
-                    <div class="tab-content hidden animate-fadeIn h-full w-full relative flex flex-col justify-end">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                            style="background-image: url('./media/images/mate_img_17.jpeg');"></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
-
-                        <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
-                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_b">Modelo Étnico</h3>
-                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_b">
-                                Contenido B...</p>
-                        </div>
-                    </div>
-
-                    <div class="tab-content hidden animate-fadeIn h-full w-full relative flex flex-col justify-end">
-                        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                            style="background-image: url('./media/images/mate_img_11.jpeg');"></div>
+                            style="background-image: url('./media/images/Inicio/mate_img_11.jpeg');"></div>
                         <div class="absolute inset-0 bg-gradient-to-t from-magenta via-magenta/60 to-transparent"></div>
 
                         <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
@@ -544,21 +515,19 @@
 
                     <div class="tab-content hidden animate-fadeIn h-full w-full relative flex flex-col justify-end">
                         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                            style="background-image: url('./media/images/mate_img_finanzas_plateadas.jpeg');"></div>
-                        <div class="absolute inset-0 bg-gradient-to-t from-mateTeal via-mateTeal/60 to-transparent">
-                        </div>
+                            style="background-image: url('./media/images/Inicio/mate_img_17.jpeg');"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-primary via-primary/60 to-transparent"></div>
 
                         <div class="relative z-10 p-8 md:p-16 max-w-3xl text-white text-left">
-                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_d">Finanzas Plateadas
-                            </h3>
-                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_d">
-                                Contenido D...</p>
+                            <h3 class="text-3xl md:text-4xl font-bold mb-4" data-i18n="init_tab_b">Modelo Étnico</h3>
+                            <p class="text-lg md:text-xl opacity-90 leading-relaxed" data-i18n="init_content_b">
+                                Contenido B...</p>
                         </div>
                     </div>
 
                     <div class="tab-content hidden animate-fadeIn h-full w-full relative flex flex-col justify-end">
                         <div class="absolute inset-0 bg-cover bg-center bg-no-repeat"
-                            style="background-image: url('./media/images/mate_img_corporativo.jpeg');"></div>
+                            style="background-image: url('./media/images/Inicio/mate_img_corporativo.jpeg');"></div>
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/60 to-transparent">
                         </div>
 
@@ -572,7 +541,7 @@
                 </div>
 
                 <div class="mt-12 text-center">
-                    <a href="proyectos.html"
+                    <a href="experiencia.html"
                         class="inline-flex items-center gap-2 px-10 py-4 bg-magenta text-white rounded-full font-bold shadow-lg hover:bg-mateTeal hover:-translate-y-1 transition-all text-lg group">
                         <span data-i18n="init_btn">Ver soluciones</span>
                         <span class="material-icons">arrow_forward</span>
@@ -675,8 +644,12 @@
                                 class="hover:text-white transition-colors">Somos Mate</a>
                         </li>
                         <li>
-                            <a href="proyectos.html" data-i18n="nav_services"
-                                class="hover:text-white transition-colors">Proyectos</a>
+                            <a href="experiencia.html" data-i18n="nav_projects"
+                                class="hover:text-white transition-colors">Experiencia</a>
+                        </li>
+                        <li>
+                            <a href="servicios.html" data-i18n="nav_services"
+                                class="hover:text-white transition-colors">Servicios</a>
                         </li>
                         <li>
                             <a href="contacto.html" data-i18n="nav_contact"

@@ -97,8 +97,15 @@
                         </ul>
                     </div> 
 
-                    <a href="proyectos.html" data-i18n="nav_projects"
-                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Proyectos</a>
+                    <a href="experiencia.html" data-i18n="nav_projects"
+                        class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Experiencia</a>
+                    <div class="relative group">
+                        <a href="servicios.html" data-i18n="nav_services" class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors flex items-center gap-1">Servicios <span class="material-icons text-xs group-hover:rotate-180 transition-transform">expand_more</span></a>
+                        <ul class="absolute top-full left-0 hidden group-hover:block bg-white dark:bg-slate-800 shadow-xl rounded-xl border border-slate-100 dark:border-slate-700 min-w-[270px] py-2 z-50 before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
+                            <li><a href="servicios.html#longevidad-bienestar-cuidado" data-i18n="submenu_services_longevity" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Longevidad, Bienestar y Cuidado</a></li>
+                            <li><a href="servicios.html#inclusion-economica-autonomia-financiera" data-i18n="submenu_services_economic" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Inclusión Económica y Autonomía Financiera</a></li>
+                        </ul>
+                    </div>
 
                     <a href="contacto.html" data-i18n="nav_contact"
                         class="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-bold shadow-md hover:bg-mateTeal transition-all">Contáctanos</a>
@@ -119,17 +126,26 @@
                     </button>
                 </nav>
 
-                <div class="md:hidden flex items-center gap-4">
+                <div class="lg:hidden flex items-center gap-4">
                     <button id="theme-toggle-mobile"
                         class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300">
                         <span class="material-icons text-xl hidden dark:block">light_mode</span>
                         <span class="material-icons text-xl block dark:hidden">dark_mode</span>
                     </button>
-                    <button id="mobile-menu-btn" class="text-slate-800 dark:text-white p-2">
+                    <button id="mobile-menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú de navegación" class="text-slate-800 dark:text-white p-2">
                         <span class="material-icons text-3xl">menu</span>
                     </button>
                 </div>
             </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+            <nav class="flex flex-col items-center text-center p-8 space-y-6">
+                <a href="/" class="text-lg font-bold text-slate-800 dark:text-white">Inicio</a>
+                <a href="somos-mate.html" class="text-lg font-bold text-slate-800 dark:text-white">Somos MATE</a>
+                <a href="experiencia.html" class="text-lg font-bold text-slate-800 dark:text-white">Experiencia</a>
+                <a href="servicios.html" class="text-lg font-bold text-slate-800 dark:text-white">Servicios</a>
+                <a href="contacto.html" class="text-lg font-bold text-primary">Contáctanos</a>
+            </nav>
         </div>
     </header>
 
@@ -175,7 +191,8 @@
                     <ul class="space-y-2 text-sm text-white/80">
                         <li><a href="/" class="hover:text-white transition-colors">Inicio</a></li>
                         <li><a href="somos-mate.html" class="hover:text-white transition-colors">Somos Mate</a></li>
-                        <li><a href="proyectos.html" class="hover:text-white transition-colors">Proyectos</a></li>
+                        <li><a href="experiencia.html" data-i18n="nav_projects" class="hover:text-white transition-colors">Experiencia</a></li>
+                        <li><a href="servicios.html" data-i18n="nav_services" class="hover:text-white transition-colors">Servicios</a></li>
                         <li><a href="contacto.html" class="hover:text-white transition-colors">Contáctanos</a></li>
                     </ul>
                 </div>

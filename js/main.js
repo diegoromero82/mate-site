@@ -37,27 +37,28 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. MENÚ MÓVIL (Toggle)
     // ==========================================
     const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const navMenu = document.querySelector('nav');
+    const mobileMenu = document.getElementById('mobile-menu');
 
-    if (mobileMenuBtn) {
+    if (mobileMenuBtn && mobileMenu) {
+        const icon = mobileMenuBtn.querySelector('.material-icons');
+        const setMobileMenuState = (isOpen) => {
+            mobileMenu.classList.toggle('hidden', !isOpen);
+            mobileMenuBtn.setAttribute('aria-expanded', String(isOpen));
+            if (icon) icon.textContent = isOpen ? 'close' : 'menu';
+        };
+
         mobileMenuBtn.addEventListener('click', () => {
-            navMenu.classList.toggle('hidden');
-            navMenu.classList.toggle('flex');
-            navMenu.classList.toggle('flex-col');
-            navMenu.classList.toggle('absolute');
-            navMenu.classList.toggle('top-20');
-            navMenu.classList.toggle('left-0');
-            navMenu.classList.toggle('w-full');
-            navMenu.classList.toggle('bg-white');
-            navMenu.classList.toggle('dark:bg-background-dark');
-            navMenu.classList.toggle('p-6');
-            navMenu.classList.toggle('shadow-xl');
+            setMobileMenuState(mobileMenu.classList.contains('hidden'));
+        });
 
-            const icon = mobileMenuBtn.querySelector('.material-icons');
-            if (icon.textContent === 'menu') {
-                icon.textContent = 'close';
-            } else {
-                icon.textContent = 'menu';
+        mobileMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => setMobileMenuState(false));
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+                setMobileMenuState(false);
+                mobileMenuBtn.focus();
             }
         });
     }
@@ -232,7 +233,7 @@ document.addEventListener('DOMContentLoaded', () => {
             for (let [key, value] of formData.entries()) {
                 if (key === 'telefono') {
                     // Extrae el número con el código de área (ej: +57300...)
-                    cleanData.append(key, iti.getNumber());
+                    cleanData.append(key, iti ? iti.getNumber() : sanitizeInput(value));
                 } else if (key !== 'captcha_user_answer') { // No enviamos el captcha a la base de datos
                     cleanData.append(key, sanitizeInput(value));
                 }
@@ -240,22 +241,27 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 btn.disabled = true;
-                btn.innerHTML = `Enviando... <span class="material-icons animate-spin text-sm">sync</span>`;
+                const translate = (key, fallback) => window.i18next ? i18next.t(key) : fallback;
+                btn.innerHTML = `${translate('form_sending', 'Enviando...')} <span class="material-icons animate-spin text-sm">sync</span>`;
 
-                // Envío a Google Apps Script
-                await fetch(form.action, {
+                // El servicio debe responder con CORS habilitado para confirmar la recepción.
+                const response = await fetch(form.action, {
                     method: 'POST',
-                    body: cleanData,
-                    mode: 'no-cors' 
+                    body: cleanData
                 });
 
-                alert("¡Gracias! Mensaje enviado con éxito y registrado en la base de datos.");
+                if (!response.ok) {
+                    throw new Error(`El servicio respondió con el estado ${response.status}.`);
+                }
+
+                alert(translate('form_success', 'Gracias. Tu mensaje fue recibido correctamente. Nos comunicaremos contigo pronto.'));
                 form.reset();
                 generateCaptcha(); // Refrescar captcha para el siguiente envío
 
             } catch (error) {
                 console.error("Error de envío:", error);
-                alert("Hubo un error al enviar. Por favor, verifica tu conexión o intenta más tarde.");
+                const translate = (key, fallback) => window.i18next ? i18next.t(key) : fallback;
+                alert(translate('form_error', 'No fue posible confirmar el envío. Por favor, intenta de nuevo más tarde.'));
             } finally {
                 btn.disabled = false;
                 btn.innerHTML = originalBtnText;

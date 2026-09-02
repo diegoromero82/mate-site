@@ -1,0 +1,578 @@
+<!doctype html>
+<html lang="es" class="light">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios | MATE Inversiones & Negocios</title>
+    <meta name="description"
+        content="Conoce los servicios de MATE en longevidad, bienestar, cuidado, inclusión económica y autonomía financiera." />
+    <meta name="keywords"
+        content="servicios, longevidad, bienestar, cuidado, inclusión económica, autonomía financiera, desarrollo sostenible" />
+    <meta name="author" content="Megatel SAS" />
+    <link rel="canonical" href="https://www.matesas.com/servicios.html" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.matesas.com/servicios.html" />
+    <meta property="og:title" content="Servicios | MATE Inversiones & Negocios" />
+    <meta property="og:description"
+        content="Servicios de MATE para impulsar longevidad, bienestar, inclusión económica y autonomía financiera." />
+    <meta property="og:image" content="https://www.matesas.com/media/images/Compartidas/mate_img_finanzas_plateadas.jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Servicios | MATE Inversiones & Negocios" />
+    <meta name="twitter:description"
+        content="Servicios de MATE para impulsar longevidad, bienestar, inclusión económica y autonomía financiera." />
+    <meta name="twitter:image" content="https://www.matesas.com/media/images/Compartidas/mate_img_finanzas_plateadas.jpeg" />
+
+    <link rel="icon" href="media/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@400;500;700&family=Material+Icons&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: { primary: "#0E7287", magenta: "#B33E7E", deepPurple: "#432E60", "background-light": "#F9FAFB", "background-dark": "#0F172A", mateTeal: "#087E8B", mateMagenta: "#B53D7A", matePurple: "#543C72" },
+                    fontFamily: { display: ["Outfit", "sans-serif"], sans: ["Plus Jakarta Sans", "sans-serif"] },
+                },
+            },
+        };
+    </script>
+</head>
+
+<body class="services-page bg-background-light dark:bg-background-dark font-sans text-slate-800 dark:text-slate-200 transition-colors duration-300 antialiased flex flex-col min-h-screen">
+    <header class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/" class="flex items-center gap-3 group">
+                    <img src="media/logos/LogoMate-03.png" alt="MATE Logo" class="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105" />
+                </a>
+                <nav class="hidden lg:flex items-center space-x-8">
+                    <a href="/" data-i18n="nav_home" class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Inicio</a>
+                    <a href="somos-mate.html" data-i18n="nav_about" class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Somos Mate</a>
+                    <a href="experiencia.html" data-i18n="nav_projects" class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Experiencia</a>
+                    <div class="relative group">
+                        <a href="servicios.html" data-i18n="nav_services" class="text-sm font-semibold text-primary dark:text-mateTeal border-b-2 border-primary dark:border-mateTeal pb-1 transition-colors flex items-center gap-1">
+                            Servicios <span class="material-icons text-xs group-hover:rotate-180 transition-transform">expand_more</span>
+                        </a>
+                        <ul class="absolute top-full left-0 hidden group-hover:block bg-white dark:bg-slate-800 shadow-xl rounded-xl border border-slate-100 dark:border-slate-700 min-w-[270px] py-2 z-50 before:content-[''] before:absolute before:-top-2 before:left-0 before:w-full before:h-2">
+                            <li><a href="servicios.html#longevidad-bienestar-cuidado" data-i18n="submenu_services_longevity" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Longevidad, Bienestar y Cuidado</a></li>
+                            <li><a href="servicios.html#inclusion-economica-autonomia-financiera" data-i18n="submenu_services_economic" class="block px-4 py-2 text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-50 dark:hover:bg-slate-700 hover:text-magenta">Inclusión Económica y Autonomía Financiera</a></li>
+                        </ul>
+                    </div>
+                    <a href="contacto.html" data-i18n="nav_contact" class="text-sm font-semibold hover:text-primary dark:hover:text-mateTeal transition-colors">Contáctanos</a>
+                </nav>
+                <div class="flex items-center gap-2 md:gap-4">
+                    <div class="flex items-center gap-2 text-sm font-medium ml-4">
+                        <button id="btn-lang-es" class="transition-all duration-300 pb-1 border-b-2 border-transparent hover:text-magenta uppercase">ES</button>
+                        <span class="text-slate-300 dark:text-slate-600">|</span>
+                        <button id="btn-lang-en" class="transition-all duration-300 pb-1 border-b-2 border-transparent hover:text-magenta uppercase">EN</button>
+                    </div>
+                    <button id="theme-toggle" class="p-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors text-slate-600 dark:text-slate-300">
+                        <span class="material-icons text-xl hidden dark:block">light_mode</span><span class="material-icons text-xl block dark:hidden">dark_mode</span>
+                    </button>
+                    <button id="mobile-menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Abrir menú de navegación" class="lg:hidden text-slate-800 dark:text-white p-2"><span class="material-icons text-3xl">menu</span></button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white dark:bg-slate-900 border-t border-slate-100 dark:border-slate-800">
+            <nav class="flex flex-col items-center text-center p-8 space-y-6">
+                <a href="/" data-i18n="nav_home" class="text-lg font-bold text-slate-800 dark:text-white">Inicio</a>
+                <a href="somos-mate.html" data-i18n="nav_about" class="text-lg font-bold text-slate-800 dark:text-white">Somos Mate</a>
+                <a href="experiencia.html" data-i18n="nav_projects" class="text-lg font-bold text-slate-800 dark:text-white">Experiencia</a>
+                <a href="servicios.html" data-i18n="nav_services" class="text-lg font-bold text-primary">Servicios</a>
+                <div class="flex flex-col items-center space-y-3 pb-2">
+                    <a href="servicios.html#longevidad-bienestar-cuidado" data-i18n="submenu_services_longevity" class="text-sm text-slate-500 italic">Longevidad, Bienestar y Cuidado</a>
+                    <a href="servicios.html#inclusion-economica-autonomia-financiera" data-i18n="submenu_services_economic" class="text-sm text-slate-500 italic">Inclusión Económica y Autonomía Financiera</a>
+                </div>
+                <a href="contacto.html" data-i18n="nav_contact" class="text-lg font-bold text-magenta">Contáctanos</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow">
+        <section id="hero-servicios" class="services-hero relative w-full min-h-[66vh] md:min-h-[74vh] flex items-center overflow-hidden bg-slate-900 pt-20">
+            <div class="services-hero-media absolute inset-0 bg-cover bg-center bg-no-repeat" style="background-image: url('./media/images/Servicios/servicios-imagen-001.jpeg');"></div>
+            <div class="services-hero-overlay absolute inset-0"></div>
+            <div class="services-hero-orb services-hero-orb--one" aria-hidden="true"></div>
+            <div class="services-hero-orb services-hero-orb--two" aria-hidden="true"></div>
+            <div class="relative z-10 w-full px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+                <div class="max-w-4xl">
+                    <div class="inline-flex items-center gap-3 rounded-full border border-white/30 bg-white/10 px-4 py-2 text-xs font-bold uppercase tracking-[0.2em] text-white/90 backdrop-blur-sm mb-7">
+                        <span class="h-2 w-2 rounded-full bg-mateTeal shadow-[0_0_0_5px_rgba(8,126,139,0.18)]"></span>
+                        MATE
+                    </div>
+                    <h1 class="font-display text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-7 drop-shadow-lg tracking-tight" data-i18n="services_hero_title">Servicios</h1>
+                    <p class="text-xl md:text-2xl lg:text-3xl text-white/90 font-medium leading-relaxed drop-shadow-md max-w-4xl" data-i18n="services_hero_desc">Diseñamos soluciones para transformar capacidades en oportunidades y oportunidades en bienestar.</p>
+                    <div class="services-hero-rule mt-10" aria-hidden="true"><span></span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-pillar service-pillar--longevity py-24 bg-white dark:bg-slate-900" id="longevidad-bienestar-cuidado">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="relative group">
+                        <div class="absolute inset-0 bg-primary/10 rounded-3xl translate-x-3 translate-y-3 transition-transform group-hover:translate-x-1 group-hover:translate-y-1"></div>
+                        <img src="./media/images/Servicios/Longevidad/mayor_campo.jpeg" alt="Longevidad, bienestar y cuidado" class="relative z-10 w-full h-[400px] object-cover rounded-3xl shadow-lg" />
+                    </div>
+                    <div>
+                        <p class="text-sm font-bold uppercase tracking-widest text-magenta mb-4" data-i18n="services_section_label">Servicios MATE</p>
+                        <h2 class="font-display text-4xl font-bold text-deepPurple dark:text-white mb-6" data-i18n="services_longevity_title">Longevidad, Bienestar y Cuidado</h2>
+                        <div class="h-1 w-12 bg-magenta mb-6"></div>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_longevity_text">En MATE, entendemos la longevidad desde una perspectiva de curso de vida y por ello acompañamos a las personas en cada etapa, fortaleciendo sus capacidades, bienestar, autonomía y participación para que puedan vivir mejor, durante más tiempo y con mayores oportunidades. Para llevarlo a cabo diseñamos soluciones que conectan <strong>bienestar, cuidado, autonomía y protección</strong> desde la niñez y la juventud hasta las etapas más avanzadas de la vida.</p>
+                    </div>
+                </div>
+
+                <div class="mt-20 pt-16 border-t border-slate-200 dark:border-slate-700">
+                    <div class="max-w-4xl mx-auto text-center mb-12">
+                        <p class="text-sm font-bold uppercase tracking-widest text-magenta mb-4"
+                            data-i18n="services_youth_eyebrow">¿Qué hacemos?</p>
+                        <h3 class="font-display text-4xl font-bold text-deepPurple dark:text-white mb-6"
+                            data-i18n="services_youth_title">Desarrollo de capacidades para niñez, adolescencia y juventud</h3>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+                            data-i18n="services_youth_desc">Diseñamos estrategias, programas e investigaciones que fortalecen las capacidades de niñas, niños, adolescentes y jóvenes para ampliar sus oportunidades educativas, laborales, sociales y comunitarias. Trabajamos con enfoque de derechos, diferencial y territorial, promoviendo participación significativa y soluciones adaptadas a las realidades y trayectorias de cada población.</p>
+                    </div>
+
+                    <div class="flex items-center gap-4 mb-8">
+                        <div class="h-1 w-12 bg-primary rounded-full"></div>
+                        <h4 class="font-display text-2xl font-bold text-slate-900 dark:text-white"
+                            data-i18n="services_business_lines_title">Líneas de negocio</h4>
+                    </div>
+                    <div class="service-line-grid service-line-grid--youth grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Longevidad/mate_img (7).jpeg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                            <div class="p-7">
+                                <h5 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3"
+                                    data-i18n="services_youth_card1_title">Proyectos de vida y desarrollo de capacidades</h5>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_youth_card1_desc">Fortalecemos habilidades socioemocionales, personales y de liderazgo para impulsar la autonomía, la toma de decisiones y la construcción de proyectos de vida.</p>
+                            </div>
+                        </article>
+                        <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Longevidad/mate_img_migracion.jpeg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                            <div class="p-7">
+                                <h5 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3" data-i18n="services_youth_card2_title">Educación, empleabilidad y emprendimiento</h5>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_youth_card2_desc">Diseñamos rutas que conectan formación, habilidades y oportunidades de empleo, emprendimiento y generación de ingresos.</p>
+                            </div>
+                        </article>
+                        <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Longevidad/participacion_longevidad.jpeg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                            <div class="p-7">
+                                <h5 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3" data-i18n="services_youth_card3_title">Participación, ciudadanía y derechos</h5>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_youth_card3_desc">Desarrollamos metodologías para fortalecer el ejercicio de derechos, la participación significativa, el liderazgo y la incidencia de niñas, niños, adolescentes y jóvenes.</p>
+                            </div>
+                        </article>
+                        <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Longevidad/mate_ninos.jpg" alt="" aria-hidden="true" loading="lazy" decoding="async" class="service-line-card__image" /></div>
+                            <div class="p-7">
+                                <h5 class="font-display text-xl font-bold text-slate-900 dark:text-white mb-3" data-i18n="services_youth_card4_title">Investigación y migración juvenil</h5>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_youth_card4_desc">Generamos evidencia para la toma de decisiones sobre las trayectorias juveniles, sus barreras y oportunidades, incluyendo educación, trabajo, permanencia y migración.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="mt-16 pt-12 border-t border-slate-200 dark:border-slate-700">
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-1 w-12 bg-magenta rounded-full"></div>
+                            <h4 class="font-display text-2xl font-bold text-slate-900 dark:text-white"
+                                data-i18n="services_success_title">Experiencias de éxito</h4>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <article class="bg-white dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <h5 class="font-display text-xl font-bold text-deepPurple dark:text-white mb-3"
+                                    data-i18n="services_success_card1_title">Save the Children</h5>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_success_card1_desc">Investigación para comprender el ejercicio de derechos y fortalecer entornos protectores de niñas, niños y adolescentes, integrando evidencia cuantitativa y cualitativa desde las personas, las familias, las comunidades, las instituciones educativas, las organizaciones sociales y las autoridades locales.</p>
+                            </article>
+                            <article class="bg-white dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <h5 class="font-display text-xl font-bold text-primary dark:text-mateTeal mb-3"
+                                    data-i18n="services_success_card2_title">Migración juvenil en Montes de María | 2026</h5>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_success_card2_desc">Investigación sobre los factores que inciden en las decisiones de permanencia y migración de jóvenes, orientada a generar evidencia para políticas y estrategias de desarrollo territorial.</p>
+                            </article>
+                            <article class="bg-white dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <h5 class="font-display text-xl font-bold text-magenta mb-3"
+                                    data-i18n="services_success_card3_title">Jornada Nacional de Limpieza del Lago de Tota | 2023</h5>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_success_card3_desc">Educación ambiental y participación ciudadana con niñas, niños, adolescentes, jóvenes y comunidades para fortalecer la conservación y apropiación del territorio.</p>
+                                <a href="./media/docs/jornada_limpieza_tota.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 mt-6 text-sm font-bold text-primary hover:text-magenta transition-colors"><span data-i18n="init_btn_more">Conoce más</span><span class="material-icons text-base" aria-hidden="true">picture_as_pdf</span></a>
+                            </article>
+                            <article class="bg-white dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <h5 class="font-display text-xl font-bold text-mateTeal mb-3"
+                                    data-i18n="services_success_card4_title">Mis Derechos Sí Cuentan | 2017</h5>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_success_card4_desc">Fortalecimiento del conocimiento, ejercicio y protección de los derechos de niñas, niños y adolescentes mediante formación, participación comunitaria y articulación institucional.</p>
+                                <a href="./media/docs/mis_derechos_si_cuentan.pdf" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 mt-6 text-sm font-bold text-primary hover:text-magenta transition-colors"><span data-i18n="init_btn_more">Conoce más</span><span class="material-icons text-base" aria-hidden="true">picture_as_pdf</span></a>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="mt-16 pt-12 border-t border-slate-200 dark:border-slate-700">
+                        <div class="max-w-4xl mx-auto text-center mb-12">
+                            <h3 class="font-display text-4xl font-bold text-deepPurple dark:text-white mb-6"
+                                data-i18n="services_care_title">Diseño e implementación de Modelos Holísticos y Sostenibles de Cuidado, Salud y Bienestar</h3>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed"
+                                data-i18n="services_care_desc">Diseñamos soluciones orientadas a fortalecer la <strong>capacidad funcional, el bienestar, la autonomía y la calidad de vida de las personas</strong> desde una perspectiva de longevidad saludable, nueva longevidad, prevención de la cronicidad, manejo de la multimorbilidad, nuevos modelos de cuidado y comunidades cuidadoras.</p>
+                        </div>
+
+                        <div class="flex items-center gap-4 mb-8">
+                            <div class="h-1 w-12 bg-primary rounded-full"></div>
+                            <h4 class="font-display text-2xl font-bold text-slate-900 dark:text-white"
+                                data-i18n="services_care_business_lines_title">Líneas de negocio</h4>
+                        </div>
+                        <div class="service-line-grid service-line-grid--care grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Cuidado/img_cuidado_1.JPG" alt="" aria-hidden="true" loading="lazy" decoding="async" class="service-line-card__image" /></div>
+                                <div class="p-7">
+                                    <h5 class="font-display text-xl font-bold text-primary dark:text-mateTeal mb-3"
+                                        data-i18n="services_care_card1_title">Modelos de cuidado de largo plazo: Cuidar para Vivir Mejor</h5>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_care_card1_desc">Diseñamos modelos integrales de cuidado que fortalecen la autonomía, la capacidad funcional y la calidad de vida, articulando servicios, redes de apoyo, cuidadores y entornos.</p>
+                                </div>
+                            </article>
+                            <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Longevidad/mate_img_18.jpeg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                                <div class="p-7">
+                                    <h5 class="font-display text-xl font-bold text-magenta mb-3"
+                                        data-i18n="services_care_card2_title">Modelos y programas de longevidad saludable y con propósito</h5>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_care_card2_desc">Desarrollamos estrategias para promover un envejecimiento saludable y una nueva longevidad, con énfasis en prevención, bienestar, autonomía, participación y proyectos de vida.</p>
+                                </div>
+                            </article>
+                            <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Longevidad/mate_cuidado.jpeg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                                <div class="p-7">
+                                    <h5 class="font-display text-xl font-bold text-deepPurple dark:text-white mb-3"
+                                        data-i18n="services_care_card3_title">Modelos de corresponsabilidad del cuidado: Cuidar entre Todos</h5>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_care_card3_desc">Diseñamos comunidades y sistemas de cuidado corresponsables que distribuyen las responsabilidades entre personas, familias, organizaciones, Estado y territorios.</p>
+                                </div>
+                            </article>
+                            <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Longevidad/mayor_costeño.jpeg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                                <div class="p-7">
+                                    <h5 class="font-display text-xl font-bold text-mateTeal mb-3"
+                                        data-i18n="services_care_card4_title">Vivir Mejor con Condiciones de Larga Duración: Longevidad, cronicidad y multimorbilidad</h5>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_care_card4_desc">Diseñamos programas para prevenir la cronicidad y fortalecer el manejo integral de condiciones de larga duración y multimorbilidad, promoviendo funcionalidad, autonomía y bienestar.</p>
+                                </div>
+                            </article>
+                            <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Cuidado/img_cuidado_5.JPG" alt="" aria-hidden="true" loading="lazy" decoding="async" class="service-line-card__image" /></div>
+                                <div class="p-7">
+                                    <h5 class="font-display text-xl font-bold text-primary dark:text-mateTeal mb-3"
+                                        data-i18n="services_care_card5_title">Servicios y programas sociales para la longevidad: Bienestar a lo Largo de la Vida</h5>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_care_card5_desc">Diseñamos e implementamos servicios, programas e intervenciones sociales que responden a las necesidades de las personas a lo largo del proceso de envejecimiento, fortaleciendo inclusión, participación y calidad de vida.</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="mt-20 pt-16 border-t border-slate-200 dark:border-slate-700 space-y-20">
+                        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                            <div class="relative group">
+                                <div class="absolute inset-0 bg-magenta/10 rounded-3xl translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1 group-hover:translate-y-1"></div>
+                                <img src="./media/images/Compartidas/mate_img_finanzas_plateadas.jpeg" alt="Economía Plateada y nuevas oportunidades" class="relative z-10 w-full h-[320px] md:h-[430px] object-cover rounded-3xl shadow-lg" />
+                            </div>
+                            <div class="max-w-xl">
+                                <p class="text-sm font-bold uppercase tracking-widest text-magenta mb-4" data-i18n="services_section_label">Servicios MATE</p>
+                                <h3 class="font-display text-4xl font-bold text-deepPurple dark:text-white leading-tight mb-6" data-i18n="services_silver_economy_title">Economía Plateada y nuevas oportunidades</h3>
+                                <div class="h-1 w-12 bg-magenta mb-6"></div>
+                                <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_silver_economy_desc">Diseñamos soluciones de <strong>emprendimiento 50+, empleabilidad senior, segunda carrera, mentoría e innovación</strong>, reconociendo la experiencia, capacidades y aspiraciones de las personas en diferentes momentos de su trayectoria laboral y productiva.</p>
+                            </div>
+                        </div>
+
+                        <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                            <div class="order-1 lg:order-2 relative group">
+                                <div class="absolute inset-0 bg-primary/10 rounded-3xl -translate-x-3 translate-y-3 transition-transform duration-500 group-hover:-translate-x-1 group-hover:translate-y-1"></div>
+                                <img src="./media/images/Servicios/Longevidad/mayor_usando_cajero.jpeg" alt="Finanzas para la Longevidad" class="relative z-10 w-full h-[320px] md:h-[430px] object-cover rounded-3xl shadow-lg" />
+                            </div>
+                            <div class="order-2 lg:order-1 max-w-xl lg:justify-self-end">
+                                <p class="text-sm font-bold uppercase tracking-widest text-primary mb-4" data-i18n="services_section_label">Servicios MATE</p>
+                                <h3 class="font-display text-4xl font-bold text-deepPurple dark:text-white leading-tight mb-6" data-i18n="services_longevity_finance_title">Finanzas para la Longevidad</h3>
+                                <div class="h-1 w-12 bg-primary mb-6"></div>
+                                <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_longevity_finance_desc">Diseñamos estrategias de <strong>ahorro, inclusión y protección financiera, educación previsional y preparación para el retiro</strong>, incorporando ciencias del comportamiento para comprender y facilitar decisiones financieras a lo largo de la vida.</p>
+                            </div>
+                        </div>
+
+                        <div class="pt-16 border-t border-slate-200 dark:border-slate-700">
+                            <div class="text-center max-w-3xl mx-auto mb-10">
+                                <h3 class="font-display text-3xl md:text-4xl font-bold text-deepPurple dark:text-white" data-i18n="services_success_title">Experiencias de éxito</h3>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                                <article class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                                    <h4 class="font-display text-2xl font-bold text-deepPurple dark:text-white mb-2" data-i18n="services_success_impact_title">IMPACTO 50+</h4>
+                                    <p class="text-sm font-bold tracking-wide text-magenta mb-4" data-i18n="services_success_impact_partner">MATE + KOGNITIVO + ZELVA</p>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-5" data-i18n="services_success_impact_desc">A través de la Unión Temporal IMPACTO 50+, integrada por MATE SAS, KOGNITIVO SAS y ZELVA SAS, acompañaremos a entidades financieras para comprender mejor las necesidades, comportamientos y oportunidades de las personas 50+ y convertir ese conocimiento en nuevas soluciones.</p>
+                                </article>
+
+                                <article class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-100 dark:border-slate-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+                                    <h4 class="font-display text-2xl font-bold text-deepPurple dark:text-white mb-4" data-i18n="services_success_conversation_title">MATE en la conversación sobre longevidad y protección social</h4>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-5" data-i18n="services_success_conversation_desc">Participamos en espacios de conocimiento y articulación sobre <strong>economía de la longevidad, finanzas plateadas y los desafíos de vivir más años</strong>.</p>
+                                    <div class="flex flex-col gap-3 text-sm font-bold text-primary">
+                                        <a href="https://www.eltiempo.com/mas-cincuenta/a-traves-de-seis-mesas-gremiales-se-busca-marcar-la-ruta-de-la-economia-de-la-longevidad-en-colombia-3567196" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-start justify-between gap-3 leading-snug hover:text-magenta transition-colors"><span data-i18n="services_success_link_1">Economía de la longevidad</span><span class="material-icons text-base shrink-0" aria-hidden="true">open_in_new</span></a>
+                                        <a href="https://www.eltiempo.com/economia/finanzas-personales/la-razon-por-la-que-solo-una-de-cada-cuatro-personas-en-colombia-lograra-obtener-una-pension-expertos-estan-preocupados-3561448" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-start justify-between gap-3 leading-snug hover:text-magenta transition-colors"><span data-i18n="services_success_link_2">Pensiones y protección social</span><span class="material-icons text-base shrink-0" aria-hidden="true">open_in_new</span></a>
+                                        <a href="https://www.portafolio.co/economia/empleo/millones-de-trabajadores-en-colombia-se-arriesgan-a-una-vejez-sin-pension-por-culpa-de-la-informalidad-laboral-494595" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-start justify-between gap-3 leading-snug hover:text-magenta transition-colors"><span data-i18n="services_success_link_3">Informalidad y vejez sin pensión</span><span class="material-icons text-base shrink-0" aria-hidden="true">open_in_new</span></a>
+                                        <a href="https://www.youtube.com/watch?v=CpVE1bUSHE4" target="_blank" rel="noopener noreferrer" class="inline-flex w-full items-start justify-between gap-3 leading-snug hover:text-magenta transition-colors"><span data-i18n="services_success_video_link">Entrevista Noticias Caracol</span><span class="material-icons text-base shrink-0" aria-hidden="true">play_circle</span></a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+
+                        <section class="pt-16 border-t border-slate-200 dark:border-slate-700" aria-labelledby="longevity-team-title">
+                            <div class="text-center max-w-3xl mx-auto mb-12">
+                                <h3 id="longevity-team-title" class="font-display text-3xl md:text-4xl font-bold text-deepPurple dark:text-white mb-4" data-i18n="services_longevity_team_title">Nuestro equipo</h3>
+                                <div class="h-1.5 w-20 bg-magenta mx-auto rounded-full mb-6"></div>
+                                <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_longevity_team_desc">Integramos conocimiento especializado en geriatría, salud pública, cuidado, bienestar, economía de la longevidad, inclusión financiera e innovación haciendo posible una mirada interdisciplinaria y técnica sobre la longevidad.</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8 lg:gap-12 max-w-6xl mx-auto">
+                                <div class="group h-[400px] [perspective:1000px] w-full max-w-sm mx-auto lg:col-span-2">
+                                    <div class="relative h-full w-full rounded-3xl shadow-lg transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer">
+                                        <div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-slate-100 dark:border-slate-700">
+                                            <div class="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden border-4 border-primary/20 shadow-inner bg-slate-100 dark:bg-slate-700"><img src="./media/images/Servicios/Longevidad/Equipo_%20Longevidad_MATE_50+/Robinson_Cuadros.jpeg" alt="Dr. Róbinson Cuadros Cuadros" class="w-full h-full object-cover" /></div>
+                                            <h4 class="font-display text-2xl font-bold text-deepPurple dark:text-white text-center mb-2" data-i18n="services_longevity_team_1_name">Dr. Róbinson Cuadros Cuadros, MD</h4>
+                                            <p class="text-primary dark:text-mateTeal font-bold text-sm uppercase tracking-wider text-center" data-i18n="services_longevity_team_1_role">Líder de Longevidad Saludable</p>
+                                            <div class="mt-6 flex items-center gap-2 text-slate-400 text-xs uppercase font-bold tracking-widest"><span class="material-icons text-base" aria-hidden="true">touch_app</span><span data-i18n="services_longevity_team_flip">Girar</span></div>
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-br from-primary to-mateTeal text-white rounded-3xl p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center shadow-2xl">
+                                            <h4 class="font-display font-bold text-xl mb-4 text-white" data-i18n="services_longevity_team_1_name">Dr. Róbinson Cuadros Cuadros, MD</h4>
+                                            <p class="text-sm leading-relaxed opacity-95" data-i18n="services_longevity_team_1_bio">Médico geriatra de la Universidad Nacional de Colombia, con más de 15 años de experiencia en el diseño de políticas públicas, programas y proyectos de longevidad saludable. Expresidente de la Asociación Colombiana de Gerontología y Geriatría y actual presidente del COMLAT.</p>
+                                            <a href="https://www.linkedin.com/in/m%C3%A9dico-geriatra-robinson-cuadros-b4992b7a/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn del Dr. Róbinson Cuadros Cuadros" class="mt-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white hover:text-magenta"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.849-3.037-1.85 0-2.134 1.445-2.134 2.939v5.667H9.361V9h3.413v1.561h.047c.475-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.369 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.115 20.452H3.559V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z" /></svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="group h-[400px] [perspective:1000px] w-full max-w-sm mx-auto lg:col-span-2">
+                                    <div class="relative h-full w-full rounded-3xl shadow-lg transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer">
+                                        <div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-slate-100 dark:border-slate-700">
+                                            <div class="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden border-4 border-magenta/20 shadow-inner bg-slate-100 dark:bg-slate-700"><img src="./media/images/Servicios/Longevidad/Equipo_%20Longevidad_MATE_50+/Wilson_Ossa.jpeg" alt="Wilson Daniel Ossa Pérez" class="w-full h-full object-cover" /></div>
+                                            <h4 class="font-display text-2xl font-bold text-deepPurple dark:text-white text-center mb-2" data-i18n="services_longevity_team_2_name">Wilson Daniel Ossa Pérez, MPH</h4>
+                                            <p class="text-magenta font-bold text-sm uppercase tracking-wider text-center" data-i18n="services_longevity_team_2_role">Líder de Cuidado para una Nueva Longevidad</p>
+                                            <div class="mt-6 flex items-center gap-2 text-slate-400 text-xs uppercase font-bold tracking-widest"><span class="material-icons text-base" aria-hidden="true">touch_app</span><span data-i18n="services_longevity_team_flip">Girar</span></div>
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-br from-magenta to-mateMagenta text-white rounded-3xl p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center shadow-2xl">
+                                            <h4 class="font-display font-bold text-xl mb-4 text-white" data-i18n="services_longevity_team_2_name">Wilson Daniel Ossa Pérez, MPH</h4>
+                                            <p class="text-sm leading-relaxed opacity-95" data-i18n="services_longevity_team_2_bio">Filósofo, psicólogo y máster en Salud Pública. Experto en modelos integrales de cuidado, protección social e innovación social para la longevidad saludable. Cofundador de Lazos Humanos, hoy Versania Cuidado y Vida.</p>
+                                            <a href="https://www.linkedin.com/in/wilson-daniel-ossa-perez-mph-88b85647/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn de Wilson Daniel Ossa Pérez" class="mt-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white hover:text-magenta"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.849-3.037-1.85 0-2.134 1.445-2.134 2.939v5.667H9.361V9h3.413v1.561h.047c.475-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.369 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.115 20.452H3.559V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z" /></svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="group h-[400px] [perspective:1000px] w-full max-w-sm mx-auto lg:col-span-2">
+                                    <div class="relative h-full w-full rounded-3xl shadow-lg transition-all duration-700 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)] cursor-pointer">
+                                        <div class="absolute inset-0 bg-white dark:bg-slate-800 rounded-3xl [backface-visibility:hidden] flex flex-col items-center justify-center p-8 border border-slate-100 dark:border-slate-700">
+                                            <div class="w-40 h-40 mx-auto rounded-full mb-6 overflow-hidden border-4 border-deepPurple/20 shadow-inner bg-slate-100 dark:bg-slate-700"><img src="./media/images/Servicios/Longevidad/Equipo_%20Longevidad_MATE_50+/Marisol_Acosta.jpeg" alt="Marisol Acosta" class="w-full h-full object-cover" /></div>
+                                            <h4 class="font-display text-2xl font-bold text-deepPurple dark:text-white text-center mb-2" data-i18n="services_longevity_team_3_name">Marisol Acosta</h4>
+                                            <p class="text-deepPurple dark:text-white font-bold text-sm uppercase tracking-wider text-center" data-i18n="services_longevity_team_3_role">Líder de Bienestar Holístico</p>
+                                            <div class="mt-6 flex items-center gap-2 text-slate-400 text-xs uppercase font-bold tracking-widest"><span class="material-icons text-base" aria-hidden="true">touch_app</span><span data-i18n="services_longevity_team_flip">Girar</span></div>
+                                        </div>
+                                        <div class="absolute inset-0 bg-gradient-to-br from-deepPurple to-matePurple text-white rounded-3xl p-8 [backface-visibility:hidden] [transform:rotateY(180deg)] flex flex-col justify-center items-center text-center shadow-2xl">
+                                            <h4 class="font-display font-bold text-xl mb-4 text-white" data-i18n="services_longevity_team_3_name">Marisol Acosta</h4>
+                                            <p class="text-sm leading-relaxed opacity-95" data-i18n="services_longevity_team_3_bio">Ingeniera Industrial, especialista en Gerencia del Talento Humano, con 24 años de experiencia directiva en los sectores financiero, educativo, público y de servicios. Cofundadora de ANDEL.</p>
+                                            <a href="https://www.linkedin.com/in/marisol-acosta-silvereconomy/" target="_blank" rel="noopener noreferrer" aria-label="Perfil de LinkedIn de Marisol Acosta" class="mt-6 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/20 text-white transition-colors hover:bg-white hover:text-magenta"><svg viewBox="0 0 24 24" class="h-5 w-5" fill="currentColor" aria-hidden="true"><path d="M20.452 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.849-3.037-1.85 0-2.134 1.445-2.134 2.939v5.667H9.361V9h3.413v1.561h.047c.475-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.369 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM7.115 20.452H3.559V9h3.556v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.226.792 24 1.771 24h20.451C23.2 24 24 23.226 24 22.271V1.729C24 .774 23.2 0 22.225 0z" /></svg></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="pt-16 border-t border-slate-200 dark:border-slate-700">
+                            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                                <div class="relative group">
+                                    <div class="absolute inset-0 bg-magenta/10 rounded-3xl translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1 group-hover:translate-y-1"></div>
+                                    <img src="./media/images/Servicios/Longevidad/mayor_loteria.jpeg" alt="Personas mayores en un entorno comunitario" class="relative z-10 w-full h-[320px] md:h-[430px] object-cover rounded-3xl shadow-lg" />
+                                </div>
+                                <div class="max-w-xl">
+                                    <p class="text-sm font-bold uppercase tracking-widest text-magenta mb-4" data-i18n="services_section_label">Servicios MATE</p>
+                                    <h3 class="font-display text-4xl font-bold text-deepPurple dark:text-white leading-tight mb-6" data-i18n="services_longevity_cta_title">Una sociedad que vive más necesita soluciones para toda la vida</h3>
+                                    <div class="h-1 w-12 bg-magenta mb-6"></div>
+                                    <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-8" data-i18n="services_longevity_cta_desc">Comprender el curso de vida nos permite anticipar necesidades, fortalecer capacidades y diseñar mejores oportunidades para el presente y el futuro.</p>
+                                    <a href="contacto.html" class="inline-flex items-center gap-2 rounded-full bg-magenta px-6 py-3 font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-deepPurple hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-magenta focus:ring-offset-2 dark:focus:ring-offset-slate-900"><span data-i18n="services_longevity_cta_button">Hablemos de longevidad</span><span class="material-icons text-lg" aria-hidden="true">arrow_forward</span></a>
+                                </div>
+                            </div>
+                        </section>
+
+                        <div class="pt-16 border-t border-slate-200 dark:border-slate-700" id="capacidades">
+                            <div class="text-center max-w-4xl mx-auto mb-14">
+                                <h2 class="font-display text-4xl font-bold text-deepPurple dark:text-white mb-6 mx-auto" data-i18n="services_capabilities_title">Capacidades que potencian nuestras soluciones</h2>
+                                <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_capabilities_desc">Ponemos capacidades transversales al servicio de cada proyecto para diseñar, implementar, medir y escalar soluciones.</p>
+                            </div>
+                            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+                                <article class="bg-white dark:bg-slate-800 p-9 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                    <div class="w-16 h-16 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-7"><span class="material-icons text-3xl" aria-hidden="true">hub</span></div>
+                                    <h3 class="font-display text-2xl font-bold text-deepPurple dark:text-white mb-4" data-i18n="services_capability_1_title">Innovación y desarrollo</h3>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-5" data-i18n="services_capability_1_desc">Diseñamos ecosistemas, modelos y alianzas que conectan actores, fortalecen organizaciones y convierten oportunidades en soluciones sostenibles.</p>
+                                    <p class="text-sm font-semibold leading-relaxed text-primary" data-i18n="services_capability_1_tags">Innovación social · Ecosistemas · Desarrollo de negocios · Gobernanza · Articulación</p>
+                                </article>
+                                <article class="bg-white dark:bg-slate-800 p-9 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                    <div class="w-16 h-16 rounded-xl bg-magenta/10 text-magenta flex items-center justify-center mb-7"><span class="material-icons text-3xl" aria-hidden="true">insights</span></div>
+                                    <h3 class="font-display text-2xl font-bold text-deepPurple dark:text-white mb-4" data-i18n="services_capability_2_title">Investigación, datos y comportamiento</h3>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-5" data-i18n="services_capability_2_desc">Generamos evidencia para comprender personas y territorios, orientar decisiones y mejorar resultados.</p>
+                                    <p class="text-sm font-semibold leading-relaxed text-magenta" data-i18n="services_capability_2_tags">Investigación · Analítica de datos · MEL · Ciencias del comportamiento · Evaluación</p>
+                                </article>
+                                <article class="bg-white dark:bg-slate-800 p-9 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                    <div class="w-16 h-16 rounded-xl bg-deepPurple/10 text-deepPurple dark:text-mateTeal flex items-center justify-center mb-7"><span class="material-icons text-3xl" aria-hidden="true">eco</span></div>
+                                    <h3 class="font-display text-2xl font-bold text-deepPurple dark:text-white mb-4" data-i18n="services_capability_3_title">Sostenibilidad e impacto</h3>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-5" data-i18n="services_capability_3_desc">Integramos las dimensiones económica, social y ambiental para generar valor sostenible y resultados medibles.</p>
+                                    <p class="text-sm font-semibold leading-relaxed text-deepPurple dark:text-mateTeal" data-i18n="services_capability_3_tags">Sostenibilidad · Cadenas de valor · Economía circular · Impacto · Desarrollo territorial</p>
+                                </article>
+                                <article class="bg-white dark:bg-slate-800 p-9 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                                    <div class="w-16 h-16 rounded-xl bg-mateTeal/10 text-mateTeal flex items-center justify-center mb-7"><span class="material-icons text-3xl" aria-hidden="true">inventory_2</span></div>
+                                    <h3 class="font-display text-2xl font-bold text-deepPurple dark:text-white mb-4" data-i18n="services_capability_4_title">Capacidad operativa</h3>
+                                    <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-5" data-i18n="services_capability_4_desc">Complementamos nuestras intervenciones con la gestión de bienes, equipos, dotaciones, tecnología y logística cuando los proyectos lo requieren.</p>
+                                    <p class="text-sm font-semibold leading-relaxed text-mateTeal" data-i18n="services_capability_4_tags">Suministro · Dotaciones · Tecnología · Logística · Soporte</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-pillar service-pillar--economic py-24 bg-slate-100 dark:bg-slate-800/50" id="inclusion-economica-autonomia-financiera">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <p class="text-sm font-bold uppercase tracking-widest text-primary mb-4" data-i18n="services_section_label">Servicios MATE</p>
+                        <h2 class="font-display text-4xl font-bold text-deepPurple dark:text-white mb-6" data-i18n="services_economic_title">Inclusión Económica y Autonomía Financiera</h2>
+                        <div class="h-1 w-12 bg-primary mb-6"></div>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-6" data-i18n="services_economic_text_1">Diseñamos e implementamos soluciones para que personas, hogares, emprendimientos, empresas y organizaciones fortalezcan sus capacidades, generen ingresos, tomen mejores decisiones y accedan a oportunidades económicas y financieras de manera sostenible.</p>
+                        <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_economic_text_2">Integramos inclusión financiera, desarrollo empresarial, acceso a mercados, tecnología, datos y ciencias del comportamiento, adaptando cada solución a las capacidades, barreras y oportunidades de las personas y los territorios.</p>
+                    </div>
+                    <div class="order-1 lg:order-2 relative group">
+                        <div class="absolute inset-0 bg-mateTeal/10 rounded-3xl -translate-x-3 translate-y-3 transition-transform group-hover:-translate-x-1 group-hover:translate-y-1"></div>
+                        <img src="./media/images/Servicios/Longevidad/mayor_comprando.jpeg" alt="Inclusión económica y autonomía financiera" class="relative z-10 w-full h-[400px] object-cover rounded-3xl shadow-lg" />
+                    </div>
+                </div>
+
+                <div class="mt-20 pt-16 border-t border-slate-200 dark:border-slate-700">
+                    <div class="max-w-4xl mx-auto text-center mb-12">
+                        <p class="text-sm font-bold uppercase tracking-widest text-magenta mb-4" data-i18n="services_economic_what_we_do">¿Qué hacemos?</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Cuidado/artesana_mujer_guajira.jpg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                            <div class="p-7">
+                                <h3 class="font-display text-xl font-bold text-primary dark:text-mateTeal mb-3" data-i18n="services_economic_card1_title">Inclusión financiera</h3>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_economic_card1_desc">Diseñamos soluciones que amplían el acceso, uso y aprovechamiento efectivo de <strong>ahorro, crédito, seguros, pagos, inversión y otros servicios financieros</strong>, conectándolos con las necesidades y capacidades reales de las personas y los negocios.</p>
+                            </div>
+                        </article>
+                        <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Cuidado/mate_img_004.jpeg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                            <div class="p-7">
+                                <h3 class="font-display text-xl font-bold text-magenta mb-3" data-i18n="services_economic_card2_title">Educación y capacidades financieras</h3>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_economic_card2_desc">Desarrollamos metodologías presenciales, digitales e híbridas para fortalecer conocimientos, comportamientos y decisiones sobre <strong>ingresos, ahorro, crédito, endeudamiento, protección, inversión y bienestar financiero</strong>.</p>
+                            </div>
+                        </article>
+                        <article class="service-line-card bg-slate-50 dark:bg-slate-800 p-0 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <div class="service-line-card__image-wrap"><img src="./media/images/Servicios/Cuidado/artesana_mujer_guajira.jpg" alt="" aria-hidden="true" class="service-line-card__image" /></div>
+                            <div class="p-7">
+                                <h3 class="font-display text-xl font-bold text-deepPurple dark:text-white mb-3" data-i18n="services_economic_card3_title">Autonomía económica y generación de ingresos</h3>
+                                <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_economic_card3_desc">Diseñamos rutas que fortalecen capacidades, ingresos, activos productivos y autonomía económica, especialmente para poblaciones que enfrentan mayores barreras de acceso a oportunidades.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="mt-16 pt-12 border-t border-slate-200 dark:border-slate-700">
+                    <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                        <div class="order-2 lg:order-1 max-w-xl">
+                            <p class="text-sm font-bold uppercase tracking-widest text-primary mb-4" data-i18n="services_business_label">EMPRESA MATE</p>
+                            <h3 class="font-display text-4xl font-bold text-deepPurple dark:text-white leading-tight mb-6" data-i18n="services_business_title">Desarrollo y fortalecimiento empresarial</h3>
+                            <div class="h-1 w-12 bg-primary mb-7"></div>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-5" data-i18n="services_business_intro_1">Nuestro modelo de acompañamiento empresarial parte de una premisa: <strong>cada empresa tiene capacidades, desafíos y oportunidades diferentes; por eso, no todas necesitan la misma ruta.</strong></p>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed mb-5" data-i18n="services_business_intro_2">A través del Índice de Capacidades Empresariales, diagnosticamos integralmente el negocio, identificamos fortalezas y brechas y construimos una ruta personalizada de fortalecimiento.</p>
+                            <p class="text-lg text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_business_model_desc">Integramos registro financiero permanente, asistencia modular, formación, herramientas de gestión, mentoría y consejo asesor, ciencias del comportamiento y conexión con redes y mercados, acompañando a las empresas desde el diagnóstico hasta la implementación y medición de resultados.</p>
+                        </div>
+                        <div class="order-1 lg:order-2 relative group">
+                            <div class="absolute inset-0 bg-mateTeal/10 rounded-3xl translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1 group-hover:translate-y-1"></div>
+                            <img src="./media/images/Servicios/Cuidado/capacitaciones_caqueta.jpeg" alt="Desarrollo y fortalecimiento empresarial" class="relative z-10 w-full h-[320px] md:h-[430px] object-cover rounded-3xl shadow-lg" />
+                        </div>
+                    </div>
+
+                    <div class="max-w-6xl mx-auto mt-12">
+                        <ol class="services-business-cycle" aria-label="Proceso de acompañamiento empresarial">
+                            <li class="services-business-cycle__step" style="--cycle-rgb: 14, 114, 135;"><span class="material-icons services-business-cycle__icon" aria-hidden="true">analytics</span><span data-i18n="services_business_step_1">Diagnosticamos</span></li>
+                            <li class="services-business-cycle__arrow material-icons" aria-hidden="true">arrow_forward</li>
+                            <li class="services-business-cycle__step" style="--cycle-rgb: 179, 62, 126;"><span class="material-icons services-business-cycle__icon" aria-hidden="true">filter_list</span><span data-i18n="services_business_step_2">Priorizamos</span></li>
+                            <li class="services-business-cycle__arrow material-icons" aria-hidden="true">arrow_forward</li>
+                            <li class="services-business-cycle__step" style="--cycle-rgb: 67, 46, 96;"><span class="material-icons services-business-cycle__icon" aria-hidden="true">handshake</span><span data-i18n="services_business_step_3">Acompañamos</span></li>
+                            <li class="services-business-cycle__arrow material-icons" aria-hidden="true">arrow_forward</li>
+                            <li class="services-business-cycle__step" style="--cycle-rgb: 8, 126, 139;"><span class="material-icons services-business-cycle__icon" aria-hidden="true">construction</span><span data-i18n="services_business_step_4">Implementamos</span></li>                            
+                            <li class="services-business-cycle__arrow material-icons" aria-hidden="true">arrow_forward</li>
+                            <li class="services-business-cycle__step" style="--cycle-rgb: 179, 62, 126;"><span class="material-icons services-business-cycle__icon" aria-hidden="true">monitor_heart</span><span data-i18n="services_business_step_5">Medimos</span></li>                                                                                   
+                        </ol>
+                    </div>
+
+                    <aside class="max-w-4xl mx-auto mt-8 rounded-2xl border border-primary/15 bg-white dark:bg-slate-800 px-7 py-6 shadow-[0_14px_32px_rgba(14,114,135,0.12)] flex items-start gap-4">
+                        <span class="material-icons shrink-0 text-3xl text-magenta" aria-hidden="true">emoji_objects</span>
+                        <p class="font-display text-xl font-bold leading-relaxed text-deepPurple dark:text-white" data-i18n="services_business_objective"><strong>El objetivo:</strong> empresas con mejores capacidades para decidir, gestionar, financiarse, crecer y sostenerse.</p>
+                    </aside>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+                        <article class="bg-slate-50 dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <h4 class="font-display text-xl font-bold text-primary dark:text-mateTeal mb-3" data-i18n="services_business_card1_title">Acceso a capital y mercados</h4>
+                            <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_business_card1_desc">Conectamos capacidades productivas y empresariales con financiación, activos, clientes, proveedores, canales comerciales, encadenamientos y nuevos mercados, fortaleciendo las condiciones para crecer.</p>
+                        </article>
+                        <article class="bg-slate-50 dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <h4 class="font-display text-xl font-bold text-magenta mb-3" data-i18n="services_business_card2_title">Género y enfoque diferencial</h4>
+                            <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_business_card2_desc">Diseñamos soluciones que reconocen las barreras y oportunidades asociadas al género, cuidado, territorio, edad, pertenencia étnica, discapacidad y otras condiciones, incorporándolas desde el diseño hasta la evaluación.</p>
+                        </article>
+                        <article class="bg-slate-50 dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <h4 class="font-display text-xl font-bold text-deepPurple dark:text-white mb-3" data-i18n="services_business_card3_title">Fortalecimiento organizacional</h4>
+                            <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_business_card3_desc">Impulsamos capacidades de gestión, gobernanza, planificación, articulación, sostenibilidad y toma de decisiones de asociaciones, organizaciones e instituciones.</p>
+                        </article>
+                        <article class="bg-slate-50 dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                            <h4 class="font-display text-xl font-bold text-mateTeal mb-3" data-i18n="services_business_card4_title">Investigación, innovación y evaluación</h4>
+                            <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_business_card4_desc">Generamos evidencia mediante diagnósticos, segmentación, análisis de datos, pilotos, monitoreo y evaluación para comprender qué funciona, para quién, en qué contextos y bajo qué condiciones.</p>
+                        </article>
+                        <article class="bg-slate-50 dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                        <h4 class="font-display text-xl font-bold text-primary dark:text-mateTeal mb-3" data-i18n="services_technology_title">Tecnología, datos e IA para la inclusión</h4>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_technology_desc">Integramos herramientas digitales, analítica de datos e inteligencia artificial para ampliar el acceso al conocimiento, personalizar rutas de acompañamiento, facilitar la gestión y desarrollar soluciones escalables adaptadas a diferentes personas, empresas y contextos.</p>
+                    </article>
+                        <article class="bg-slate-50 dark:bg-slate-800 p-7 rounded-2xl border border-slate-100 dark:border-slate-700 shadow-sm">
+                        <h4 class="font-display text-xl font-bold text-magenta mb-3" data-i18n="services_audience_title">Diseñamos para diferentes personas y territorios</h4>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4" data-i18n="services_audience_desc_1">Nuestra experiencia nos permite adaptar estas soluciones a mujeres, jóvenes, población rural, comunidades étnicas, víctimas del conflicto, personas 50+, emprendedores, mipymes, asociaciones productivas, organizaciones comunitarias e instituciones financieras y de desarrollo.</p>
+                        <p class="text-slate-600 dark:text-slate-300 leading-relaxed" data-i18n="services_audience_desc_2">Trabajamos desde el territorio, pero diseñamos soluciones con capacidad de adaptación, escalamiento y medición de resultados.</p>
+                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-deepPurple dark:bg-slate-900 text-white py-12 transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="md:col-span-2">
+                    <a href="/" class="flex items-center gap-3 mb-4 hover:opacity-80 transition-opacity"><img src="./media/logos/LogoMate-05.png" alt="MATE Inversiones & Negocios" class="h-20 w-auto object-contain"></a>
+                    <p class="text-white/80 text-sm max-w-sm leading-relaxed" data-i18n="footer_desc">Impulsamos inclusión económica y ciudadanía inclusiva a través de soluciones productivas, financieras, sociales y sostenibles.</p>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4 text-magenta" data-i18n="footer_links_title">Enlaces</h4>
+                    <ul class="space-y-2 text-sm text-white/80">
+                        <li><a href="/" data-i18n="nav_home" class="hover:text-white transition-colors">Inicio</a></li>
+                        <li><a href="somos-mate.html" data-i18n="nav_about" class="hover:text-white transition-colors">Somos Mate</a></li>
+                        <li><a href="experiencia.html" data-i18n="nav_projects" class="hover:text-white transition-colors">Experiencia</a></li>
+                        <li><a href="servicios.html" data-i18n="nav_services" class="hover:text-white transition-colors">Servicios</a></li>
+                        <li><a href="contacto.html" data-i18n="nav_contact" class="hover:text-white transition-colors">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-display font-bold text-lg mb-4 text-mateTeal" data-i18n="footer_contact_title">Contacto</h4>
+                    <ul class="space-y-3 text-sm text-white/80">
+                        <li class="flex items-center gap-2"><span class="material-icons text-sm">email</span><a href="mailto:direcciongeneral@matesas.com" class="hover:text-white transition-colors">direcciongeneral@matesas.com</a></li>
+                        <li class="flex items-start gap-2"><span class="material-icons text-sm mt-0.5">location_on</span><span data-i18n="footer_location_1">Bogotá D.C., Colombia</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/10 pt-8 text-center text-xs text-white/50"><span>© 2026 MATE SAS.</span></div>
+        </div>
+    </footer>
+    <script src="js/data.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="js/seo.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
