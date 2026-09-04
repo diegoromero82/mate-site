@@ -1,13 +1,17 @@
 # Estado del proyecto
 
-_Actualizado: 1 de septiembre de 2026._
+_Actualizado: 4 de septiembre de 2026._
 
 ## Estado actual
 
+- Versión vigente publicada en producción en `https://www.matesas.com/` el 1 de septiembre de 2026; el proyecto queda a la espera de aprobación, comentarios o nuevos ajustes del usuario final.
 - Sitio institucional estático multipágina listo para ser servido desde un hosting compatible con Apache.
 - Páginas principales: inicio, somos MATE, experiencia, servicios, contacto y error 404.
 - Interfaz responsive, selector de idioma español/inglés y tema claro/oscuro.
-- Formulario de contacto conectado a Google Apps Script.
+- Formulario de contacto conectado a Google Apps Script mediante envío compatible con la política CORS del servicio.
+- Restaurado el envío del formulario de Contacto: se utiliza `no-cors` para remitir los datos a Google Apps Script sin bloquear la solicitud en el navegador; la confirmación al usuario indica que el mensaje fue enviado para procesamiento.
+- Corregida la validación del campo Nombre completo de Contacto, que usaba una expresión regular incompatible con navegadores actuales.
+- Configurado `.gitignore` con exclusiones seguras para archivos locales y sensibles; la bitácora, recursos multimedia publicados y archivos del sitio permanecen versionables.
 - Repositorio local limpio durante la revisión inicial; no se realizaron operaciones de sincronización ni publicación.
 - Actualizado el titular y el texto descriptivo del Hero de Inicio en español e inglés, según la solicitud del cliente. El titular se muestra en tres renglones y se conservaron los distintivos originales de transformación social.
 - Actualizada la sección “¿Por qué somos diferentes?” de Inicio con cuatro tarjetas, contenido aprobado e iconografía relacionada.
@@ -68,6 +72,7 @@ _Actualizado: 1 de septiembre de 2026._
 - Homologado el diseño de los Heroes de Somos MATE, Experiencia y Contacto con el sistema visual de Servicios.
 - Actualizadas la segunda y tercera imagen del Hero de Inicio con los recursos entregados.
 - Incorporada una cuarta imagen y ajustada la rotación del carrusel del Hero de Inicio.
+- Reconfigurado el carrusel del Hero de Inicio para mostrar exclusivamente las seis imágenes entregadas en la carpeta de Hero, de `001` a `006`.
 
 ## Hallazgos técnicos priorizados
 

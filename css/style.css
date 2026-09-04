@@ -118,7 +118,7 @@ html.dark ::-webkit-scrollbar-thumb:hover { background: #087E8B; }
     
     /* Aplicamos las dos animaciones: Zoom lento y Desvanecimiento (Fade) */
     animation-name: kenBurnsZoom, heroFade;
-    animation-duration: 40s, 40s; /* Duración total del ciclo para 4 imágenes */
+    animation-duration: 60s, 60s; /* Duración total del ciclo para 6 imágenes */
     animation-iteration-count: infinite; /* Infinito */
 }
 
@@ -132,23 +132,23 @@ html.dark ::-webkit-scrollbar-thumb:hover { background: #087E8B; }
     }
 }
 
-/* --- Animación 2: Control de opacidad y visibilidad (4 imágenes / ciclo 40s) ---
-   Cada imagen es totalmente visible durante 10 segundos (25% del tiempo).
+/* --- Animación 2: Control de opacidad y visibilidad (6 imágenes / ciclo 60s) ---
+   Cada imagen es totalmente visible durante 10 segundos (16.66% del tiempo).
    El z-index cambia para que la imagen activa siempre esté arriba.
 */
 @keyframes heroFade {
-    0%, 25% {
+    0%, 16.66% {
         opacity: 1; 
         z-index: 2; /* Visible y encima */
     } 
-    25.01%, 100% {
+    16.67%, 100% {
         opacity: 0; 
         z-index: 0; /* Oculta */
     }
 }
 
-/* Configuración de retardos para cada una de las 4 imágenes.
-   La duración total del ciclo es 40s.
+/* Configuración de retardos para cada una de las 6 imágenes.
+   La duración total del ciclo es 60s.
 */
 .hero-slide:nth-child(1) { 
     animation-delay: 0s, 0s; 
@@ -161,6 +161,12 @@ html.dark ::-webkit-scrollbar-thumb:hover { background: #087E8B; }
 }
 .hero-slide:nth-child(4) {
     animation-delay: 30s, 30s; /* Empieza cuando la 3 termina */
+}
+.hero-slide:nth-child(5) {
+    animation-delay: 40s, 40s; /* Empieza cuando la 4 termina */
+}
+.hero-slide:nth-child(6) {
+    animation-delay: 50s, 50s; /* Empieza cuando la 5 termina */
 }
 
 .hero-overlay {

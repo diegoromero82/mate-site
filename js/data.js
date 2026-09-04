@@ -335,7 +335,7 @@ const translations = {
         alliances_card2_title: "UT IMPACTO 50+",
         alliances_card2_partner: "MATE + INSTINTIVO + ZELVA",
         alliances_card2_desc: "Longevidad, finanzas plateadas, ciencias del comportamiento, experiencia de usuario y comunicación.",
-        alliances_instintivo_link: "Instintivo",
+        alliances_instintivo_link: "Conoce a Instintivo",
         alliances_zelva_link: "Conoce a Zelva",
         alliances_card3_title: "PropulXora",
         alliances_card3_partner: "MATE + PROPULSOR LATINOAMÉRICA",
@@ -421,8 +421,8 @@ const translations = {
         form_privacy_link: "Política de Tratamiento de Datos Personales",
         form_btn: "Enviar Mensaje",
         form_sending: "Enviando...",
-        form_success: "Gracias. Tu mensaje fue recibido correctamente. Nos comunicaremos contigo pronto.",
-        form_error: "No fue posible confirmar el envío. Por favor, intenta de nuevo más tarde.",
+        form_success: "Gracias. Tu mensaje fue enviado para procesamiento. Nos comunicaremos contigo pronto.",
+        form_error: "No fue posible enviar el mensaje. Por favor, verifica tu conexión e intenta de nuevo más tarde.",
 
         // Validación de seguridad (Captcha)
         captcha_label: "Validación de seguridad: ¿Cuánto es ",
@@ -749,7 +749,7 @@ const translations = {
         alliances_card2_title: "UT IMPACTO 50+",
         alliances_card2_partner: "MATE + INSTINTIVO + ZELVA",
         alliances_card2_desc: "Longevity, silver economy finance, behavioral sciences, user experience, and communications.",
-        alliances_instintivo_link: "Instintivo",
+        alliances_instintivo_link: "Discover Instintivo",
         alliances_zelva_link: "Discover Zelva",
         alliances_card3_title: "PropulXora",
         alliances_card3_partner: "MATE + PROPULSOR LATINOAMÉRICA",
@@ -835,8 +835,8 @@ const translations = {
         form_privacy_link: "Data Privacy Policy",
         form_btn: "Send Message",
         form_sending: "Sending...",
-        form_success: "Thank you. Your message was received successfully. We will be in touch shortly.",
-        form_error: "We could not confirm the submission. Please try again later.",
+        form_success: "Thank you. Your message was sent for processing. We will be in touch shortly.",
+        form_error: "We could not send your message. Please check your connection and try again later.",
 
         // Security Validation (Captcha)
         captcha_label: "Security validation: What is ",

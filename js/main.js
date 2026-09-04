@@ -244,24 +244,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 const translate = (key, fallback) => window.i18next ? i18next.t(key) : fallback;
                 btn.innerHTML = `${translate('form_sending', 'Enviando...')} <span class="material-icons animate-spin text-sm">sync</span>`;
 
-                // El servicio debe responder con CORS habilitado para confirmar la recepción.
-                const response = await fetch(form.action, {
+                // Google Apps Script recibe el envío, pero no expone una respuesta CORS
+                // que el navegador pueda leer desde este sitio estático.
+                await fetch(form.action, {
                     method: 'POST',
-                    body: cleanData
+                    body: cleanData,
+                    mode: 'no-cors'
                 });
 
-                if (!response.ok) {
-                    throw new Error(`El servicio respondió con el estado ${response.status}.`);
-                }
-
-                alert(translate('form_success', 'Gracias. Tu mensaje fue recibido correctamente. Nos comunicaremos contigo pronto.'));
+                alert(translate('form_success', 'Gracias. Tu mensaje fue enviado para procesamiento. Nos comunicaremos contigo pronto.'));
                 form.reset();
                 generateCaptcha(); // Refrescar captcha para el siguiente envío
 
             } catch (error) {
                 console.error("Error de envío:", error);
                 const translate = (key, fallback) => window.i18next ? i18next.t(key) : fallback;
-                alert(translate('form_error', 'No fue posible confirmar el envío. Por favor, intenta de nuevo más tarde.'));
+                alert(translate('form_error', 'No fue posible enviar el mensaje. Por favor, verifica tu conexión e intenta de nuevo más tarde.'));
             } finally {
                 btn.disabled = false;
                 btn.innerHTML = originalBtnText;

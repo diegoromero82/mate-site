@@ -4,6 +4,10 @@ Este archivo sigue el formato de [Keep a Changelog](https://keepachangelog.com/e
 
 ## [Sin publicar]
 
+### Publicado
+
+- Publicada en producción la versión vigente del sitio en `https://www.matesas.com/` el 1 de septiembre de 2026.
+
 ### Añadido
 
 - Documentación inicial de arquitectura y operación en `README.md`.
@@ -12,6 +16,10 @@ Este archivo sigue el formato de [Keep a Changelog](https://keepachangelog.com/e
 
 ### Modificado
 
+- Configurado `.gitignore` para excluir credenciales, archivos temporales, registros, dependencias y configuraciones locales, manteniendo en el repositorio la bitácora, contenido y recursos necesarios para el sitio.
+- Restaurado el envío compatible con Google Apps Script en el formulario de Contacto mediante `no-cors`, evitando el bloqueo CORS que impedía remitir solicitudes al endpoint publicado; el aviso ahora informa que el mensaje fue enviado para procesamiento.
+- Retirada una expresión regular incompatible del campo Nombre completo en Contacto, eliminando el error de validación mostrado por navegadores actuales.
+- Reconfigurado el carrusel del Hero de Inicio para mostrar exclusivamente las seis imágenes entregadas en `media/images/Inicio/hero`, en orden de `001` a `006`.
 - Incorporada una cuarta imagen al carrusel del Hero de Inicio y ajustado el ciclo de animación para cuatro diapositivas.
 - Actualizadas la segunda y tercera imagen del Hero de Inicio con los nuevos recursos proporcionados.
 - Homologado el diseño editorial del Hero de Somos MATE, Experiencia y Contacto con el Hero de Servicios, conservando las imágenes y textos propios de cada página.
