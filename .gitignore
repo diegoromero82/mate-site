@@ -1,0 +1,35 @@
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Dependencias y resultados generados localmente
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+
+# Registros y archivos temporales
+*.log
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# Configuración de editores
+.vscode/
+.idea/
+*.code-workspace
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Copias de respaldo locales
+*.bak
+*.backup

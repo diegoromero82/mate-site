@@ -14,9 +14,13 @@ document.addEventListener('languageChanged', (e) => {
         titleKey = 'meta_title_somos';
         descKey = 'meta_desc_somos';
     }
-    else if (path.includes('proyectos.html')) {
-        titleKey = 'meta_title_proyectos';
-        descKey = 'meta_desc_proyectos';
+    else if (path.includes('experiencia.html')) {
+        titleKey = 'meta_title_experiencia';
+        descKey = 'meta_desc_experiencia';
+    }
+    else if (path.includes('servicios.html')) {
+        titleKey = 'meta_title_servicios';
+        descKey = 'meta_desc_servicios';
     }
     else if (path.includes('contacto.html')) {
         titleKey = 'meta_title_contacto';

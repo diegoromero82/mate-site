@@ -2,41 +2,62 @@
    MATE SAS - Estilos Base Centralizados
    ========================================================================== */
 
-/* Importamos las capas de Tailwind */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-@layer base {
-  /* Comportamiento suave del scroll en toda la página */
-  html {
-    scroll-behavior: smooth;
-  }
-
-  /* Evitar que el texto sea seleccionable en botones y enlaces de navegación */
-  button, nav a {
-    user-select: none;
-  }
+/* Estas reglas se entregan como CSS nativo: el sitio usa Tailwind por CDN y no
+   cuenta con un paso de compilación para procesar directivas de preprocesador. */
+html {
+  scroll-behavior: smooth;
 }
 
-@layer components {
-  /* Aquí podremos crear clases personalizadas si notamos que repetimos
-     muchas clases de Tailwind en botones, tarjetas, etc. */
-  
-  .btn-primary {
-    @apply px-6 py-3 bg-primary text-white rounded-full font-bold shadow-md hover:bg-mateTeal hover:-translate-y-0.5 transition-all duration-300;
-  }
-
-  .btn-outline {
-    @apply px-6 py-3 border-2 border-primary text-primary dark:border-white dark:text-white rounded-full font-bold hover:bg-primary hover:text-white dark:hover:bg-white dark:hover:text-background-dark transition-all duration-300;
-  }
+button,
+nav a {
+  user-select: none;
 }
 
-@layer utilities {
-  /* Utilidades personalizadas para fondos decorativos si las necesitamos luego */
-  .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-magenta;
-  }
+.btn-primary {
+  padding: 0.75rem 1.5rem;
+  color: #fff;
+  background: #0E7287;
+  border-radius: 9999px;
+  font-weight: 700;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  transition: background-color 300ms ease, transform 300ms ease;
+}
+
+.btn-primary:hover {
+  background: #087E8B;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  padding: 0.75rem 1.5rem;
+  color: #0E7287;
+  background: transparent;
+  border: 2px solid #0E7287;
+  border-radius: 9999px;
+  font-weight: 700;
+  transition: background-color 300ms ease, color 300ms ease, transform 300ms ease;
+}
+
+.btn-outline:hover {
+  color: #fff;
+  background: #0E7287;
+}
+
+html.dark .btn-outline {
+  color: #fff;
+  border-color: #fff;
+}
+
+html.dark .btn-outline:hover {
+  color: #0F172A;
+  background: #fff;
+}
+
+.text-gradient {
+  color: transparent;
+  background: linear-gradient(90deg, #0E7287, #B33E7E);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 /* ==========================================================================
@@ -57,16 +78,21 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-background-light dark:bg-background-dark;
+  background: #F9FAFB;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-300 dark:bg-slate-700 rounded-full;
+  background: #cbd5e1;
+  border-radius: 9999px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-primary dark:bg-mateTeal;
+  background: #0E7287;
 }
+
+html.dark ::-webkit-scrollbar-track { background: #0F172A; }
+html.dark ::-webkit-scrollbar-thumb { background: #334155; }
+html.dark ::-webkit-scrollbar-thumb:hover { background: #087E8B; }
 /* =========================================================
    MATE SAS - Animaciones del Hero Slider (3 Imágenes)
    ========================================================= */
@@ -92,7 +118,7 @@
     
     /* Aplicamos las dos animaciones: Zoom lento y Desvanecimiento (Fade) */
     animation-name: kenBurnsZoom, heroFade;
-    animation-duration: 30s, 30s; /* Duración total del ciclo para 3 imágenes */
+    animation-duration: 60s, 60s; /* Duración total del ciclo para 6 imágenes */
     animation-iteration-count: infinite; /* Infinito */
 }
 
@@ -106,23 +132,23 @@
     }
 }
 
-/* --- Animación 2: Control de opacidad y visibilidad (3 Imágenes / Ciclo 30s) ---
-   Cada imagen es totalmente visible durante 10 segundos (33.33% del tiempo).
+/* --- Animación 2: Control de opacidad y visibilidad (6 imágenes / ciclo 60s) ---
+   Cada imagen es totalmente visible durante 10 segundos (16.66% del tiempo).
    El z-index cambia para que la imagen activa siempre esté arriba.
 */
 @keyframes heroFade {
-    0%, 33.33% { 
+    0%, 16.66% {
         opacity: 1; 
         z-index: 2; /* Visible y encima */
     } 
-    33.34%, 100% { 
+    16.67%, 100% {
         opacity: 0; 
         z-index: 0; /* Oculta */
     }
 }
 
-/* Configuración de retardos (delays) para cada una de las 3 imágenes.
-   La duración total del ciclo es 30s.
+/* Configuración de retardos para cada una de las 6 imágenes.
+   La duración total del ciclo es 60s.
 */
 .hero-slide:nth-child(1) { 
     animation-delay: 0s, 0s; 
@@ -132,6 +158,15 @@
 }
 .hero-slide:nth-child(3) { 
     animation-delay: 20s, 20s; /* Empieza cuando la 2 termina */
+}
+.hero-slide:nth-child(4) {
+    animation-delay: 30s, 30s; /* Empieza cuando la 3 termina */
+}
+.hero-slide:nth-child(5) {
+    animation-delay: 40s, 40s; /* Empieza cuando la 4 termina */
+}
+.hero-slide:nth-child(6) {
+    animation-delay: 50s, 50s; /* Empieza cuando la 5 termina */
 }
 
 .hero-overlay {
@@ -216,4 +251,378 @@
     0% { transform: translateX(0); }
     /* Se desplaza exactamente la mitad (porque duplicaremos los logos en el HTML) */
     100% { transform: translateX(-50%); } 
+}
+
+/* =========================================================
+   PÁGINA DE SERVICIOS — Sistema visual editorial
+   ========================================================= */
+.services-hero {
+    isolation: isolate;
+}
+
+.services-hero-media {
+    animation: servicesHeroZoom 18s ease-out both;
+    background-position: center 72%;
+    transform-origin: center 72%;
+}
+
+.services-hero-overlay {
+    background:
+        linear-gradient(90deg, rgba(31, 24, 48, 0.9) 0%, rgba(67, 46, 96, 0.76) 42%, rgba(8, 126, 139, 0.28) 100%),
+        linear-gradient(0deg, rgba(15, 23, 42, 0.7) 0%, transparent 48%);
+}
+
+.services-hero-orb {
+    position: absolute;
+    z-index: 1;
+    border-radius: 9999px;
+    filter: blur(1px);
+    opacity: 0.58;
+    pointer-events: none;
+    animation: servicesFloat 8s ease-in-out infinite;
+}
+
+.services-hero-orb--one {
+    width: 19rem;
+    height: 19rem;
+    right: -7rem;
+    top: 15%;
+    background: radial-gradient(circle, rgba(8, 126, 139, 0.56), rgba(8, 126, 139, 0));
+}
+
+.services-hero-orb--two {
+    width: 14rem;
+    height: 14rem;
+    left: 37%;
+    bottom: -7rem;
+    background: radial-gradient(circle, rgba(179, 62, 126, 0.42), rgba(179, 62, 126, 0));
+    animation-delay: -4s;
+}
+
+.services-hero-rule {
+    display: flex;
+    align-items: center;
+    width: min(20rem, 100%);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.26);
+}
+
+.services-hero-rule span {
+    display: block;
+    width: 42%;
+    height: 3px;
+    border-radius: 9999px;
+    background: #B33E7E;
+    animation: servicesRule 2.2s ease-out both;
+}
+
+.services-page .service-pillar {
+    position: relative;
+    scroll-margin-top: 9rem;
+}
+
+.services-page .service-pillar--longevity::before,
+.services-page .service-pillar--economic::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 22rem;
+    height: 22rem;
+    border-radius: 9999px;
+    pointer-events: none;
+}
+
+.services-page .service-pillar--longevity::before {
+    top: 10rem;
+    left: -15rem;
+    background: rgba(179, 62, 126, 0.055);
+}
+
+.services-page .service-pillar--economic::before {
+    right: -14rem;
+    top: 12rem;
+    background: rgba(8, 126, 139, 0.07);
+}
+
+.services-page .service-pillar > div {
+    position: relative;
+    z-index: 1;
+}
+
+.services-page .service-pillar h2 {
+    max-width: 36rem;
+    line-height: 1.05;
+}
+
+.services-page .service-pillar h3,
+.services-page .service-pillar h4,
+.services-page .service-pillar h5 {
+    text-wrap: balance;
+}
+
+.services-page .service-pillar article {
+    position: relative;
+    overflow: hidden;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease, border-color 280ms ease;
+}
+
+.services-page .service-pillar article::after {
+    content: "";
+    position: absolute;
+    left: 1.75rem;
+    right: 1.75rem;
+    bottom: 0;
+    height: 3px;
+    border-radius: 9999px 9999px 0 0;
+    background: linear-gradient(90deg, #0E7287, #B33E7E);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 280ms ease;
+}
+
+.services-page .service-pillar article:hover {
+    transform: translateY(-0.4rem);
+    box-shadow: 0 18px 38px rgba(15, 23, 42, 0.12);
+    border-color: rgba(14, 114, 135, 0.24);
+}
+
+.services-page .service-pillar article:hover::after {
+    transform: scaleX(1);
+}
+
+.services-page .service-line-card__image-wrap {
+    height: clamp(18rem, 42vw, 28rem);
+    overflow: hidden;
+    background: #e2e8f0;
+}
+
+.services-page .service-line-card__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transition: transform 520ms cubic-bezier(0.22, 1, 0.36, 1), filter 520ms ease;
+}
+
+.services-page .service-line-card:hover .service-line-card__image {
+    transform: scale(1.06);
+    filter: saturate(1.08);
+}
+
+.services-page .service-line-card {
+    background: #f1f5f9;
+    border-color: #e8edf3;
+    box-shadow: 0 2px 3px rgba(15, 23, 42, 0.035);
+}
+
+.services-page .service-line-card::after {
+    display: none;
+}
+
+.services-page .service-line-card:hover {
+    box-shadow: 0 16px 30px rgba(15, 23, 42, 0.1);
+    border-color: rgba(14, 114, 135, 0.2);
+}
+
+.dark .services-page .service-line-card {
+    background: #1e293b;
+    border-color: #334155;
+}
+
+.services-page .service-pillar--economic .bg-deepPurple {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #432E60 0%, #543C72 55%, #0E7287 145%);
+}
+
+.services-page .service-pillar--economic .bg-deepPurple::after {
+    content: "";
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    right: -6rem;
+    bottom: -8rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 9999px;
+}
+
+.services-page .service-pillar--economic .bg-deepPurple > * {
+    position: relative;
+    z-index: 1;
+}
+
+.services-page .services-business-cycle {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr) auto minmax(0, 1fr);
+    align-items: center;
+    gap: 0.55rem;
+}
+
+.services-page .services-business-cycle__step {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
+    min-width: 0;
+    min-height: 4.75rem;
+    padding: 0.8rem 1rem;
+    overflow: hidden;
+    border: 1px solid rgba(var(--cycle-rgb), 0.2);
+    border-radius: 1.2rem;
+    background: #ffffff;
+    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.07);
+    color: rgb(var(--cycle-rgb));
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    transition: transform 280ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 280ms ease, border-color 280ms ease;
+}
+
+.services-page .services-business-cycle__step::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 5rem;
+    height: 5rem;
+    right: -2.7rem;
+    bottom: -2.8rem;
+    border-radius: 9999px;
+    background: rgba(var(--cycle-rgb), 0.1);
+    transition: transform 380ms cubic-bezier(0.22, 1, 0.36, 1), background-color 280ms ease;
+}
+
+.services-page .services-business-cycle__step:hover {
+    transform: translateY(-0.45rem) scale(1.025);
+    border-color: rgba(var(--cycle-rgb), 0.45);
+    box-shadow: 0 18px 28px rgba(var(--cycle-rgb), 0.18);
+}
+
+.services-page .services-business-cycle__step:hover::before {
+    transform: scale(1.9);
+    background: rgba(var(--cycle-rgb), 0.14);
+}
+
+.services-page .services-business-cycle__icon {
+    flex: 0 0 auto;
+    font-size: 1.25rem;
+}
+
+.services-page .services-business-cycle__step--measure {
+    padding-inline: 0.8rem;
+}
+
+.services-page .services-business-cycle__measure-content {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    min-width: 0;
+}
+
+.services-page .services-business-cycle__measure-label {
+    display: block;
+    width: 7rem;
+    line-height: 1.1;
+    text-align: left;
+}
+
+.services-page .services-business-cycle__arrow {
+    color: rgba(14, 114, 135, 0.72);
+    font-size: 1.65rem;
+    transition: transform 240ms ease, color 240ms ease;
+}
+
+.services-page .services-business-cycle__step:hover + .services-business-cycle__arrow {
+    transform: translateX(0.4rem);
+    color: #B33E7E;
+}
+
+.dark .services-page .services-business-cycle__step {
+    background: #1e293b;
+    border-color: rgba(var(--cycle-rgb), 0.42);
+}
+
+@keyframes servicesHeroZoom {
+    from { transform: scale(1.08); }
+    to { transform: scale(1); }
+}
+
+@keyframes servicesFloat {
+    0%, 100% { transform: translate3d(0, 0, 0); }
+    50% { transform: translate3d(-1rem, 1rem, 0); }
+}
+
+@keyframes servicesRule {
+    from { width: 0; }
+    to { width: 42%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .services-hero-media,
+    .services-hero-orb,
+    .services-hero-rule span {
+        animation: none;
+    }
+
+    .services-page .service-pillar article,
+    .services-page .service-line-card__image,
+    .services-page .services-business-cycle__step,
+    .services-page .services-business-cycle__step::before,
+    .services-page .services-business-cycle__arrow {
+        transition: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .services-page .services-business-cycle {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .services-page .services-business-cycle__step {
+        justify-content: flex-start;
+    }
+
+    .services-page .services-business-cycle__arrow {
+        align-self: center;
+        transform: rotate(90deg);
+    }
+
+    .services-page .services-business-cycle__step:hover + .services-business-cycle__arrow {
+        transform: rotate(90deg) translateX(0.4rem);
+    }
+}
+
+@media (min-width: 1024px) {
+    .services-page .service-line-grid {
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+    }
+
+    .services-page .service-line-grid > article {
+        grid-column: span 2 / span 2;
+    }
+
+    .services-page .service-line-grid--youth > article:nth-child(4) {
+        grid-column: auto;
+    }
+
+    .services-page .service-line-grid--youth {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .services-page .service-line-grid--youth > article {
+        grid-column: auto;
+    }
+
+    .services-page .service-line-grid--care > article:nth-child(4) {
+        grid-column: 2 / span 2;
+    }
+
+    .services-page .service-line-grid--care > article:nth-child(5) {
+        grid-column: 4 / span 2;
+    }
 }
